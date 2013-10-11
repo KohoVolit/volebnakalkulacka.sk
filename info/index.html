@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Info | VolebníKalkulačka.cz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+    <link type="image/x-icon" href="../image/favicon.ico" rel="shortcut icon">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.js"></script>
+	<link rel="stylesheet" href="../css/psp2013-page.css" />
+	
+
+  </head>
+
+  
+  <body>
+  <div data-role="page" data-title="Info | VolebníKalkulačka.cz" data-theme="f" class='page type-interior' style="font-family:Helvetica,Arial,sans-serif">
+  
+  <div data-role="header" data-theme="g">
+	  <a href="/" data-role="button" data-icon="home" data-iconpos="notext" data-ajax="false">Domov</a>
+	  <a href="/info" data-icon="info" data-iconpos="notext" data-ajax="false">Info</a>
+	  <h3 class="h1">Info | VolebníKalkulačka.cz</h3>
+  </div><!-- /header -->
+  
+  
+  
+    <div data-role="content">
+      <div class="box-center-match">
+    
+<h2>O projektu</h2>
+		
+<a name="about"></a><p>Volební kalkulačka (anglicky <i>voting advice application</i>) je jednoduchý, zpravidla internetový test porovnávající Vaše politické postoje s postoji politických stran či osob (zákonodárců, kandidátů ve volbách atd.). Více o historii volebních kalkulaček a o úspěšných příkladech ze světa se můžete dočíst na <a href="http://cs.wikipedia.org/wiki/Volebn%C3%AD_kalkula%C4%8Dka"><b><i>Wikipedii</i></b></a>.
+<p>
+
+<p>Pokud se Vám Volební kalkulačka líbí, <a href="../support/"><i><b>podpořte</b></i></a> její vývoj a provoz.</p>
+
+<p>Českou a slovenskou Volební kalkulačku vyvíjí a provozuje občanské sdružení <a href="http://kohovolit.eu/"><b><i>KohoVolit.eu</i></b></a> již od roku 2006. Celkem jsme vytvořili již 20 volebních kalkulaček pro všechny druhy voleb (evropské, prezidentské, parlamentní, regionální i komunální). Zatím nejúspěšnější kalkulačku před prvním kolem prezidentských voleb v ČR v roce 2013 použil více než 1 milion voličů.</p>
+
+<p><a href="http://kohovolit.eu/"><b><i>KohoVolit.eu</i></b></a> vytváří dva druhy volebních kalkulaček: inventura hlasování porovnává Vaše odpovědi s reálnými hlasováními v zákonodárném sboru za uplynulé funkční období. Názorový test porovnává Vaše odpovědi s odpověďmi, které nám poskytly samotné politické strany či kandidáti ve volbách. Pokud některá strana či kandidát v názorovém testu chybí, je to vždy protože jsme neobdrželi odpovědi.</p>
+
+<p>Použitá loga politických stran a fotografie osob pochází z webových stránek politických stran, z Wikipedie nebo z webových stránek příslušeného zastupitelského sboru.</p>
+
+<h2>Popis výpočtu</h2>
+
+Pro maximální transparentnost a ověřitelnost spočtených výsledků zde uvádíme, jak se Vaše shoda se stranami či osobami počítá, a také proč se počítá zrovna takhle.
+
+<h3>Názorový test</h3>
+
+<p>Otázka, u níž neodpovíte „Ano“ či „Ne“, se do výpočtu nezahrnuje. Pokud na otázku odpovíte „Ano“, strany či kandidáti, kteří rovněž odpověděli „Ano“, získávají jeden bod. Strany či kandidáti, kteří odpověděli „Ne“, jeden bod ztrácejí. Pokud odpovíte „Ne“, získávají jeden bod strany či kandidáti, kteří rovněž odpověděli „Ne“. Ti, kteří odpověděli „Ano“, naopak jeden bod ztrácejí. Strany či kandidáti, kteří na otázku neodpověděli „Ano“ ani „Ne“ nezískávají ani neztrácí žádné body.</p>
+
+<p>Následně se každé straně či kandidátovi sečtou body za všechny otázky, u nichž jste odpověděli „Ano“ či „Ne“, a výsledek se vydělí počtem takových otázek. Tím je získána shoda v rozmezí -100 % až 100 %. Pro větší názornost se shoda převádí na rozmezí 0 % až 100 % tak, že se vydělí dvěma a přičte se k ní 50 % (u kalkulaček od poloviny roku 2013).</p>
+
+<h3>Inventura hlasování</h3>
+
+<p>Hlasování, u kterého nehlasujete „Ano“ ani „Ne“, se do výpočtu nezahrnuje. Pokud hlasujete „Ano“, zákonodárci, kteří hlasovali pro návrh, získávají jeden bod. Zákonodárci, kteří hlasovali proti návrhu, zdrželi se, nebo byli přihlášeni, ale nestiskli žádné tlačítko, jeden bod ztrácejí. Pokud hlasujete „Ne“, získávají jeden bod zákonodárci, kteří hlasovali proti návrhu, zdrželi se, nebo byli přihlášeni, ale nestiskli žádné tlačítko. Ti, kteří hlasovali pro návrh, naopak jeden bod ztrácejí. Zákonodárci, kteří nebyli v době daného hlasování přihlášeni, nebo nebyli členy Parlamentu, nezískávají ani neztrácí žádné body.</p>
+
+<p>Následně se každému zákonodárci sečtou body za všechna hlasování, u nichž jste hlasovali „Ano“ či „Ne“, a výsledek se vydělí počtem takových hlasování. Tím je získána shoda v rozmezí -100 % až 100 %. Pro větší názornost se shoda převádí na rozmezí 0 % až 100 % tak, že se vydělí dvěma a přičte se k ní 50 % (u kalkulaček od poloviny roku 2013).</p>
+
+<p>Situace, kdy se zákonodárce zdržel nebo nestiskl žádné tlačítko, má pro výsledek hlasování přesně stejný význam jako hlasování proti návrhu. Zákonodárce totiž nehlasuje pro návrh, a přitom se jeho hlas započítává do kvora, které je pro přijetí návrhu zapotřebí. Proto tyto situace při výpočtu shody považujeme za hlasování proti návrhu.</p>
+
+<p>V případě hlasování, kdy je pro přijetí návrhu vyžadována většina všech zákonodárců, a nikoli pouze většina přítomných zákonodárců (např. pro změnu Ústavy nebo pro přehlasování veta Senátu či prezidenta), má neúčast na hlasování přesně stejný význam jako hlasování proti návrhu. Proto neúčast při výpočtu shody považujeme za hlasování proti návrhu.</p>
+
+<h3>Důležitost otázek a hlasování</h3>
+
+<p>U každé otázky či hlasování máte možnost nastavit, jakou pro Vás má shoda důležitost, tedy váhu s jakou se má zahrnout do celkového součtu shody. Každé ze dvou úrovní důležitosti (normální, vysoká) odpovídá jistá váha a celková shoda je pak váženým průměrem shody v jednotlivých otázkách či hlasováních. Ve skutečnosti se tedy místo jednoho bodu ke shodě přičte, resp. odečte váha příslušné otázky či hlasování a na konci se dělí nikoli počtem otázek či hlasování, ale součtem absolutních hodnot jejich vah. Nastavení vah je takové, že vysoká důležitost má oproti normální důležitosti dvojnásobnou váhu.</p>
+
+<h3>Zobrazení výsledné shody</h3>
+
+<p>Může se stát, že Vám vyjde stejná shoda se dvěma nebo více stranami či osobami. V tom případě je pořadí stran či osob při zobrazení výsledné shody určeno náhodně.</p>
+
+<h2>Donoři a partneři projektu</h2>
+
+Volební kalkulačka by nevznikla bez laskavé podpory:
+
+<p><a href="http://motejl.cz"><img src="http://www.motejl.cz/images/logo.png" width="241" height="116" alt="Logo Fond Otakara Motejla" title="Fond Otakara Motejla" /></a></p>
+
+<p><img src="http://img23.imageshack.us/img23/5053/g189.png" width="539" height="83" alt="Loga donorů" title="Loga donorů" /></p>
+
+<p><a href="http://kohovolit.eu/"><b><i>KohoVolit.eu</i></b></a> patří na <a href="http://www.nasstat.cz/cze/"><b><i>NášStát.cz</i></b></a>.</p>
+
+<img src="http://img33.imageshack.us/img33/7517/y9rh.jpg" width="258" height="166" alt="NášStát.cz" title="NášStát.cz" />
+
+
+		</div>	
+	</div> <!-- /content -->
+
+	<!-- footer -->
+	<div data-role="footer" data-theme="g"> 
+<div>2013 KohoVolit.eu, kontakt: Michal Škop +420 775 187 021, Kamil Gregor +420 724 362 427, email: jmeno.prijmeni[zavinac]kohovolit.eu</div>
+	  <div class="footerContainer"> 
+		<div class="right computer">
+			<a href="http://kohovolit.eu">
+				<img src="../image/kohovolit-logo-dark-small.png" title="KohoVolit.eu" alt="KohoVolit.eu"/>
+			</a>
+		 </div>
+	  </div>
+	</div>
+	<!-- /footer -->
+	
+  		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-8592359-7']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
+		
+  </div> <!-- /page -->
+  
+</body>
+</html>
