@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang='cs'>
+<html lang='sk'>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Volební kalkulačka | volby 2013</title>
-	<meta name="description" content="Volby 2013 se blíží! Spočítejte si koho volit!" />
-	<meta name="keywords" content="volby 2013, předčasné volby, volební kalkulačka, volební test" />
+	<title>Volebná kalkulačka | voľby 2013</title>
+	<meta name="description" content="Voľby 2013 sa blížia! Spočítajte si koho voliť!" />
+	<meta name="keywords" content="voľby 2013, župné voľby , volebná kalkulačka, volebný test" />
 	<meta name="author" content="KohoVolit.eu" />
 	<meta name="robots" content="index, follow" />
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.css" />
@@ -14,10 +14,10 @@
 
 	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.js"></script>
-	<meta property="og:image" content="http://volebnikalkulacka.cz/image/logo.jpg"/>
-	<meta property="og:title" content="Volební kalkulačka"/>
-	<meta property="og:url" content="http://volebnikalkulacka.cz/"/>
-	<meta property="og:site_name" content="Volební kalkulačka"/>
+	<meta property="og:image" content="http://volebnakalkulacka.sk/image/logo.jpg"/>
+	<meta property="og:title" content="Volebná kalkulačka"/>
+	<meta property="og:url" content="http://volebnakalkulacka.sk/"/>
+	<meta property="og:site_name" content="Volebná kalkulačka"/>
 	<meta property="og:type" content="website"/>
 
 	
@@ -26,7 +26,6 @@
 <div data-role="page" class="type-home">
 
 	<div data-role="header" data-theme="g" class="header">
-	  <a href="./en/" class="ui-btn-right" data-theme="g">English</a>
 	  <h6>&nbsp;</h6>
 	</div>
 
@@ -35,65 +34,22 @@
 	
 	
 
-		<h1>Volební kalkulačka</h1>
-		<p>Nejužitečnějších 5 minut před volbami.</p>
+		<h1>Volebná kalkulačka</h1>
+		<p>Najužitočnejších 5 minút pred voľbami.</p>
 
 	
 
 
 	<ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="g">
-					<li  data-theme="s">
-					<!--<a href="volba-prezidenta-cr-2-kolo-2013" data-ajax="false">-->
-					  <?php 
-					    //research
-						$rand=rand(0,19);
-						if ($rand == 0)
-						  echo '<a href="poslanecka-snemovna-2013/kalkulacka-vyzkum.php" data-rel="dialog">';
-						else
-						  echo '<a href="poslanecka-snemovna-2013/" data-ajax="false">';
-					  ?> 
-					  <img src='./image/cz.png' width="67" height="80">
-					  <h2>Názorový test pro volby 2013</h2>
-					  <p class="ui-li-desc">Shoda s názory kandidujících stran.</p>
-					</a>
-					</li>
-	</ul>
-	<ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="g">
-					
-					<li  data-theme="t">
-					<!--<a href="poslanecka-snemovna-2013-inventura-hlasovani" data-ajax="false">-->
-					  <?php 
-					    //research
-						$rand=rand(0,19);
-						if ($rand == 0)
-						  echo '<a href="poslanecka-snemovna-2013-inventura-hlasovani/kalkulacka-vyzkum.php" data-rel="dialog">';
-						else
-						  echo '<a href="poslanecka-snemovna-2013-inventura-hlasovani/" data-ajax="false">';
-					  ?> 
-					  <img src='./image/cz.png' width="67" height="80">
-					  <h2>Inventura hlasování 2010-2013</h2>
-					  <p class="ui-li-desc">Shoda dle hlasování poslanců.</p>
-					</a>
-					</li>
-	</ul>
-	<ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="g">
-					
 					<li  data-theme="c">
-					<!--<a href="poslanecka-snemovna-2013-inventura-hlasovani" data-ajax="false">-->
-					  <?php 
-					    //research
-						$rand=rand(0,19);
-						if ($rand == 0)
-						  echo '<a href="poslanecka-snemovna-2013-ultimate/kalkulacka-vyzkum.php" data-rel="dialog" style="color:#888;">';
-						else
-						  echo '<a href="poslanecka-snemovna-2013-ultimate/" data-ajax="false"  style="color:#888;">';
-					  ?> 
-					  <img src='./image/cz.png' width="67" height="80">
-					  <h2>Rozšířený názorový test pro volby 2013 (β)</h2>
-					  <p class="ui-li-desc">80 otázek! Shoda s názory kandidujících stran.</p>
-					</a>
+					<!--<a href="volba-prezidenta-cr-2-kolo-2013" data-ajax="false">-->
+					  <img src='./image/sk.png' width="67" height="80">
+					  <h2>Volebná kalkulačka pre župné voľby 2013</h2>
+					  <p class="ui-li-desc"><strong>Spustenie 25.10.2013</strong></p>
+					<!--</a>-->
 					</li>
-	</ul>   
+	</ul>
+  
 
 
 
@@ -106,7 +62,7 @@
 			  var js, fjs = d.getElementsByTagName(s)[0];
 			  if (d.getElementById(id)) return;
 			  js = d.createElement(s); js.id = id;
-			  js.src = "//connect.facebook.net/cs_CZ/all.js#xfbml=1";
+			  js.src = "//connect.facebook.net/sk_SK/all.js#xfbml=1";
 			  fjs.parentNode.insertBefore(js, fjs);
 			}(document, 'script', 'facebook-jssdk'));</script> 
 					  <div class="fb-like" data-href="http://www.facebook.com/KohoVolit.eu" data-send="false" data-layout="box_count" data-width="50" data-show-faces="false"></div>
@@ -119,7 +75,7 @@
 
 			<!-- Place this tag after the last +1 button tag. -->
 			<script type="text/javascript">
-			  window.___gcfg = {lang: 'cs'};
+			  window.___gcfg = {lang: 'sk'};
 
 			  (function() {
 				var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
@@ -138,7 +94,7 @@
 	  </div><!-- /grid -->
 	  
 	 <div>
-	   <p style="text-align:justify"><strong>Volební kalkulačky pro předčasné parlamentní volby 2013</strong> Vám pomohou v rozhodnutí koho volit ve volbách do Poslanecké sněmovny 25. a 26. října 2013. <strong>Názorový test</strong> porovnává Vaše odpovědi s názory stran. <strong>Inventura hlasování</strong> srovnává vaše odpovědi se skutečnými hlasováními ze Sněmovny v letech 2010-2013. <strong>Volební test Vám zabere přibližně 5 minut.</strong>
+	   <p style="text-align:justify"><strong>Volebné kalkulačky pre župné voľby 2013</strong> Vám pomôžu v rozhodnutí koho voliť vo voľbách do VÚC 9. novembra 2013. <strong>Volebná kalkulačka</strong> porovnáva Vaše odpovede s názormi kandidátov na župany. <strong>Volebný test Vám zaberie približne 5 minút.</strong>
 	 </p>
 	 </div> 
 
@@ -157,55 +113,24 @@
   echo $number;
   
 ?>
-		</span> vyplněných Volebních kalkulaček
+		</span> vyplnených Volebných kalkulačiek
 	</div>
 	<!-- /counter -->
 	  
-	  		
-
-	 <!-- dms 1 -->		
-	<div id="dms" class="computer">
-  		<div id="dms-inside" class="computer ui-btn ui-shadow ui-btn-corner-all ui-btn-up-c ui-bar-c"> 
-		  <img src="./image/psp2013/dms.png" alt="DMS" title="DMS KOHOVOLIT na 87777" />
-		  <div id="dms-inside-inside" >
-		    <h3>Podpořte tvorbu nezávislých Volebních kalkulaček</h3>
-		    Pošlete SMS na číslo <strong>87777</strong> s textem:<br/>
-		    <strong>DMS KOHOVOLIT</strong> <br/>
-		    <span class="small">(cena 30Kč, z toho 27Kč pro sdružení KohoVolit.eu)<br/></span>
-			<strong>DMS ROK KOHOVOLIT</strong> <br/>
-			<span class="small">(viz předchozí, automaticky každý měsíc po 1 rok)</span> <br/>
-			<span class="right small"><a href="/support/">podrobné info -></a></span> <br/>
-			<p><strong>Děkujeme!</strong></p>
-		  </div>
-	  </div>
-	</div>
-		<div id="dms-mobile" data-role="popup" class="mobile ui-btn ui-shadow ui-btn-corner-all ui-btn-up-c ui-bar-e">
-			<h3>Podpořte Volební kalkulačku</h3>
-			SMS na číslo <strong>87777</strong><br/>
-			<strong>DMS KOHOVOLIT</strong><br/>
-			nebo<br/>
-			<strong>DMS ROK KOHOVOLIT</strong><br/>
-			(cena 30Kč, resp. 12x30Kč)<br/>
-			Děkujeme!
-		</div> 
-<!-- /dms 1 -->			  
+	  				  
 
 
 
 	</div> <!-- /content -->
 	
 		<script type="text/javascript">
+			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-8592359-7']);
-		  _gaq.push(['_trackPageview']);
-
-		  (function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
-
+			  ga('create', 'UA-8592359-12', 'volebnakalkulacka.sk');
+			  ga('send', 'pageview');
 		</script>
 		
 
@@ -213,10 +138,9 @@
 	    <div data-role="navbar">
 		  <ul>
 		  	
-			<li><a href="info" data-ajax="false">O projektu VolebníKalkulačka.cz</a></li>
-			<li><a href="embed" data-ajax="false">Vložit Volební kalkulačku k sobě na web</a></li>
-			<li><a href="archive" data-ajax="false">Archiv volebních kalkulaček</a></li>
-			<li><a href="kandidatky-volby-2013" data-ajax="false">Kandidátky pro volby 2013</a></li>
+			<li><a href="info" data-ajax="false">O projekte VolebnáKalkulačka.sk</a></li>
+			<li><a href="embed" data-ajax="false">Vložiť Volebnú kalkulačku k sebe na web</a></li>
+			<li><a href="http://volebnikalkulacka.cz/archive" data-ajax="false">Archív volebných kalkulačiek</a></li>
   		  </ul>
 	    </div>
 	        <p class="right computer">
