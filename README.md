@@ -1,0 +1,4 @@
+volebnakalkulacka.sk
+====================
+
+volebná kalkulačka
