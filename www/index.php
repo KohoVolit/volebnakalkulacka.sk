@@ -94,7 +94,7 @@
 	  </div><!-- /grid -->
 	  
 	 <div>
-	   <p style="text-align:justify"><strong>Volebné kalkulačky pre župné voľby 2013</strong> Vám pomôžu v rozhodnutí koho voliť vo voľbách do VÚC 9. novembra 2013. <strong>Volebná kalkulačka</strong> porovnáva Vaše odpovede s názormi kandidátov na župany. <strong>Volebný test Vám zaberie približne 5 minút.</strong>
+	   <p style="text-align:justify"><strong>Volebné kalkulačky pre župné voľby 2013</strong> Vám pomôžu v rozhodnutí koho voliť vo voľbách do VÚC 9. novembra 2013. <strong>Volebná kalkulačka</strong> porovnáva Vaše odpovede s názormi kandidátov na županov jednotlivých krajov. <strong>Volebný test Vám zaberie približne 5 minút.</strong>
 	 </p>
 	 </div> 
 
