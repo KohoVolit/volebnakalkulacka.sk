@@ -36,14 +36,13 @@
 
 		<h1>Volebná kalkulačka</h1>
 		<p>Najužitočnejších 5 minút pred voľbami.</p>
-
 	
 
 
 	<ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="g">
 					<li  data-theme="c">
 					<!--<a href="volba-prezidenta-cr-2-kolo-2013" data-ajax="false">-->
-					  <img src='./image/sk.png' width="67" height="80">
+					  <img src='./image/sk_gray.png' width="67" height="80">
 					  <h2>Volebná kalkulačka pre župné voľby 2013</h2>
 					  <p class="ui-li-desc"><strong>Spustenie 25.10.2013</strong></p>
 					<!--</a>-->
@@ -103,17 +102,17 @@
 	   <span class="counter-number">
 <?php
   //$number = number_format(ceil($filesize/297.2),0,',',' '); original calculation
-  $filesize = filesize('result.txt');
+  //$filesize = filesize('result.txt');
   /*if ($filesize < 335527092)
     $number = number_format(684613 + round(($filesize-203466983.6)/1145.192),0,',',' ');  //slowing down
   else
     $number = number_format(ceil($filesize/419.4),0,',',' ');*/
   //$number = number_format(ceil($filesize/419.4) + 1459825,0,',',' '); //1459825 - number by 2013-09-09
-  $number = number_format(ceil($filesize/362.94),0,',',' ');
-  echo $number;
+  //$number = number_format(ceil($filesize/362.94),0,',',' ');
+  //echo $number;
   
 ?>
-		</span> vyplnených Volebných kalkulačiek
+		</span><!-- vyplnených Volebných kalkulačiek -->
 	</div>
 	<!-- /counter -->
 	  
