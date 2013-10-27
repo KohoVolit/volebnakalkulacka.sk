@@ -44,7 +44,7 @@
 					<!--<a href="volba-prezidenta-cr-2-kolo-2013" data-ajax="false">-->
 					  <img src='./image/sk_gray.png' width="67" height="80">
 					  <h2>Volebná kalkulačka pre župné voľby 2013</h2>
-					  <p class="ui-li-desc"><strong>Spustenie 25.10.2013</strong></p>
+					  <p class="ui-li-desc"><strong>Spustenie 30.10.2013</strong></p>
 					<!--</a>-->
 					</li>
 	</ul>
