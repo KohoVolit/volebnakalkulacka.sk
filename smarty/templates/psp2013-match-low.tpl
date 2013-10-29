@@ -3,23 +3,16 @@
 	 <a data-role="button" data-theme="c" href={include "psp2013-match-facebook-link.tpl"}	  
 		   target='_blank'><img src="../../image/fb_logo.png" 
 		   alt="Sdílej na Facebooku" />
-	<span class="match-fb-text">Sdílej <span class="computer">výsledky </span>na Facebooku</span></a>
+	<span class="match-fb-text">Zdieľaj <span class="computer">výsledky </span>na Facebooku</span></a>
 	  
 	  <div data-role="collapsible" data-theme="d" data-content-theme="e">
-    	<h3>Vložit kalkulačku k sobě na web</h3>
+    	<h3>Vložiť kalkulačku k sebe na web</h3>
             <div data-role="fieldcontain">
 				<p>Vložte kód HTML (standardní Inventura hlasování):</p>
-					<textarea data-role="none" cols="40" rows="3" name="textarea" id="textarea"><iframe src="http://volebnikalkulacka.cz/poslanecka-snemovna-2013-inventura-hlasovani/?key=result_inventura" width="650" height="550" frameborder="0" ></iframe></textarea><br/>
-				V <a href="/embed" data-ajax="false">detailním výběru kalkulaček</a> si můžete vybrat jakou kalkulačku vložit (Inventura, Volební kalkulačka) i její velikost (standardní, mobilní)
+					<textarea data-role="none" cols="40" rows="3" name="textarea" id="textarea"><iframe src="http://volebnakalkulacka.sk/volby-vuc-2013/?region={$region}&key=result_inventura" width="650" height="550" frameborder="0" ></iframe></textarea><br/>
+				V <a href="/embed" data-ajax="false">detailnom výberu kalkulačiek</a> si môžete vybrať akú kalkulačku vložiť i jej veľkosť (štandardné, mobilné)
 			</div>   
 	  </div>
-	</div>
-	
-	<div style="margin-left: auto;margin-right: auto;max-width: 500px;color:#888;text-align:center;padding-bottom:1em;">
-	  <a href="../../poslanecka-snemovna-2013/?key=inventura" data-role="button" data-theme="s" data-icon="arrow-r" data-iconpos="right"  data-ajax="false">
-	    Jak se kandidující strany s Vámi shodnou zjistíte ve
-	    <div style="font-size:1.2em">Volební kalkulačce 2013</div> 
-	  </a>
 	</div>
 
 {literal}

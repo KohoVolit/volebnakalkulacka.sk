@@ -1,5 +1,5 @@
 <!DOCTYPE html> 
-<html lang='cs'>
+<html lang='sk'>
 
 <head>
 	<meta charset="utf-8">
@@ -80,7 +80,7 @@
 	  <div class="question ui-body ui-body-{$partner['swatch_question_body']}">
 	    <!-- question content -->
 	    <legend><p>{$text.page_important_legend}</p></legend>
-	    <button type="submit" data-theme="c" value="submit-value" data-icon="arrow-r" data-iconpos="right">Přeskočit</button>
+	    <button type="submit" data-theme="c" value="submit-value" data-icon="arrow-r" data-iconpos="right">Preskočiť</button>
 	    <fieldset data-role="controlgroup">
 	    {foreach $questions as $key=>$question}
 	       <input type="checkbox" name="c-{$question->id}" id="c-{$question->id}" class="custom" {if $key % 2}data-theme="e"{/if}/>

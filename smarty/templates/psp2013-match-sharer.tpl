@@ -7,7 +7,7 @@
   </div>
   
   <div>
-    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://volebnakalkulacka.sk" data-via="KohoVolitEU" data-lang="{$text.result_twitter_data_lang}" data-size="large" data-count="none" data-text="{$text.result_twitter_text_1}{$text.result_twitter_text_2} {$results[0].name}({$results[0].result_percent}%) {$text.result_twitter_and} {$results[1].name}({$results[1].result_percent}%) {$text.result_twitter_text_3} {$results[$results_count-1].name}({$results[$results_count-1].result_percent}%) {$text.result_twitter_hashtags}">{$text.result_twitter_share}</a>
+    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://volebnakalkulacka.sk" data-via="KohoVolitEU" data-lang="{$text.result_twitter_data_lang}" data-size="large" data-count="none" data-text="{$text.result_twitter_text_1}{$text.result_twitter_text_2} {$results[0].last_name}({$results[0].result_percent}%)  {$text.result_twitter_text_3} {$results[$results_count-1].last_name}({$results[$results_count-1].result_percent}%) {$text.result_twitter_hashtags}">{$text.result_twitter_share}</a>
    </div>
 {literal}<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>{/literal}
 

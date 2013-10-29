@@ -11,10 +11,10 @@
 	<!--<link rel="stylesheet" href="../../css/page.css" />-->
   </head>
 <body>
-  <div data-role="dialog" data-title="Podrobné výsledky | VolebníKalkulačka.cz" id="compare-dialog-email">
+  <div data-role="dialog" data-title="Podrobné výsledky | VolebnáKalkulačka.sk" id="compare-dialog-email">
 
   		<div data-role="header" data-theme="e">
-			<h1>To je skvělé!</h1>
+			<h1>To je skvelé!</h1>
 		</div>
 		<div data-role="content" data-theme="e">  
 			<script>
@@ -35,16 +35,16 @@
 	</script>
 	
 	
-		  <p>Pokud chcete být první, kdo se dozví, co <strong>nového jsme v KohoVolit.eu pro Vás připravili</strong> - nechte nám na sebe kontakt:</p>	  
+		  <p>Ak chcete byť prvý, kto sa dozvie, čo <strong> nového sme v KohoVolit.eu pre Vás pripravili</strong> - nechajte nám na seba kontakt:</p>	  
 		  <form id="email_form" onSubmit="JavaScript:my_submit()" action="#">
 			<label for="email">Email:</label>
 			<input type="text" name="email" id="email" value=""  />
 			<input type="hidden" name="calc" id="calc" value="{$calc_code}" />
 			<input type="hidden" name="query_string" id="query_string" value="{$query_string}" />
-			<button type="submit"  data-theme="b" data-icon="arrow-r" data-iconpos="right">Pokračovat na podrobný přehled shody</button>
+			<button type="submit"  data-theme="b" data-icon="arrow-r" data-iconpos="right">Pokračovať na podrobný prehľad zhody</button>
 		  </form>
 		  
-		  <p><strong>Ani my nemáme rádi spam.</strong> Vaše údaje nikomu nedáme.</p>
+		  <p><strong>Ani my nemáme radi spam.</strong> Vaše údaje nikomu nedáme.</p>
   
   	</div> <!-- /content -->
 

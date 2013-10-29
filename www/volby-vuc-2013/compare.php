@@ -81,7 +81,7 @@ if (!isset($_SESSION['email_provided']) or (!$_SESSION['email_provided'])) {
 	$smarty->assign('user',$user);
 	$smarty->assign('mps',$mps);
 	$smarty->assign('questions',$questions);
-	$smarty->display('psp2013vk-compare.tpl');
+	$smarty->display('psp2013-compare.tpl');
 }
 
 
