@@ -43,6 +43,7 @@ $details = array();
 foreach ($regions as $region) {
   //select candidates from the region
   $cands = array();
+  $noreply = array();
   $data = array();
   foreach ($fcand as $cand) {
     $cand_ar = str_getcsv($cand,"\t");

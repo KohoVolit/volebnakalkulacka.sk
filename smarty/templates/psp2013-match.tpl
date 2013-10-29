@@ -47,6 +47,12 @@
 	    <!-- table -->
 	    {include "psp2013-match-table.tpl"}
 	    <!-- /table -->
+	    
+		<!-- table -->
+		{if $missing|@count > 0}
+	      {include "psp2013vk-match-missing.tpl"}
+	    {/if}
+	    <!-- /table -->
 	
 		<!-- lower part -->
 		{include "psp2013-match-low.tpl"}
