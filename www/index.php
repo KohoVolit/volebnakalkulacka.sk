@@ -65,7 +65,7 @@
 				<li  data-theme="c">
 					<!--<a href="volby-vuc-2013/?region=nitra" data-ajax="false">-->
 					  <!--<img src='./image/sk.png' width="67" height="80">-->
-					  <h2>Nitrianský kraj - voľba župana 2013</h2>
+					  <h2>Nitriansky kraj - voľba župana 2013</h2>
 					  <p class="ui-li-desc"><strong>Žiadny z kandidátov neodpovedal na otázky</strong></p>
 					<!--</a>-->
 				</li>
