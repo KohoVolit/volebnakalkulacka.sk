@@ -33,6 +33,7 @@
 <body>
 <form action="./match/" method="get" data-ajax="false">
 <input type="text" name="partner" id="partner" value="{$partner['name']}" hidden='hidden' />
+<input type="text" name="region" id="region" value="{$region}" hidden='hidden' />
 
 {$key=1}
 {foreach $questions as $question}
