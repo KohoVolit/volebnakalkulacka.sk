@@ -23,7 +23,7 @@ $smarty->setConfigDir('../../smarty/configs');
 //$_SESSION['email_provided'] = false;
  
 if (!isset($_SESSION['email_provided']) or (!$_SESSION['email_provided'])) {
-  $calc_code = 'psp2013';
+  $calc_code = 'vuc2013-' . $region;
   $smarty->assign('calc_code',$calc_code);
   $smarty->assign('query_string',$_SERVER['QUERY_STRING']);
   $_SESSION['email_provided'] = true;
