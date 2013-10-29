@@ -40,13 +40,63 @@
 
 
 	<ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="g">
-					<li  data-theme="c">
-					<!--<a href="volba-prezidenta-cr-2-kolo-2013" data-ajax="false">-->
-					  <img src='./image/sk_gray.png' width="67" height="80">
-					  <h2>Volebná kalkulačka pre župné voľby 2013</h2>
-					  <p class="ui-li-desc"><strong>Spustenie 30.10.2013</strong></p>
+			<li data-role="list-divider"></li>
+				<li  data-theme="c">
+					<a href="volby-vuc-2013/?region=banska-bystrica" data-ajax="false">
+					  <!--<img src='./image/sk.png' width="67" height="80">-->
+					  <h2>Banskobystrický kraj - voľba župana 2013</h2>
+					  <!--<p class="ui-li-desc"><strong>Spustenie 30.10.2013</strong></p>-->
+					</a>
+				</li>
+				<li  data-theme="c">
+					<a href="volby-vuc-2013/?region=bratislava" data-ajax="false">
+					  <!--<img src='./image/sk.png' width="67" height="80">-->
+					  <h2>Bratislavský kraj - voľba župana 2013</h2>
+					  <!--<p class="ui-li-desc"><strong>Spustenie 30.10.2013</strong></p>-->
+					</a>
+				</li>
+				<li  data-theme="c">
+					<a href="volby-vuc-2013/?region=kosice" data-ajax="false">
+					  <!--<img src='./image/sk.png' width="67" height="80">-->
+					  <h2>Košický kraj - voľba župana 2013</h2>
+					  <!--<p class="ui-li-desc"><strong>Spustenie 30.10.2013</strong></p>-->
+					</a>
+				</li>
+				<li  data-theme="c">
+					<!--<a href="volby-vuc-2013/?region=nitra" data-ajax="false">-->
+					  <!--<img src='./image/sk.png' width="67" height="80">-->
+					  <h2>Nitrianský kraj - voľba župana 2013</h2>
+					  <p class="ui-li-desc"><strong>Žiadny z kandidátov neodpovedal na otázky</strong></p>
 					<!--</a>-->
-					</li>
+				</li>
+				<li  data-theme="c">
+					<a href="volby-vuc-2013/?region=presov" data-ajax="false">
+					  <!--<img src='./image/sk.png' width="67" height="80">-->
+					  <h2>Prešovský kraj - voľba župana 2013</h2>
+					  <!--<p class="ui-li-desc"><strong>Spustenie 30.10.2013</strong></p>-->
+					</a>
+				</li>
+				<li  data-theme="c">
+					<a href="volby-vuc-2013/?region=trencin" data-ajax="false">
+					  <!--<img src='./image/sk.png' width="67" height="80">-->
+					  <h2>Trenčiansky kraj - voľba župana 2013</h2>
+					  <!--<p class="ui-li-desc"><strong>Spustenie 30.10.2013</strong></p>-->
+					</a>
+				</li>
+				<li  data-theme="c">
+					<a href="volby-vuc-2013/?region=trnava" data-ajax="false">
+					  <!--<img src='./image/sk.png' width="67" height="80">-->
+					  <h2>Trnavský kraj - voľba župana 2013</h2>
+					  <!--<p class="ui-li-desc"><strong>Spustenie 30.10.2013</strong></p>-->
+					</a>
+				</li>
+				<li  data-theme="c">
+					<a href="volby-vuc-2013/?region=zilina" data-ajax="false">
+					  <!--<img src='./image/sk.png' width="67" height="80">-->
+					  <h2>Žilinský kraj - voľba župana 2013</h2>
+					  <!--<p class="ui-li-desc"><strong>Spustenie 30.10.2013</strong></p>-->
+					</a>
+				</li>
 	</ul>
   
 
