@@ -64,7 +64,7 @@
       
 
 
-      <a href="#" data-role="button" data-rel="back">Zavřít</a>
+      <a href="#" data-role="button" data-rel="back">Zavrieť</a>
     </div> <!-- /content -->
 	
   
