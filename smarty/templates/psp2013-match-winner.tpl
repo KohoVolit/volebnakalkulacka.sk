@@ -7,7 +7,7 @@
 	<div class="ui-block-b">
 	  <div class="match-winner-block">
 	    <a href="../compare.php?{$query_string}&id={$results[0].id}&match={$results[0].result_percent}" data-rel="dialog" style="text-decoration:none">
-		  <div><img src="../../image/vuc2013/{$results[0].friendly_name}.jpg" width="119" height="155" alt="{$results[0].name}" title="{$results[0].name}" /></div>
+		  <div><img src="../../image/vuc2013/{$results[0].friendly_name}.jpg" width="122" height="155" alt="{$results[0].name}" title="{$results[0].name}" /></div>
 		  <div class="match-winner">{$results[0].first_name}<br/>{$results[0].last_name}<br/><span style="font-size:0.75em;line-height:100%">{$results[0].party}</span></div>
 		  <div class="match-winner-percentage"><span class="match-winner-percentage-number">{$results[0].result_percent}</span> %</div>
 		</a>

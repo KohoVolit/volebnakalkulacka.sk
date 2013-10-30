@@ -8,7 +8,7 @@
 	  <div class="question ui-body ui-body-{$partner['swatch_question_body']}">	  
 	    <ul data-role="listview" data-theme="{$partner['swatch_question_body']}" data-filter="true" data-filter-placeholder="{$text.result_filter}" data-filter-theme="e">
 	      {foreach $results as $key=>$result}
-	        <li {if $key % 2}data-theme="c"{/if}><a href="../compare.php?{$query_string}&id={$result.id}&match={$result.result_percent}" data-rel="dialog" ><img src="../../image/1x1.png" class="psp2013-sprite psp2013-sprite-{$result.friendly_name}" alt="{$result.party}"/>
+	        <li {if $key % 2}data-theme="c"{/if}><a href="../compare.php?{$query_string}&id={$result.id}&match={$result.result_percent}" data-rel="dialog" ><img src="../../image/vuc2013/80/{$result.friendly_name}.jpg" width="63" height="80" alt="{$result.name}" title="{$result.name}" />
 	        <h3>{"`$result.last_name` `$result.first_name`"|truncate:35:"...":true}</h3>
 	        <div class="computer"><p class="ui-li-desc">{$result.party}</p></div>
 	        <p class="ui-li-aside">
@@ -22,7 +22,6 @@
 	        ">{$result.result_percent} %</span>
 	        <span class="mobile ui-li-count">{$result.result_percent} %</span>
 	       </p>
-	        
 	        </a></li>
 	      {/foreach}
 	    </ul>
