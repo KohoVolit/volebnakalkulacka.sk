@@ -188,7 +188,7 @@
 		  <ul>
 		  	
 			<li><a href="info" data-ajax="false">O projekte VolebnáKalkulačka.sk</a></li>
-			<li style="color:grey"><!--<a href="embed" data-ajax="false">-->Vložiť Volebnú kalkulačku k sebe na web<!--</a>--></li>
+			<li><a data-ajax="false">Vložiť Volebnú kalkulačku k sebe na web</li>
 			<li><a href="http://volebnikalkulacka.cz/archive" data-ajax="false">Archív volebných kalkulačiek</a></li>
   		  </ul>
 	    </div>
