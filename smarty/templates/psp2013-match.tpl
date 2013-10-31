@@ -61,7 +61,7 @@
 	</div><!-- /content -->
 
 	<!-- footer -->
-	{include "psp2013-match-footer.tpl"}
+	<!--{include "psp2013-match-footer.tpl"}-->
 	<!-- /footer -->
     
   </div> <!-- /page -->
