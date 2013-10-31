@@ -41,21 +41,21 @@
 
 	<ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="g">
 			<li data-role="list-divider"></li>
-				<li  data-theme="c">
+				<li  data-theme="e">
 					<a href="volby-vuc-2013/?region=banska-bystrica" data-ajax="false">
 					  <!--<img src='./image/sk.png' width="67" height="80">-->
 					  <h2>Banskobystrický kraj</h2>
 					  <p class="ui-li-desc"><strong>Zatiaľ odpovedali 3 kandidáti na župana</strong></p>
 					</a>
 				</li>
-				<li  data-theme="c">
+				<li  data-theme="e">
 					<a href="volby-vuc-2013/?region=bratislava" data-ajax="false">
 					  <!--<img src='./image/sk.png' width="67" height="80">-->
 					  <h2>Bratislavský kraj</h2>
 					  <p class="ui-li-desc"><strong>Zatiaľ odpovedali 4 kandidáti na župana</strong></p>
 					</a>
 				</li>
-				<li  data-theme="c">
+				<li  data-theme="e">
 					<a href="volby-vuc-2013/?region=kosice" data-ajax="false">
 					  <!--<img src='./image/sk.png' width="67" height="80">-->
 					  <h2>Košický kraj</h2>
@@ -69,28 +69,28 @@
 					  <p class="ui-li-desc"><strong>Žiadny z kandidátov na župana zatiaľ neodpovedal na otázky</strong></p>
 					<!--</a>-->
 				</li>
-				<li  data-theme="c">
+				<li  data-theme="e">
 					<a href="volby-vuc-2013/?region=presov" data-ajax="false">
 					  <!--<img src='./image/sk.png' width="67" height="80">-->
 					  <h2>Prešovský kraj</h2>
 					  <p class="ui-li-desc"><strong>Zatiaľ odpovedal 1 kandidát na župana</strong></p>
 					</a>
 				</li>
-				<li  data-theme="c">
+				<li  data-theme="e">
 					<a href="volby-vuc-2013/?region=trencin" data-ajax="false">
 					  <!--<img src='./image/sk.png' width="67" height="80">-->
 					  <h2>Trenčiansky kraj</h2>
 					  <p class="ui-li-desc"><strong>Zatiaľ odpovedali 4 kandidáti na župana</strong></p>
 					</a>
 				</li>
-				<li  data-theme="c">
+				<li  data-theme="e">
 					<a href="volby-vuc-2013/?region=trnava" data-ajax="false">
 					  <!--<img src='./image/sk.png' width="67" height="80">-->
 					  <h2>Trnavský kraj</h2>
 					  <p class="ui-li-desc"><strong>Zatiaľ odpovedal 1 kandidát na župana</strong></p>
 					</a>
 				</li>
-				<li  data-theme="c">
+				<li  data-theme="e">
 					<a href="volby-vuc-2013/?region=zilina" data-ajax="false">
 					  <!--<img src='./image/sk.png' width="67" height="80">-->
 					  <h2>Žilinský kraj</h2>
