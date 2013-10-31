@@ -9,126 +9,42 @@ $smarty->setCompileDir('../../smarty/templates_c');
 $smarty->setCacheDir('../../smarty/cache');
 $smarty->setConfigDir('../../smarty/configs');
 
-
-//regions
-include ('../regions.php');
-
-//add friendly url
-foreach ($regions as $key=>$r) {
-  $regions[$key]['friendly_url'] = friendly_url($r['name'] . '-2012') . '/?';
-}
-
 $constit = array(
-	'0' => 'Celá ČR',
-	'2'=>'Sokolov (2)',
-	'5'=>'Chomutov (5)',
-	'8'=>'Rokycany (8)',
-	'11'=>'Domažlice (11)',
-	'14'=>'České Budějovice (14)',
-	'17'=>'Praha 12 (17)',
-	'20'=>'Praha 4 (20)',
-	'23'=>'Praha 8 (23)',
-	'26'=>'Praha 2 (26)',
-	'29'=>'Litoměřice (29)',
-	'32'=>'Teplice (32)',
-	'35'=>'Jablonec nad Nisou (35)',
-	'38'=>'Mladá Boleslav (38)',
-	'41'=>'Benešov (41)',
-	'44'=>'Chrudim (44)',
-	'47'=>'Náchod (47)',
-	'50'=>'Svitavy (50)',
-	'53'=>'Třebíč (53)',
-	'56'=>'Břeclav (56)',
-	'59'=>'Brno-město (59)',
-	'62'=>'Prostějov (62)',
-	'65'=>'Šumperk (65)',
-	'68'=>'Opava (68)',
-	'71'=>'Ostrava-město (71)',
-	'74'=>'Karviná (74)',
-	'77'=>'Vsetín (77)',
-	'80'=>'Zlín (80)'
+  'banska-bystrica' => 'Banskobystrický kraj',
+  'bratislava' => 'Bratislavský kraj',
+  'kosice' => 'Košický kraj',
+  'nitra' => 'Nitriansky kraj',
+  'presov' => 'Prešovský kraj',
+  'trencin' => 'Trenčiansky kraj',
+  'trnava' => 'Trnavský kraj',
+  'zilina' => 'Žilinský kraj'
 );
 
 foreach ($constit as $ckey=>$c) {
   $constit[$ckey] = array(
     'name' => $c,
-    'friendly_url' => (($ckey==0) ? 'senat-2012/?' : 'senat-2012/page.php?constituency_code='.$ckey.'&'),
-    'selected' => (($ckey==0) ? 'true' : 'false'),
+    'friendly_url' => 'volby-vuc-2013/?region='.$ckey . '&',
+    'selected' => (($ckey=='bratislava') ? 'true' : 'false'),
   );
 }
 
-$calc2013 = array(
-  array(
-    'name' => 'Volební kalkulačka 2013',
-    'friendly_url' => 'poslanecka-snemovna-2013/',
-    'selected' => true,
-  ),
-);
 
-$inventory2013 = array(
-  array(
-    'name' => 'Inventura hlasování 2010-2013',
-    'friendly_url' => 'poslanecka-snemovna-2013-inventura-hlasovani/',
-    'selected' => false,
-  ),
-);
-
-$president2 = array(
-  array(
-    'name' => 'Prezidentská kalkulačka 2. kolo',
-    'friendly_url' => 'volba-prezidenta-cr-2-kolo-2013/',
-    'selected' => 'false',
-  ),
-);
-
-$president = array(
-  array(
-    'name' => 'Prezidentská kalkulačka 1. kolo',
-    'friendly_url' => 'volba-prezidenta-cr-2013/',
-    'selected' => 'false',
-  ),
-);
 
 $sizes = array(
-  array('name' => 'Největší 850x600', 'width' => '850', 'height' => '600'),
-  array('name' => 'Standardní 650x550', 'width' => '650', 'height' => '550', 'selected' => true),
-  array('name' => 'Mobilní 480x320', 'width' => '480', 'height' => '320'),
-  array('name' => 'Mobilní na výšku 320x480', 'width' => '320', 'height' => '480'),
+  array('name' => 'Najvatšia 850x600', 'width' => '850', 'height' => '600'),
+  array('name' => 'Standardná 650x550', 'width' => '650', 'height' => '550', 'selected' => true),
+  array('name' => 'Mobilná 480x320', 'width' => '480', 'height' => '320'),
+  array('name' => 'Mobilná na výšku 320x480', 'width' => '320', 'height' => '480'),
 );
 
 $calcs = array(
   'all' => array(
-    'name' => 'Celá VolebníKalkulačka.cz',
-    'calc' => array(array('name'=>'VolebníKalkulačka.cz','friendly_url'=>'?')),
-  ),
-  
-  'calc2013' => array(
-    'name' => 'Názorový test volby 2013',
-    'calc' => $calc2013,
-  ),
-  
-  'inventory2013' => array(
-    'name' => 'Inventura hlasování 2010-2013',
-	'calc' => $inventory2013,
+    'name' => 'Celá VolebnáKalkulačka.sk',
+    'calc' => array(array('name'=>'VolebnáKalkulačka.sk','friendly_url'=>'?')),
   ),
 
-  'president2' => array(
-    'name' => 'Prezidentská kalkulačka 2013 2.kolo',
-    'calc' => $president2,
-  ),
-  
-  'president' => array(
-    'name' => 'Prezidentská kalkulačka 2013 1.kolo',
-    'calc' => $president,
-  ),
-
-  'region' => array(
-    'name' => 'Krajské volební kalkulačky 2012',
-    'calc' => $regions,
-
-  ),
-  'senate' => array(
-    'name' => 'Senátní volební kalkulačka 2012',
+  'vuc2013' => array(
+    'name' => 'Krajské volebné kalkulačky 2013',
     'calc' => $constit,
   ),
 

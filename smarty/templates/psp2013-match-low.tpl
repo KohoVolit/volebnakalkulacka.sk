@@ -9,8 +9,8 @@
     	<h3>Vložiť kalkulačku k sebe na web</h3>
             <div data-role="fieldcontain">
 				<p>Vložte kód HTML:</p>
-					<textarea data-role="none" cols="40" rows="3" name="textarea" id="textarea"><iframe src="http://volebnakalkulacka.sk/volby-vuc-2013/?region={$region}&key=result_nazorovy" width="650" height="550" frameborder="0" ></iframe></textarea><!--<br/>
-				V <a href="/embed" data-ajax="false">detailnom výbere kalkulačiek</a> si môžete vybrať akú kalkulačku vložiť i jej veľkosť (štandardné, mobilné)-->
+					<textarea data-role="none" cols="40" rows="3" name="textarea" id="textarea"><iframe src="http://volebnakalkulacka.sk/volby-vuc-2013/?region={$region}&key=result_nazorovy" width="650" height="550" frameborder="0" ></iframe></textarea><br/>
+				V <a href="/embed" data-ajax="false">detailnom výbere kalkulačiek</a> si môžete vybrať akú kalkulačku vložiť i jej veľkosť (štandardné, mobilné)
 			</div>   
 	  </div>
 	</div>
