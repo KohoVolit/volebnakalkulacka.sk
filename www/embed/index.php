@@ -31,8 +31,8 @@ foreach ($constit as $ckey=>$c) {
 
 
 $sizes = array(
-  array('name' => 'Najvatšia 850x600', 'width' => '850', 'height' => '600'),
-  array('name' => 'Standardná 650x550', 'width' => '650', 'height' => '550', 'selected' => true),
+  array('name' => 'Najväčšia 850x600', 'width' => '850', 'height' => '600'),
+  array('name' => 'Štandardná 650x550', 'width' => '650', 'height' => '550', 'selected' => true),
   array('name' => 'Mobilná 480x320', 'width' => '480', 'height' => '320'),
   array('name' => 'Mobilná na výšku 320x480', 'width' => '320', 'height' => '480'),
 );
