@@ -59,15 +59,15 @@
 					<a href="volby-vuc-2013/?region=kosice" data-ajax="false">
 					  <!--<img src='./image/sk.png' width="67" height="80">-->
 					  <h2>Košický kraj</h2>
-					  <p class="ui-li-desc"><strong>Zatiaľ odpovedali 4 kandidáti na župana</strong></p>
+					  <p class="ui-li-desc"><strong>Zatiaľ odpovedalo 5 kandidátov na župana</strong></p>
 					</a>
 				</li>
-				<li  data-theme="c">
-					<!--<a href="volby-vuc-2013/?region=nitra" data-ajax="false">-->
+				<li  data-theme="e">
+					<a href="volby-vuc-2013/?region=nitra" data-ajax="false">
 					  <!--<img src='./image/sk.png' width="67" height="80">-->
 					  <h2>Nitriansky kraj</h2>
-					  <p class="ui-li-desc"><strong>Žiadny z kandidátov na župana zatiaľ neodpovedal na otázky</strong></p>
-					<!--</a>-->
+					  <p class="ui-li-desc"><strong>Zatiaľ odpovedal 1 kandidát na župana</strong></p>
+					</a>
 				</li>
 				<li  data-theme="e">
 					<a href="volby-vuc-2013/?region=presov" data-ajax="false">
