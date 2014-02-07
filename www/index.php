@@ -41,62 +41,14 @@
 
 	<ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="g">
 			<li data-role="list-divider"></li>
-				<li  data-theme="e">
-					<a href="volby-vuc-2013/?region=banska-bystrica" data-ajax="false">
-					  <!--<img src='./image/sk.png' width="67" height="80">-->
-					  <h2>Banskobystrický kraj</h2>
-					  <p class="ui-li-desc"><strong>Zatiaľ odpovedali 3 kandidáti na župana</strong></p>
-					</a>
+				<li>
+					<!--<a href="volby-vuc-2013/?region=banska-bystrica" data-ajax="false">-->
+					  <img src='./image/sk_gray.png' width="67" height="80">
+					  <h2>Voľba prezidenta 2014</h2>
+					  <p class="ui-li-desc">Volebná kalkulačka búde spustená <strong>19.2.2014!</strong></p>
+					<!--</a>-->
 				</li>
-				<li  data-theme="e">
-					<a href="volby-vuc-2013/?region=bratislava" data-ajax="false">
-					  <!--<img src='./image/sk.png' width="67" height="80">-->
-					  <h2>Bratislavský kraj</h2>
-					  <p class="ui-li-desc"><strong>Zatiaľ odpovedali 4 kandidáti na župana</strong></p>
-					</a>
-				</li>
-				<li  data-theme="e">
-					<a href="volby-vuc-2013/?region=kosice" data-ajax="false">
-					  <!--<img src='./image/sk.png' width="67" height="80">-->
-					  <h2>Košický kraj</h2>
-					  <p class="ui-li-desc"><strong>Zatiaľ odpovedalo 5 kandidátov na župana</strong></p>
-					</a>
-				</li>
-				<li  data-theme="e">
-					<a href="volby-vuc-2013/?region=nitra" data-ajax="false">
-					  <!--<img src='./image/sk.png' width="67" height="80">-->
-					  <h2>Nitriansky kraj</h2>
-					  <p class="ui-li-desc"><strong>Zatiaľ odpovedal 1 kandidát na župana</strong></p>
-					</a>
-				</li>
-				<li  data-theme="e">
-					<a href="volby-vuc-2013/?region=presov" data-ajax="false">
-					  <!--<img src='./image/sk.png' width="67" height="80">-->
-					  <h2>Prešovský kraj</h2>
-					  <p class="ui-li-desc"><strong>Zatiaľ odpovedal 1 kandidát na župana</strong></p>
-					</a>
-				</li>
-				<li  data-theme="e">
-					<a href="volby-vuc-2013/?region=trencin" data-ajax="false">
-					  <!--<img src='./image/sk.png' width="67" height="80">-->
-					  <h2>Trenčiansky kraj</h2>
-					  <p class="ui-li-desc"><strong>Zatiaľ odpovedali 4 kandidáti na župana</strong></p>
-					</a>
-				</li>
-				<li  data-theme="e">
-					<a href="volby-vuc-2013/?region=trnava" data-ajax="false">
-					  <!--<img src='./image/sk.png' width="67" height="80">-->
-					  <h2>Trnavský kraj</h2>
-					  <p class="ui-li-desc"><strong>Zatiaľ odpovedal 1 kandidát na župana</strong></p>
-					</a>
-				</li>
-				<li  data-theme="e">
-					<a href="volby-vuc-2013/?region=zilina" data-ajax="false">
-					  <!--<img src='./image/sk.png' width="67" height="80">-->
-					  <h2>Žilinský kraj</h2>
-					  <p class="ui-li-desc"><strong>Zatiaľ odpovedal 1 kandidát na župana</strong></p>
-					</a>
-				</li>
+				
 	</ul>
   
 
@@ -143,7 +95,7 @@
 	  </div><!-- /grid -->
 	  
 	 <div>
-	   <p style="text-align:justify"><strong>Volebné kalkulačky pre župné voľby 2013</strong> Vám pomôžu v rozhodnutí koho voliť vo voľbách do VÚC 9. novembra 2013. <strong>Volebná kalkulačka</strong> porovnáva Vaše odpovede s názormi kandidátov na županov jednotlivých krajov. <strong>Volebný test Vám zaberie približne 5 minút.</strong>
+	   <p style="text-align:justify"><strong>Volebná kalkulačka pre prezidentské voľby 2014</strong> Vám pomôže v rozhodnutí koho voliť vo voľbách 15. marca 2014. <strong>Volebná kalkulačka</strong> porovnáva Vaše odpovede s názormi kandidátov na prezidenta. <strong>Volebný test Vám zaberie približne 5 minút.</strong>
 	 </p>
 	 </div> 
 
