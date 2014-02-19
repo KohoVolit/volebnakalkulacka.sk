@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Volebná kalkulačka | voľby 2013</title>
+	<title>Volebná kalkulačka | voľby 2014</title>
 	<meta name="description" content="Voľby 2014 sa blížia! Spočítajte si koho voliť!" />
 	<meta name="keywords" content="voľby 2014, prezidentské voľby , volebná kalkulačka, volebný test" />
 	<meta name="author" content="KohoVolit.eu" />
