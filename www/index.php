@@ -9,7 +9,7 @@
 	<meta name="author" content="KohoVolit.eu" />
 	<meta name="robots" content="index, follow" />
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.css" />
-	<link rel="stylesheet" href="./css/psp2013-page.css" />
+	<link rel="stylesheet" href="./css/president2014-page.css" />
 	<link type="image/x-icon" href="./image/favicon.ico" rel="shortcut icon">
 
 	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
@@ -42,11 +42,11 @@
 	<ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="g">
 			<li data-role="list-divider"></li>
 				<li>
-					<!--<a href="volby-vuc-2013/?region=banska-bystrica" data-ajax="false">-->
-					  <img src='./image/sk_gray.png' width="67" height="80">
+					<a href="volba-prezidenta-2014" data-ajax="false">
+					  <img src='./image/sk.png' width="67" height="80">
 					  <h2>Voľba prezidenta 2014</h2>
-					  <p class="ui-li-desc">Volebná kalkulačka búde spustená <strong>už dnes, 19.2.2014!</strong></p>
-					<!--</a>-->
+					  <p class="ui-li-desc">Zhoda z názory kandidátov na prezidenta.</strong></p>
+					</a>
 				</li>
 				
 	</ul>

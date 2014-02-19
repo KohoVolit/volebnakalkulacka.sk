@@ -42,6 +42,11 @@ $calcs = array(
     'name' => 'Celá VolebnáKalkulačka.sk',
     'calc' => array(array('name'=>'VolebnáKalkulačka.sk','friendly_url'=>'?')),
   ),
+  
+  'president2014' => array(
+    'name' => 'Volebná kalkulačka pre prezidentské voľby 2014',
+    'calc' => array(array('name'=>'Prezidentské voľby 2014','friendly_url'=>'volba-prezidenta-2014')),
+  ),
 
   'vuc2013' => array(
     'name' => 'Krajské volebné kalkulačky 2013',
