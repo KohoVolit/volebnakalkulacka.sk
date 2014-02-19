@@ -45,7 +45,7 @@
 					<!--<a href="volby-vuc-2013/?region=banska-bystrica" data-ajax="false">-->
 					  <img src='./image/sk_gray.png' width="67" height="80">
 					  <h2>Voľba prezidenta 2014</h2>
-					  <p class="ui-li-desc">Volebná kalkulačka búde spustená <strong>19.2.2014!</strong></p>
+					  <p class="ui-li-desc">Volebná kalkulačka búde spustená <strong>už dnes, 19.2.2014!</strong></p>
 					<!--</a>-->
 				</li>
 				
