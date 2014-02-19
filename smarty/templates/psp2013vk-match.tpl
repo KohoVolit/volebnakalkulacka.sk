@@ -36,18 +36,18 @@
 		{assign var=results_count value=$results|@count}
 		
 		<!-- sharer -->
-		{include "psp2013-match-sharer.tpl"}
+		{include "psp2013vk-match-sharer.tpl"}
 
 		<!-- dms 1 -->		
-		<!--{include "psp2013-match-dms.tpl"}-->
+		{include "psp2013-match-dms.tpl"}
 
 		<!-- winner block -->
-		{include "president2014-match-winner.tpl"}
+		{include "psp2013vk-match-winner.tpl"}
 
 	    <!-- table -->
-	    {include "psp2013-match-table.tpl"}
+	    {include "psp2013vk-match-table.tpl"}
 	    <!-- /table -->
-	    
+	
 		<!-- table -->
 		{if $missing|@count > 0}
 	      {include "psp2013vk-match-missing.tpl"}
@@ -55,13 +55,13 @@
 	    <!-- /table -->
 	
 		<!-- lower part -->
-		{include "psp2013-match-low.tpl"}
+		{include "psp2013vk-match-low.tpl"}
 		<!-- /lower part -->
 
 	</div><!-- /content -->
 
 	<!-- footer -->
-	<!--{include "psp2013-match-footer.tpl"}-->
+	{include "psp2013-match-footer.tpl"}
 	<!-- /footer -->
     
   </div> <!-- /page -->

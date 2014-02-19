@@ -114,7 +114,7 @@ foreach ($answers0 as $key=>$region) {
 
 }
 //print_r($keys);die();
-  
+$details = array();
 foreach ($answers0 as $key=>$region) {
   array_shift($region);
   array_shift($region);
@@ -122,10 +122,17 @@ foreach ($answers0 as $key=>$region) {
   foreach ($region as $row) {
    //print_r($row);die();
     $vote = array();
-    for($i = 3; $i<=76; $i= $i + 2) {
-      $id = ($i-1)/2;
-      $vote[$id] = answer2value($row[$i]);
+    $onedetail = array();
+    for($j = 3; $j<=76; $j= $j + 2) {
+      $id = ($j-1)/2;
+      $vote[$id] = answer2value($row[$j]);
+      //details
+      $party = $parties[$row[$unique_code_column[$key]]];
+      if (trim($row[$j+1]) != '') {
+        $onedetail[$id] = trim($row[$j+1]);
+      }
     }
+    $details[friendly_url($party['last_name'],'sk_SK.UTF-8')] = $onedetail;
     if (isset($parties[$row[$unique_code_column[$key]]])) {
       $party = $parties[$row[$unique_code_column[$key]]];
       $data[$key][] = array(
@@ -162,7 +169,10 @@ foreach ($answers0 as $key=>$region) {
   print_r($data);
   
 
-
+$fout = fopen ($dir . 'details_ser.txt', "w+");
+	$json = serialize($details);
+	fwrite($fout,$json);
+	fclose($fout);
 
 function answer2value($a) {
   if ($a == 'Áno') return 1;

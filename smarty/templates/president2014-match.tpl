@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang='cs'>
+<html lang='sk'>
   <head>
     <title>{$text.result_title} | {$text.page_header_desktop}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.css" />
 	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.js"></script>
-	<link rel="stylesheet" href="../../css/psp2013-page.css" />
+	<link rel="stylesheet" href="../../css/president2014-page.css" />
 	
 	
 	<script type="text/javascript" >
@@ -28,7 +28,7 @@
   <div data-role="page" data-title="{$text.result_title}{if $partner['name'] == 'default'} | {$text.page_header_desktop}{/if}" data-theme="c" class='page type-interior partner-{$partner['name']}'>
   
 	<!-- header -->
-	{include "psp2013-match-header.tpl"}
+	{include "president2014-match-header.tpl"}
 	<!-- /header -->
 	
 	<div data-role="content" class="content">
@@ -36,32 +36,29 @@
 		{assign var=results_count value=$results|@count}
 		
 		<!-- sharer -->
-		{include "psp2013-match-sharer.tpl"}
-
-		<!-- dms 1 -->		
-		<!--{include "psp2013-match-dms.tpl"}-->
+		{include "president2014-match-sharer.tpl"}
 
 		<!-- winner block -->
 		{include "president2014-match-winner.tpl"}
 
 	    <!-- table -->
-	    {include "psp2013-match-table.tpl"}
+	    {include "president2014-match-table.tpl"}
 	    <!-- /table -->
 	    
 		<!-- table -->
 		{if $missing|@count > 0}
-	      {include "psp2013vk-match-missing.tpl"}
+	      {include "president2014-match-missing.tpl"}
 	    {/if}
 	    <!-- /table -->
 	
 		<!-- lower part -->
-		{include "psp2013-match-low.tpl"}
+		{include "president2014-match-low.tpl"}
 		<!-- /lower part -->
 
 	</div><!-- /content -->
 
 	<!-- footer -->
-	<!--{include "psp2013-match-footer.tpl"}-->
+	<!--{include "president2014-match-footer.tpl"}-->
 	<!-- /footer -->
     
   </div> <!-- /page -->

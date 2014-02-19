@@ -1011,25 +1011,26 @@ color: #a21412;
 .psp2013vk-sprite-zmena-80{ background-position: -130px -910px; width: 80px; height: 80px; } 
 
 .president2014-sprite {
-  background: url('../image/president2014/president2014-sprite.png') no-repeat top left;
+  background: url('../image/president2014/president2014-sprite.jpg') no-repeat top left;
   width: 55px;
   height: 80px;
 }
 
-.president2014-sprite-bardos{ background-position: 0 0; width: 121px; height: 155px; } 
-.president2014-sprite-behyl{ background-position: 0 -205px; width: 122px; height: 155px; } 
-.president2014-sprite-carnogursky{ background-position: 0 -410px; width: 122px; height: 154px; } 
-.president2014-sprite-fico{ background-position: 0 -614px; width: 122px; height: 156px; } 
-.president2014-sprite-fischer{ background-position: 0 -820px; width: 122px; height: 155px; } 
-.president2014-sprite-hrusovsky{ background-position: 0 -1025px; width: 122px; height: 155px; } 
-.president2014-sprite-jurista{ background-position: 0 -1230px; width: 122px; height: 155px; } 
-.president2014-sprite-kiska{ background-position: 0 -1435px; width: 122px; height: 155px; } 
-.president2014-sprite-knazko{ background-position: 0 -1640px; width: 122px; height: 154px; } 
-.president2014-sprite-martincko{ background-position: 0 -1844px; width: 122px; height: 155px; } 
-.president2014-sprite-melnik{ background-position: -172px 0; width: 122px; height: 155px; } 
-.president2014-sprite-mezenska{ background-position: -172px -205px; width: 122px; height: 154px; } 
-.president2014-sprite-prochazka{ background-position: -172px -409px; width: 122px; height: 154px; } 
-.president2014-sprite-simko{ background-position: -172px -613px; width: 122px; height: 154px; } 
+.president2014-sprite-bardos{ background-position: 0 0; width: 63px; height: 80px; } 
+.president2014-sprite-behyl{ background-position: 0 -130px; width: 63px; height: 80px; } 
+.president2014-sprite-carnogursky{ background-position: 0 -260px; width: 63px; height: 80px; } 
+.president2014-sprite-fico{ background-position: 0 -390px; width: 63px; height: 80px; } 
+.president2014-sprite-fischer{ background-position: 0 -520px; width: 63px; height: 80px; } 
+.president2014-sprite-hrusovsky{ background-position: 0 -650px; width: 63px; height: 80px; } 
+.president2014-sprite-jurista{ background-position: 0 -780px; width: 63px; height: 80px; } 
+.president2014-sprite-kiska{ background-position: 0 -910px; width: 63px; height: 80px; } 
+.president2014-sprite-knazko{ background-position: 0 -1040px; width: 63px; height: 80px; } 
+.president2014-sprite-martincko{ background-position: 0 -1170px; width: 63px; height: 80px; } 
+.president2014-sprite-melnik{ background-position: 0 -1300px; width: 63px; height: 80px; } 
+.president2014-sprite-mezenska{ background-position: 0 -1430px; width: 63px; height: 80px; } 
+.president2014-sprite-prochazka{ background-position: 0 -1560px; width: 63px; height: 80px; } 
+.president2014-sprite-simko{ background-position: 0 -1690px; width: 63px; height: 80px; } 
+
 
 
 #jqm-homeheader img {
