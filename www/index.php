@@ -4,8 +4,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Volebná kalkulačka | voľby 2013</title>
-	<meta name="description" content="Voľby 2013 sa blížia! Spočítajte si koho voliť!" />
-	<meta name="keywords" content="voľby 2013, župné voľby , volebná kalkulačka, volebný test" />
+	<meta name="description" content="Voľby 2014 sa blížia! Spočítajte si koho voliť!" />
+	<meta name="keywords" content="voľby 2014, prezidentské voľby , volebná kalkulačka, volebný test" />
 	<meta name="author" content="KohoVolit.eu" />
 	<meta name="robots" content="index, follow" />
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.css" />
