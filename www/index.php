@@ -45,7 +45,7 @@
 					<a href="volba-prezidenta-2014" data-ajax="false">
 					  <img src='./image/sk.png' width="67" height="80">
 					  <h2>Voľba prezidenta 2014</h2>
-					  <p class="ui-li-desc">Zhoda z názory kandidátov na prezidenta.</strong></p>
+					  <p class="ui-li-desc">Zhoda s názormi kandidátov na prezidenta.</strong></p>
 					</a>
 				</li>
 				
