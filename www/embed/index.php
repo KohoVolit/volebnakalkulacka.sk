@@ -45,7 +45,7 @@ $calcs = array(
   
   'president2014' => array(
     'name' => 'Volebná kalkulačka pre prezidentské voľby 2014',
-    'calc' => array(array('name'=>'Prezidentské voľby 2014','friendly_url'=>'volba-prezidenta-2014')),
+    'calc' => array(array('name'=>'Prezidentské voľby 2014','friendly_url'=>'volba-prezidenta-2014/?')),
   ),
 
   'vuc2013' => array(
