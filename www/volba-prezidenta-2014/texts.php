@@ -63,7 +63,7 @@ $text = array(
   'dms_mobile_3' => 'or',
   'dms_mobile_explanation' => '(charge of 30Kč, or 12x30Kč)',
   'dms_info' => 'More info',
-  'result_winner_computer' => 'Najviac sa s Vami zhoduje:',
+  'result_winner_computer' => 'Najviac sa s Vami zhodujú:',
   'result_winner_share' => 'Zdieľaj <span class="computer">výsledky </span>na Facebooku</span>',
   'missing_table_description' => 'Nasledujúci kandidáti <strong>zatiaľ neodpovedali</strong>:',
   'image_link' => '../../image/sk_vuc2013/chair/',//'http://www.politickysupermarket.sk/', 

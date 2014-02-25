@@ -3,8 +3,6 @@
   <div class="ui-grid-b computer">
   
 	<div class="ui-block-a">
-	</div>  
-	<div class="ui-block-b">
 	  <div class="match-winner-block">
 	    <a href="../compare.php?{$query_string}&id={$results[0].id}&match={$results[0].result_percent}" data-rel="dialog" style="text-decoration:none">
 		  <div><img src="../../image/president2014/{$results[0].friendly_name}.jpg" width="122" height="155" alt="{$results[0].name}" title="{$results[0].name}" /></div>
@@ -12,8 +10,24 @@
 		  <div class="match-winner-percentage"><span class="match-winner-percentage-number">{$results[0].result_percent}</span> %</div>
 		</a>
 	  </div>
+	</div>  
+	<div class="ui-block-b">
+	  <div class="match-winner-block">
+	    <a href="../compare.php?{$query_string}&id={$results[1].id}&match={$results[1].result_percent}" data-rel="dialog" style="text-decoration:none">
+		  <div><img src="../../image/president2014/{$results[1].friendly_name}.jpg" width="122" height="155" alt="{$results[1].name}" title="{$results[1].name}" /></div>
+		  <div class="match-winner">{$results[1].first_name}<br/>{$results[1].last_name}</div>
+		  <div class="match-winner-percentage"><span class="match-winner-percentage-number">{$results[1].result_percent}</span> %</div>
+		</a>
+	  </div>
 	</div>
 	<div class="ui-block-c">
+	  <div class="match-winner-block">
+	    <a href="../compare.php?{$query_string}&id={$results[2].id}&match={$results[2].result_percent}" data-rel="dialog" style="text-decoration:none">
+		  <div><img src="../../image/president2014/{$results[2].friendly_name}.jpg" width="122" height="155" alt="{$results[2].name}" title="{$results[2].name}" /></div>
+		  <div class="match-winner">{$results[2].first_name}<br/>{$results[2].last_name}</div>
+		  <div class="match-winner-percentage"><span class="match-winner-percentage-number">{$results[2].result_percent}</span> %</div>
+		</a>
+	  </div>
 	</div>  
 	
 </div><!-- /grid-b -->
