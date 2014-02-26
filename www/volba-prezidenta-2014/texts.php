@@ -66,6 +66,8 @@ $text = array(
   'result_winner_computer' => 'Najviac sa s Vami zhodujú:',
   'result_winner_share' => 'Zdieľaj <span class="computer">výsledky </span>na Facebooku</span>',
   'missing_table_description' => 'Nasledujúci kandidáti <strong>zatiaľ neodpovedali</strong>:',
+  'refused_table_description' => 'Nasledujúci kandidáti <strong>odmietli odpovedať</strong>:',
+  'refused_explanation' => 'Zdôvodnenie',
   'image_link' => '../../image/sk_vuc2013/chair/',//'http://www.politickysupermarket.sk/', 
   
   //COMPARE

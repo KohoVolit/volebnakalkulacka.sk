@@ -39,12 +39,18 @@ $partner = array('name'=>'default','swatch_bar' => 'q', 'swatch_footer' => 'r', 
 
 $parties_file = '../answers.json';
 $missing = '../noreply.json';
+$refused = '../refused.json';
 
 //read parties = candidates
 $candidates = json_decode(file_get_contents($parties_file));
 
 //read missing
 $missing = json_decode(file_get_contents($missing));
+if (empty($missing)) $missing = array();
+
+//read refused
+$refused = json_decode(file_get_contents($refused));
+if (empty($refused)) $refused = array();
 
 include("../texts.php");
 
@@ -64,6 +70,7 @@ $url = 'http://' . $_SERVER['HTTP_HOST'] . '/' . $_SERVER['REQUEST_URI'] ;
 //$winner_color[2] = party2color($results[2]['party']);
 
 $smarty->assign('missing', $missing);
+$smarty->assign('refused', $refused);
 $smarty->assign('text', $text);
 $smarty->assign('partner', $partner);
 //$smarty->assign('region', $region);
