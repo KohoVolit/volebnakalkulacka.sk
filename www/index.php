@@ -104,17 +104,18 @@
 	   <span class="counter-number">
 <?php
   //$number = number_format(ceil($filesize/297.2),0,',',' '); original calculation
-  //$filesize = filesize('result.txt');
+  $filesize = filesize('result.txt');
   /*if ($filesize < 335527092)
     $number = number_format(684613 + round(($filesize-203466983.6)/1145.192),0,',',' ');  //slowing down
   else
     $number = number_format(ceil($filesize/419.4),0,',',' ');*/
   //$number = number_format(ceil($filesize/419.4) + 1459825,0,',',' '); //1459825 - number by 2013-09-09
   //$number = number_format(ceil($filesize/362.94),0,',',' ');
-  //echo $number;
+    $number = number_format(ceil($filesize/339),0,',',' ');
+    echo $number;
   
 ?>
-		</span><!-- vyplnených Volebných kalkulačiek -->
+		</span> vyplnených Volebných kalkulačiek
 	</div>
 	<!-- /counter -->
 	  
