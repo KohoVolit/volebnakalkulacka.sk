@@ -42,11 +42,20 @@
 	<ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="g">
 			<li data-role="list-divider"></li>
 				<li>
-					<a href="volba-prezidenta-2014" data-ajax="false">
-					  <img src='./image/sk.png' width="67" height="80">
-					  <h2>Voľba prezidenta 2014</h2>
-					  <p class="ui-li-desc">Zhoda s názormi kandidátov na prezidenta.</strong></p>
-					</a>
+					<!-- <a href="volba-prezidenta-2014" data-ajax="false">-->
+					  <img src='./image/eu_gray.png' width="67" height="80">
+					  <h2>Volebná kalkulačka 2014</h2>
+					  <p class="ui-li-desc">Zhoda s názormi kandidujúcich strán.</strong></p>
+					<!--</a>-->
+				</li>
+				
+		    <li data-role="list-divider"></li>
+				<li>
+					<!-- <a href="volba-prezidenta-2014" data-ajax="false">-->
+					  <img src='./image/eu_gray.png' width="67" height="80">
+					  <h2>Invetúra hlasovaní 2014</h2>
+					  <p class="ui-li-desc">Otázky, o ktorých sa skutočne hlasovalo v EP 2009-2014.</strong></p>
+					<!--</a>-->
 				</li>
 				
 	</ul>
@@ -95,28 +104,28 @@
 	  </div><!-- /grid -->
 	  
 	 <div>
-	   <p style="text-align:justify"><strong>Volebná kalkulačka pre prezidentské voľby 2014</strong> Vám pomôže v rozhodnutí koho voliť vo voľbách 15. marca 2014. <strong>Volebná kalkulačka</strong> porovnáva Vaše odpovede s názormi kandidátov na prezidenta. <strong>Volebný test Vám zaberie približne 5 minút.</strong>
+	   <p style="text-align:justify"><strong>Volebná kalkulačka pre európske voľby 2014</strong> Vám pomôže v rozhodnutí koho voliť vo voľbách 24. mája 2014. <strong>Volebná kalkulačka</strong> porovnáva Vaše odpovede s názormi kandidujúcich strán. <strong>Volebný test Vám zaberie približne 5 minút.</strong>
 	 </p>
 	 </div> 
 
 	 <!-- counter --> 
-	 <div class="counter">
+	 <!--<div class="counter">
 	   <span class="counter-number">
 <?php
   //$number = number_format(ceil($filesize/297.2),0,',',' '); original calculation
-  $filesize = filesize('result.txt');
+  //$filesize = filesize('result.txt');
   /*if ($filesize < 335527092)
     $number = number_format(684613 + round(($filesize-203466983.6)/1145.192),0,',',' ');  //slowing down
   else
     $number = number_format(ceil($filesize/419.4),0,',',' ');*/
   //$number = number_format(ceil($filesize/419.4) + 1459825,0,',',' '); //1459825 - number by 2013-09-09
   //$number = number_format(ceil($filesize/362.94),0,',',' ');
-    $number = number_format(ceil($filesize/339),0,',',' ');
-    echo $number;
+    //$number = number_format(ceil($filesize/339),0,',',' ');
+    //echo $number;
   
 ?>
 		</span> vyplnených Volebných kalkulačiek
-	</div>
+	</div>-->
 	<!-- /counter -->
 	  
 	  				  
