@@ -45,7 +45,7 @@
 					<!-- <a href="volba-prezidenta-2014" data-ajax="false">-->
 					  <img src='./image/eu_gray.png' width="67" height="80">
 					  <h2>Volebná kalkulačka 2014</h2>
-					  <p class="ui-li-desc">Zhoda s názormi kandidujúcich strán.</strong></p>
+					  <p class="ui-li-desc">>Bude spustená <strong>mesiac pred voľbami</strong></p>
 					<!--</a>-->
 				</li>
 				
@@ -54,7 +54,7 @@
 					<!-- <a href="volba-prezidenta-2014" data-ajax="false">-->
 					  <img src='./image/eu_gray.png' width="67" height="80">
 					  <h2>Invetúra hlasovaní 2014</h2>
-					  <p class="ui-li-desc">Otázky, o ktorých sa skutočne hlasovalo v EP 2009-2014.</strong></p>
+					  <p class="ui-li-desc">Bude spustená <strong>mesiac pred voľbami</strong></p>
 					<!--</a>-->
 				</li>
 				
