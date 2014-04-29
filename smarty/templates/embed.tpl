@@ -39,12 +39,23 @@
           	<div data-role="collapsible" {if (isset($calc['selected']) and ($cals['selected']))}data-collapsed="false"{/if} data-theme="d" data-content-theme="d">
           	
             	 <h3>{$c['name']}</h3>
+            	 
+            	 {if (isset($c['custom']))}
+            	 <label for="navbarcolor">Barva hornej lišty (html, napr: #ab0) - nepovinné</label>
+            	 <input type="color" name="navbarcolor" id="navbarcolor-{$c['friendly_url']}" data-calc="{$c['friendly_url']}">
+            	 <label for="navbarcolor">Pozadie (adresa obrázka umiestneného na webe, nesmie obsahovať znak '_', napr.: http://volebnikalkulacka.cz/evropsky-parlament-2014/image/bg.jpg) - nepovinné</label>
+            	 <input type="text" name="background" id="background-{$c['friendly_url']}" data-calc="{$c['friendly_url']}">
+            	 {/if}
+            	 
             	 {foreach $sizes as $size}
             	    <div data-role="collapsible" {if (isset($size['selected']) and ($size['selected']))}data-collapsed="false"{/if}  data-theme="e" data-content-theme="e">
             	     <h3>{$size['name']}</h3>
             	     <div data-role="fieldcontain">
 						<p>Kód HTML:</p>
-						<textarea data-role="none" cols="40" rows="3" name="textarea" id="textarea"><iframe src="http://volebnakalkulacka.sk/{$c['friendly_url']}key={$key}" width="{$size['width']}" height="{$size['height']}" frameborder="0" ></iframe></textarea>
+						<p>Kód HTML:</p>
+						<textarea data-role="none" cols="40" rows="3" name="textarea" class="textarea textarea-{$c['friendly_url']}"><iframe src="http://volebnakalkulacka.sk/{$c['friendly_url']}?key={$key}" width="{$size['width']}" height="{$size['height']}" frameborder="0"></iframe></textarea>
+						<input type="hidden" value='<iframe src="http://volebnakalkulacka.sk/{$c['friendly_url']}?key={$key}' id="link1-{$c['friendly_url']}">
+						<input type="hidden" value='" width="{$size['width']}" height="{$size['height']}" frameborder="0"></iframe>' id="link3-{$c['friendly_url']}">
 					</div> 
             	    </div>
             	 {/foreach}
@@ -60,6 +71,24 @@
   
   <!-- footer -->
   {include "page-footer.tpl"}
+  
+  <!-- js -->
+  <script>
+    $('input').change(function() {
+    calc = $(this).attr("data-calc");
+    navbarcolor = $('#navbarcolor-'+calc).val().substr(1);
+    background = $('#background-'+calc).val().replace('http://','').replace('https://').replace(/\//g, '_')
+    $('.textarea-'+calc).each(function(i) {
+      iframe = $('#link1-'+calc).val();
+      if (navbarcolor != '')
+        iframe += '&navbar='+navbarcolor;
+      if (background != '')
+        iframe += '&background='+background;
+      iframe += $('#link3-'+calc).val();
+      $(this).html(iframe)
+    });
+  });
+  </script>
   
   </div> <!-- /page --> 
 

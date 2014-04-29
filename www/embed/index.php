@@ -9,6 +9,24 @@ $smarty->setCompileDir('../../smarty/templates_c');
 $smarty->setCacheDir('../../smarty/cache');
 $smarty->setConfigDir('../../smarty/configs');
 
+/*$calc2014ep = array (
+  array(
+    'name' => 'Volebná kalkulačka EP 2014',
+    'friendly_url' => 'europsky-parlament-2014',
+    'selected' => true,
+    'custom' => true
+  ),
+);*/
+
+$inventory2014ep = array (
+  array(
+    'name' => 'Inventúra hlasovaní EP 2009-2014',
+    'friendly_url' => 'inventura-hlasovani-europsky-parlament-2009-2014',
+    'selected' => true,
+    'custom' => true
+  ),
+);
+
 $constit = array(
   'banska-bystrica' => 'Banskobystrický kraj',
   'bratislava' => 'Bratislavský kraj',
@@ -38,6 +56,17 @@ $sizes = array(
 );
 
 $calcs = array(
+
+  /*'calc2014ep' => array(
+    'name' => 'Volebná kalkulačka Európsky parlament 2014',
+    'calc' => $calc2014ep,
+  ),*/
+
+  'inventory2014ep' => array(
+    'name' => 'Inventúra hlasovaní Európsky parlament 2009-2014',
+    'calc' => $inventory2014ep,
+  ),
+
   'all' => array(
     'name' => 'Celá VolebnáKalkulačka.sk',
     'calc' => array(array('name'=>'VolebnáKalkulačka.sk','friendly_url'=>'?')),
