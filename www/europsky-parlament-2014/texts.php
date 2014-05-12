@@ -105,7 +105,7 @@ $text = array(
   'page_progressbar_from' => 'z',
   //important questions
   'page_header_mobile_important' => 'Důležité otázky',
-  'page_important_legend' => '<strong>Vyberte otázky, které jsou pro Vás nejdůležitější</strong>.  Zpřesníte tím výsledek. Tento krok není povinný a lze přeskočit.',
+  'page_important_legend' => '<strong>Označte otázky, ktoré sú pre Vás najdôležitejšie</strong>. Spresníte tým výsledok. Tento krok nie je povinný a môžete ho preskočiť.',
   
   
   //RESULTS
