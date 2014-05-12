@@ -18,14 +18,16 @@
           {include "match-winners.tpl"}
         <!-- /winners -->
         <!-- sharer -->
+          {include "match-sharer.tpl"}
         <!-- /sharer -->
         <!-- fb -->
+          {assign "fb_pos" "top"}
           {include "match-fb.tpl"}
         <!-- /fb -->
         <!-- tabs -->
           {include "match-tabs.tpl"}
         <!-- /tabs -->
-        
+          {assign "fb_pos" "bottom"}
           {include "match-fb.tpl"}
           
           {include "match-lower.tpl"}
@@ -37,7 +39,6 @@
     
     {block name=outsideBody}
     <!-- support -->
-      {include "match-support.tpl"}
       {include "match-comparison.tpl"}
       {include "match-save.tpl"}
     <!-- /support -->

@@ -9,14 +9,14 @@ $smarty->setCompileDir('../../smarty/templates_c');
 $smarty->setCacheDir('../../smarty/cache');
 $smarty->setConfigDir('../../smarty/configs');
 
-/*$calc2014ep = array (
+$calc2014ep = array (
   array(
     'name' => 'Volebná kalkulačka EP 2014',
     'friendly_url' => 'europsky-parlament-2014',
     'selected' => true,
     'custom' => true
   ),
-);*/
+);
 
 $inventory2014ep = array (
   array(
@@ -57,10 +57,10 @@ $sizes = array(
 
 $calcs = array(
 
-  /*'calc2014ep' => array(
+  'calc2014ep' => array(
     'name' => 'Volebná kalkulačka Európsky parlament 2014',
     'calc' => $calc2014ep,
-  ),*/
+  ),
 
   'inventory2014ep' => array(
     'name' => 'Inventúra hlasovaní Európsky parlament 2009-2014',

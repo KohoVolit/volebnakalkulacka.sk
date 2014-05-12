@@ -60,7 +60,7 @@ $text = array(
    //tabs
    'result_results' => 'Výsledky',
    'result_comparison' => 'Porovnanie',
-   'result_eu' => 'Výsledky v EU',
+   'result_eu' => 'Výsledky v EÚ',
    
    //support (DMS)
    'result_support' => '<strong>Podpořte tvorbu nezávislých

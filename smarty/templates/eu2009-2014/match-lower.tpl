@@ -1,4 +1,3 @@
 <div class="text-center">
-  <!--<a href="/evropsky-parlament-2014/" type="button" class="btn btn-success btn-lg sharebutton" ><i class="fa fa-bar-chart-o fa-lg"></i> Názorová shoda se stranami? Zkuste Volební kalkulačku!</a>-->
-  <button type="button" class="btn btn-success btn-lg sharebutton" disabled="disabled"><i class="fa fa-bar-chart-o fa-lg"></i> Názorová zhoda so stranami? Volebná kalkulačka! (máj 2014)</button>
+  <a href="/europsky-parlament-2014/" type="button" class="btn btn-success btn-lg sharebutton" ><i class="fa fa-bar-chart-o fa-lg"></i> Názorová zhoda so stranami? Skúste Volebnú kalkulačku!</a>
 </div>
