@@ -39,8 +39,8 @@ $text = array(
   'page_important_skip' => 'Preskočiť',
   'page_important_results' => 'Výsledky',  
   
-  'ie8' => 'Omlouváme se, ale Volební kalkulačka nemusí fungovat v prohlížečích Internet Explorer 8 a starších',
-  'opera11' =>' Omlouváme se, ale Volební kalkulačka nemusí fungovat v prohlížečích Opera 11 a starších',
+  'ie8' => 'Ospravedlňujeme sa, ale Volebná kalkulačka nemusí fungovať v prehliadačoch Internet Explorer 8 a starších',
+  'opera11' =>'Ospravedlňujeme sa, ale Volebná kalkulačka nemusí fungovať v prehliadačoch Opera 11 a starších',
 
    //MATCH
    'match_save' => 'Uložiť svoje hlasovanie',
@@ -54,7 +54,7 @@ $text = array(
    
    //fb
    'result_fb_appid' => "647475721940594",
-  'result_fb_picture_link' => 'http://volebnikalkulacka.cz/evropsky-parlament-2014/image/logo/',
+  'result_fb_picture_link' => 'http://volebnakalkulacka.sk/europsky-parlament-2014/image/logo/',
   'result_fb_name' => 'Vo Volebné kalkulačke mám najvyššiu zhodu:',
   'result_fb_description_1' => 'Podľa Volebné kalkulačky pre eurovoľby sa so mnou najviac zhodujú: ',
   'result_fb_description_match' => 'zhoda',
