@@ -94,7 +94,7 @@ $text = array(
    'google_tracking_id' => 'UA-8592359-12',   
 
    //header
-  'page_header_desktop' => "Volební kalkulačka 2013",
+  'page_header_desktop' => "Volební kalkulačka 2014",
   'page_header_mobile' => 'Otázka ',
   //question
 
