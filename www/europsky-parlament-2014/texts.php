@@ -19,7 +19,7 @@ $text = array(
   'licence' => 'Creative Commons BY 4.0',
   'year' => '2014',
   
-  'footer_text' => 'Volebné kalkulačky pre Vás už od roku 2006 vytvára občianske združenie <a href="http://kohovolit.eu">KohoVolit.eu</a>',
+  'footer_text' => '<a href="http://kohovolit.eu">KohoVolit.eu</a> pre Vás vytvára volebné kalkulačky už od roku 2006<br/>Proudly part of <a href="http://www.votematch.eu/">VoteMatchEurope</a>',
   
 
 
