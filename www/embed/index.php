@@ -12,7 +12,7 @@ $smarty->setConfigDir('../../smarty/configs');
 $calc2014ep = array (
   array(
     'name' => 'Volebná kalkulačka EP 2014',
-    'friendly_url' => 'europsky-parlament-2014',
+    'friendly_url' => 'europsky-parlament-2014/',
     'selected' => true,
     'custom' => true
   ),
@@ -21,7 +21,16 @@ $calc2014ep = array (
 $inventory2014ep = array (
   array(
     'name' => 'Inventúra hlasovaní EP 2009-2014',
-    'friendly_url' => 'inventura-hlasovani-europsky-parlament-2009-2014',
+    'friendly_url' => 'inventura-hlasovani-europsky-parlament-2009-2014/',
+    'selected' => true,
+    'custom' => true
+  ),
+);
+
+$calc2014ep_hu = array (
+  array(
+    'name' => '2014-es európai parlamenti választás',
+    'friendly_url' => '2014-es-europai-parlamenti-valasztas/',
     'selected' => true,
     'custom' => true
   ),
@@ -65,6 +74,11 @@ $calcs = array(
   'inventory2014ep' => array(
     'name' => 'Inventúra hlasovaní Európsky parlament 2009-2014',
     'calc' => $inventory2014ep,
+  ),
+  
+  'calc2014ep_hu' => array(
+    'name' => 'Választás kalkulátor Európai Parlament 2014',
+    'calc' => $calc2014ep_hu,
   ),
 
   'all' => array(
