@@ -1,3 +1,7 @@
+$(document).on("click", ".open-dialog2", function () {
+  ids = ["0",$(this).data('id')];
+});
+
 $(document).on("click", ".open-dialog", function () {
   ids = ["0",$(this).data('id')];
 });
@@ -5,7 +9,7 @@ $(document).on("click", ".open-dialog", function () {
 $('#modal').on('show.bs.modal', function (e) {
   //alert ('ok');
     if (typeof (questions) == "undefined") {
-        //load answers
+        //load answers3
         $.ajax({
           url: '../questions.json',
           success: function(data){
@@ -19,10 +23,10 @@ $('#modal').on('show.bs.modal', function (e) {
 });
 
 function create_comparison(questions) {
-  if (typeof (details) == "undefined") {
-        //load answers
+  if (typeof (details3) == "undefined") {
+        //load answers3
         $.ajax({
-          url: '../details.json',
+          url: '../details3.json',
           success: function(data){
             make_comparison(questions,data);
           }
@@ -33,19 +37,19 @@ function create_comparison(questions) {
 }
 
 function make_comparison(questions, details) {
-  answers["0"] = me;
+    answers3["0"] = me;
   if (typeof(ids) == "undefined") ids = ["0","0"];
   
   html = '<table class="table table-striped comparison-table"><thead>';
   v1_id = ids[0];
   v2_id = ids[1];
   
-  html += '<tr><th>'+ texts['question'] +'</th><th class="comp-center">' + answers[v1_id]['short_name'] + '</th><th></th><th class="comp-center">' + answers[v2_id]['short_name'] + '</th></tr>';
+  html += '<tr><th>'+ texts['question'] +'</th><th class="comp-center">' + answers3[v1_id]['short_name'] + '</th><th></th><th class="comp-center">' + answers3[v2_id]['short_name'] + '</th></tr>';
   html += '</thead><tbody>';
   for (key in questions) {
     q_id = questions[key]['id'];
-    vote1 = answers[v1_id]['vote'][q_id];
-    vote2 = answers[v2_id]['vote'][q_id];
+    vote1 = answers3[v1_id]['vote'][q_id];
+    vote2 = answers3[v2_id]['vote'][q_id];
     detail1 = get_detail(details,v1_id,q_id);
     detail2 = get_detail(details,v2_id,q_id);
     if (typeof(weights[q_id]) != "undefined")
@@ -56,17 +60,17 @@ function make_comparison(questions, details) {
     html += "</td><td class='comp-center'>" + val2word(vote1);
     if (detail1) html += tooltip(detail1, 'fa-info-circle');
     html += "</td><td class='comp-center'>";
-    html += compare_answers(vote1,vote2);
+    html += compare_answers3(vote1,vote2);
     html += "</td><td class='comp-center'>" + val2word(vote2);
     if (detail2) html += tooltip(detail2, 'fa-info-circle');
     html += "</td></tr>";
   }
   html += "</tbody></table>"
   $("#comparison-dialog").html(html);
-  $(".tooltip-top").tooltip({placement: 'top'});
+  $(".tooltip-top").tooltip({placement: 'bottom'});
 }
 
-function compare_answers(a1,a2) {
+function compare_answers3(a1,a2) {
   if (a1*a2 == -1) return "<strong>✘</strong>";
   else return "";
 }
