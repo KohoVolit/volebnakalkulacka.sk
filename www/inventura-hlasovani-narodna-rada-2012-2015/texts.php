@@ -29,7 +29,7 @@ $text = array(
   'title' => 'Inventúra hlasovaní EP 2009-2014 | Volebná kalkulačka' ,
 
    //PAGE
-  'calc_name' => 'Inventúra hlasovaní - Európsky parlament 2009-2014',
+  'calc_name' => 'Inventúra hlasovaní - Národná rada 2012-2015',
   'page_question_yes' => 'ÁNO',
   'page_question_no' => 'NIE',
   'page_question_neutral' => 'neviem',
@@ -49,7 +49,7 @@ $text = array(
    
    //fb
    'result_fb_appid' => "647475721940594",
-  'result_fb_picture_link' => 'http://volebnikalkulacka.cz/evropsky-parlament-2014/image/logo/',
+  'result_fb_picture_link' => 'http://volebnakalkulacka.sk/inventura-hlasovani-narodna-rada-2012-2015/image/logo/',
   'result_fb_name' => 'V inventúre hlasovaní mám najvyššiu zhodu:',
   'result_fb_description_1' => 'Podľa Inventúry hlasovaní 2012-2015 ma v Národnej rade reprezentuje: ',
   'result_fb_description_match' => 'zhoda',
