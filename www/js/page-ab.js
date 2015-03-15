@@ -21,20 +21,28 @@ $('document').ready(function() {
       else $('#carousel-control-left').show();
       
       //to the last one (weight selection)
-      if (slideTo == ($('.item').length - 1)) {
-        $('#carousel-control-right').hide();
-        $('#carousel-control-last').show();
+      if (slideTo == ($('.item').length - 2)) {
+        $('#carousel-control-right').show();
+        $('#carousel-control-last').hide();
         $('.carousel-indicators').hide();
         
         hideAndZebra();
       }
       else {
-        $('#carousel-control-right').show();
-        $('#carousel-control-last').hide();
-        $('.carousel-indicators').show();
+          if (slideTo == ($('.item').length - 1)) {
+            $('#carousel-control-right').hide();
+            $('#carousel-control-last').show();
+            $('.carousel-indicators').hide();
+          } else
+          {
+            $('#carousel-control-right').show();
+            $('#carousel-control-last').hide();
+            $('.carousel-indicators').show();
+          }
       }
-      
       window.location.hash = '#p' + slideTo;
+      
+      
     });
 });
 
@@ -110,6 +118,16 @@ $('document').ready(function() {
 });
 
 // submit calc also by clicking on the last arrow
-$("#carousel-control-last").click(function() {
+//document.getElementById("carousel-control-last").onclick = function() {
+//    document.getElementById("calc").submit();
+//}
+
+// AB
+// submit calc also by clicking on the last table
+$(".abwho-button").click(function() {
+    $("#ab-who-val").val(this.id)
     document.getElementById("calc").submit();
-})
+});
+$(".button-last").click(function() {
+    $('#carousel').carousel('next');
+});

@@ -10,11 +10,27 @@
             <!-- /{$key}th page -->
             {$key=$key+1}
           {/foreach}
-          
-            <!-- last item - selection of weights -->
-            {include "page-last.tpl"}
-            <!-- /last item -->
-          
+
+            <!-- AB -->
+            <!-- also in page.tpl -->
+            {assign var="random" value=0|mt_rand:1}
+            {if ($random == 1)}
+                <!-- ab last item - selection of weights -->
+                {include "page-ab-last.tpl"}
+                <!-- /last item -->
+                <!-- ab who will be winner -->
+                {include "page-ab-who.tpl"}
+                <!-- /ab who will be winner -->
+                <script src="../js/page-ab.js"></script>
+            {else} 
+                <!-- last item - selection of weights -->
+                
+                {include "page-last.tpl"}
+                <!-- /last item -->
+                <script src="../js/page.js"></script>
+                <input type="hidden" name="ab-who" value="0" />
+            {/if}
+            
           
           </div> <!-- /.carousel-inner -->
           
