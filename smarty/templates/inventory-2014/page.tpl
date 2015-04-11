@@ -2,7 +2,7 @@
     {block name=additionalHead}
       <link href="../css/stylish-portfolio.min.css" rel="stylesheet">
       <link href="../css/carousel.min.css" rel="stylesheet">
-      <link href="../css/vaa2014.css" rel="stylesheet">
+      <link href="../css/vaa2014-2.css" rel="stylesheet">
     {/block}
     
     {block name=lastHead}
