@@ -1,0 +1,194 @@
+[
+  {
+    "order":1,
+    "question_en":"The UK should leave the EU immediately.",
+    "question":"Veľká Británia by mala okamžite vystúpiť z Európskej Únie ",
+    "id":1,
+    "name":"Vystúpenie z EÚ",
+    "description": ""
+  },
+  {
+    "order":2,
+    "question_en":"No one should be imprisoned for possession of drugs for personal use.",
+    "question":"Drogy pre osobnú spotrebu by mali byť legálne.",
+    "id":2,
+    "name":"Drženie drog legálne",
+    "description": ""
+  },
+  {
+    "order":3,
+    "question_en":"Rules for benefit claimants should be tougher.",
+    "question":"Pravidlá pre výplatu sociálnych dávok by sa mala sprísniť.",
+    "id":3,
+    "name":"Prísnejšie sociálne dávky",
+    "description": ""
+  },
+  {
+    "order":4,
+    "question_en":"The tax rate on personal income above £150k a year should be increased to 50%.",
+    "question":"Sadzba dane z príjmu nad 150 000 libier (200 000 Eur) ročne by sa mala zvýšiť na 50 %.",
+    "id":4,
+    "name":"Progresívna daň z príjmov",
+    "description": "Veľká Británia má aktuálne tzv. progresívnu daň z príjmu. To znamená, že osoby s vyššími príjmami platia vyššiu sadzbu dane."
+  },
+  {
+    "order":5,
+    "question_en":"The \"bedroom tax\" should be scrapped.",
+    "question":"Daň zo spálne by mala byť zrušená.",
+    "id":5,
+    "name":"Zrušenie daně z ložnice",
+    "description": "\"Daň z spálne\" je ľudový názov pre systém znižovanie sociálnych dávok pre ľudí žijúcich v domoch/bytoch s \"nadbytočným\" počtom izieb."
+  },
+  {
+    "order":6,
+    "question_en":"Winter fuel payments should only be available to pensioners on low incomes.",
+    "question":"Štátne príspevky pre vykurovanie v zime by mali byť vyplácané iba dôchodcom s nízkymi príjmami. ",
+    "id":6,
+    "name":"Príspevky na kúrenie",
+    "description": "Vláda vo Veľkej Británii prispieva dôchodcom na vykurovanie v zime."
+  },
+  {
+    "order":7,
+    "question_en":"The government should cut UK foreign aid.",
+    "question":"Vláda by mala skresať rozvojovú pomoc pre chudobné krajiny.",
+    "id":7,
+    "name":"Zníženie rozvojovej pomoci",
+    "description": ""
+  },
+  {
+    "order":8,
+    "question_en":"People living in social housing should have the right to buy their home at a discount.",
+    "question":"Ľudia žijúci v sociálnom bývaní by mali dostať zľavu pri obstarávaní bývania.",
+    "id":8,
+    "name":"Zľava na bývanie",
+    "description": ""
+  },
+  {
+    "order":9,
+    "question_en":"The UK should renew the Trident nuclear weapon system.",
+    "question":"Veľká Británia by mala modernizovať systém jadrových zbraní Trident.",
+    "id":9,
+    "name":"Modernizácia Tridentu",
+    "description": "Systém Trident sa skladá zo štyroch ponoriek nesúcich jadrové rakety. Teraz sa jedná o jediný zbraňový systém Veľkej Británie nesúci jadrové zbrane."
+  },
+  {
+    "order":10,
+    "question_en":"Sex education should be compulsory in all state schools",
+    "question":"Sexuálna výchova by mala byť povinná vo všetkých štátnych školách.",
+    "id":10,
+    "name":"Povinná sexuálna výchova",
+    "description": ""
+  },
+  {
+    "order":11,
+    "question_en":"There should be a limit on the amount landlords can increase rent each year.",
+    "question":"Maximálna možná miera ročného zvyšovania nájmu by mala mať svoj strop.",
+    "id":11,
+    "name":"Limit na zvyšovanie nájmov",
+    "description": ""
+  },
+  {
+    "order":12,
+    "question_en":"The government's top priority should be cutting the budget deficit.",
+    "question":"Hlavnou prioritou vlády by malo byť znižovanie schodku štátneho rozpočtu.",
+    "id":12,
+    "name":"Znižovania deficitu rozpočtu priorita",
+    "description": ""
+  },
+  {
+    "order":13,
+    "question_en":"Public spending should be increased even if it means the government borrows more.",
+    "question":"Verejné výdavky by sa mali zvýšiť aj keby to znamenalo, že si štát bude viac požičiavať.",
+    "id":13,
+    "name":"Zvyšovanie verejných výdavkov",
+    "description": ""
+  },
+  {
+    "order":14,
+    "question_en":"University tuition fees should be reduced.",
+    "question":"Školné na vysokých školách by sa malo znížiť.",
+    "id":14,
+    "name":"Nižšie školné",
+    "description": "Na vysokých školách v Anglicku (ale nie v Škótsku) sa platí vysoké školné od roku 1998."
+  },
+  {
+    "order":15,
+    "question_en":"All primary school children should get free school meals regardless of household income.",
+    "question":"Žiaci základných škôl by mali dostávať obedy zadarmo bez ohľadu na príjem ich domácnosti.",
+    "id":15,
+    "name":"Obedy zadarmo na ZŠ",
+    "description": "Vo Veľkej Británii sa teraz poskytujú obedy zdarma len deťom z nízkoprijímových rodín."
+  },
+  {
+    "order":16,
+    "question_en":"The government should set targets for carbon emission reduction.",
+    "question":"Vláda by mala limitovať emisie oxidu uhličitého.",
+    "id":16,
+    "name":"Limity pre CO2",
+    "description": "Emisie oxidu uhličitého (CO2) produkované napríklad v doprave alebo priemyslom patria medzi hlavné zdroje znečistenia ovzdušia."
+  },
+  {
+    "order":17,
+    "question_en":"The government should allow \"fracking\" to extract gas and oil.",
+    "question":"Vláda by mala povoliť ťažbu ropy a zemného plynu pomocou hydraulického štepenia (fracking)",
+    "id":17,
+    "name":"Fracking",
+    "description": "Hydraulické štiepenie je metóda ťažby ropy a zemného plynu. Umožňuje ťažbu z nálezísk, kde to pred tým nebolo možné, ale toto môže výrazne poškodiť životné prostredie. "
+  },
+  {
+    "order":18,
+    "question_en":"Only skilled immigrants should be allowed to move to the UK.",
+    "question":"Iba imigranti s vysokou pracovnou kvalifikáciou by mali mať umožnené presťahovanie do Veľkej Británie.",
+    "id":18,
+    "name":"Obmedzenie imigrácie",
+    "description": ""
+  },
+  {
+    "order":19,
+    "question_en":"Immigrants should have to wait at least two years before claiming unemployment benefits.",
+    "question":"Imigranti by mali čakať aspoň dva roky na oprávnenie získavať podporu v nezamestnanosti.",
+    "id":19,
+    "name":"Imigranti 2 roky bez soc. dávok",
+    "description": ""
+  },
+  {
+    "order":20,
+    "question_en":"The government should raise new taxes to fund the NHS.",
+    "question":"Vláda by mala zvýšiť dane, aby zabezpečila financovanie štátneho zdravotníctva.",
+    "id":20,
+    "name":"Financovanie štátneho zdravotníctva",
+    "description": ""
+  },
+  {
+    "order":21,
+    "question_en":"The government should support the oil and gas industry by cutting taxes on its profits.",
+    "question":"Vláda by mala podporovať ťažbu zemného plynu a ropy daňovými úľavami.",
+    "id":21,
+    "name":"Daňové úľavy pre ťažbu",
+    "description": ""
+  },
+  {
+    "order":22,
+    "question_en":"Scotland should be an independent country.",
+    "question":"Škótsko by malo byť nezávislou krajinou.",
+    "id":22,
+    "name":"Škótsko samostatné",
+    "description": ""
+  },
+  {
+    "order":23,
+    "question_en":"The government sould take rail services into public ownership.",
+    "question":"Vláda by mala prevziať železničnú dopravu do verejného vlastníctva.",
+    "id":23,
+    "name":"Železnice verejné",
+    "description": "Železničná doprava vo Veľkej Británii je (po roku 1993) prevádzkovaná prevažne súkromnými firmami, štát zabezpečuje iba úpravu tratí."
+  },
+  {
+    "order":24,
+    "question_en":"The government should have the power to access records of anyone's digital communications.",
+    "question":"Vláda by mala možnosť čítať digitálne správy hocikoho.",
+    "id":24,
+    "name":"Prístup vlády k elektronickej komunikácii",
+    "description": ""
+  }
+]
