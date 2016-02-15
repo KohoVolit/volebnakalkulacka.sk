@@ -69,10 +69,13 @@
     
     {block name=footer}{/block}
 
-
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
     {block name=js}{/block}
+    
+    {if $settings->clicks}
+        {include "clicks.tpl"}
+    {/if}
     
     <!-- google analytics -->
     <script type="text/javascript">

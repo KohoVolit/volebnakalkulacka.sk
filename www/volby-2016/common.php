@@ -42,6 +42,7 @@ $smarty->assign('text',$t);
 $smarty->assign('settings',$settings);
 $smarty->assign('session_id',session_id());
 $smarty->assign('customization',$customization);
+$smarty->assign('relative_path',$relative_path);
 
 
 

@@ -34,7 +34,5 @@
        var user = $.parseJSON('{$user}');
      </script>
      <!-- <script src="../js/page-ab.js"></script>-->
-     <!-- js -->
-     {include "page-js.tpl"}
-     <!-- /js -->
+
    {/block}

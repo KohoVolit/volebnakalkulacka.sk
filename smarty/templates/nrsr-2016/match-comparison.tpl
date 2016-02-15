@@ -7,7 +7,7 @@
         <h4 class="modal-title" id="modalLabel">{$text['result_comparison']}</h4>
       </div>
       <div class="modal-body" id="comparison-dialog" >
-             <i class="fa fa-spinner"></i>
+             <i class="fa fa-spinner fa-spin fa-3x"></i>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-dismiss="modal" id="comparison-close-bottom">{$text['result_close']}</button>
@@ -15,3 +15,4 @@
     </div>
   </div>
 </div> <!-- /Modal -->
+{include "match-comparison-table.tpl"}

@@ -2,6 +2,7 @@
     {block name=additionalHead}
       <link href="{$settings->cdn_domain}css/stylish-portfolio.min.css" rel="stylesheet">
       <link href="{$settings->cdn_domain}css/vaa2016.css" rel="stylesheet">
+      <script src="{$settings->cdn_domain}js/handlebars.min.js"></script> 
     {/block}
     {block name=lastHead}
       <title>{$text['title']}</title>

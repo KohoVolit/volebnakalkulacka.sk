@@ -8,6 +8,7 @@
     "languages": [
         "sk"
     ],
+    "clicks": true,
     "customization": true,
     "app_css": false,
     "background_image": "image/bg.jpg",
@@ -39,6 +40,9 @@
             "first_row": ["name"],
             "second_row": ["abbreviation"],
             "third_row": []       
+        },
+        "comparison": {
+            "name": "abbreviation"
         }
     }
 }

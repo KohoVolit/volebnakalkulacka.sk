@@ -3,7 +3,7 @@
 * VAA
 * calculate match
 */
-error_reporting(E_ALL);
+
 session_start();
 
 $relative_path = "../";
