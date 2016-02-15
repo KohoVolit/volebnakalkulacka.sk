@@ -1,0 +1,44 @@
+{
+    "election_code": "volby-2016",
+    "directory":"volby-2016",
+    "template": "nrsr-2016",
+    "defaults" : {
+        "language": "sk"
+    },
+    "languages": [
+        "sk"
+    ],
+    "customization": true,
+    "app_css": false,
+    "background_image": "image/bg.jpg",
+    "match": {
+        "winner": {
+            "name": "abbreviation",
+            "picture": "picture",
+            "picture_width": "132",
+            "picture_height": "132",
+            "picture_alt": "name",
+            "picture_title": "name",
+            "picture_class": "img-rounded"
+        },
+        "fb": {
+            "picture": "picture",
+            "caption": "name",
+            "winner": "abbreviation"
+        },
+        "twitter": {
+            "winner": "abbreviation"
+        },
+        "table": {
+            "picture": "picture",
+            "picture_width": "80",
+            "picture_height": "80",
+            "picture_alt": "abbreviation",
+            "picture_title": "abbreviation",
+            "picture_class": "img-rounded",
+            "first_row": ["name"],
+            "second_row": ["abbreviation"],
+            "third_row": []       
+        }
+    }
+}

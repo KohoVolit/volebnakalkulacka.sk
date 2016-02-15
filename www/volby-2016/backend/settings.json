@@ -1,0 +1,10 @@
+{
+    "answers_url":"https://docs.google.com/spreadsheet/ccc?key=1EghFlTIN0wPQGneUdJJ4hA3yCu1dY64B8NLpeCCZdnc&output=csv",
+    "voters_url":"https://docs.google.com/spreadsheet/ccc?key=1bKZ7kQliRtqSYEGhHS-GHf9IJmEsTQjHDSe-2qXtjsI&output=csv",
+    "answers_codes_column": 3,
+    "number_of_questions": 60,
+    "yes": "Áno",
+    "no": "Nie",
+    "picture_prepend": "volby-2016/image/logo/",
+    "picture_append": ".jpg"
+}
