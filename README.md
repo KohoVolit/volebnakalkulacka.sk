@@ -26,10 +26,10 @@ Volebná kalkulačka
 - it is possible to rewrite general settings (from `www/local_settings.json`) for whole site by these settings
 
 #### Images
-- default background image is set in `www/local_settings.json`
+- default background image for the new app is set in `www/new-app/settings.json`
 
 #### Languages
-Several languages are supported (using parameter `?lang=xx` in the address, `xx` is the ISO code). These needs to be set up in `www/new-app/settings.json` and files `www/new-app/texts_xx.csv` must exist.
+Several languages are supported (using parameter `?lang=xx` in the address, `xx` is the ISO code). These needs to be set up in `www/new-app/settings.json` and the files `www/new-app/texts_xx.csv` must exist.
 
 #### Updating
 Updating process may be different for any calculator
@@ -47,6 +47,13 @@ Update is done by accessing `http(s)://(server_name)/new-app/backend/update.php`
 Custom CSS may be set in `www/new-app/settings.json`
 ##### External customization
 It s possible to customize the calculator (if allowed in `www/new-app/settings.json`), quickly or with whole custom css:
-- `bg`: url-encoded link to background picture (e.g., `http(s)://(server_name)/new-app/?bg=http%3A%2F%2Fexample.com%2Fpicture.jpg`)
-- `navbar`: color of upper navbar (e.g., `http(s)://(server_name)/new-app/?navbar=%23CC00FF` or `?navbar=red`)
-- `css`: url-encoded link to custom css (e.g., `http(s)://(server_name)/new-app/?css=http%3A%2F%2Fexample.com%2Fcustom.css`)
+- `bg`: url-encoded link to background picture 
+(e.g., `http(s)://(server_name)/new-app/?bg=http%3A%2F%2Fexample.com%2Fpicture.jpg`)
+- `navbar`: url-encoded html color of the upper navbar 
+(e.g., `http(s)://(server_name)/new-app/?navbar=%23CC00FF` or `?navbar=red`)
+- `css`: url-encoded link to custom css 
+(e.g., `http(s)://(server_name)/new-app/?css=http%3A%2F%2Fexample.com%2Fcustom.css`)
+
+#### Click registration (optional)
+- set it in `www/new-app/settings.json`
+- create new file `www/new-app/click.txt` and set it writable by www server (e.g., chown user:www-data, chmod 620)

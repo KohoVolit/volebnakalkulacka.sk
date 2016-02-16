@@ -35,9 +35,8 @@
         @media (min-width: 666px) { .header { background: url('{$customization['bg']}') no-repeat fixed center center / cover rgba(0, 0, 0, 0); }}
     {else}
         @media (min-width: 666px) { .header { background: url('{$settings->cdn_domain}{$settings->directory}/{$settings->background_image}') no-repeat fixed center center / cover rgba(0, 0, 0, 0); }}
-{*    {/if}*}
-    </style>
     {/if}
+    </style>
     
     {if (isset($customization['navbar']))}
       <style>
