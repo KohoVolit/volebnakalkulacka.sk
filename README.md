@@ -43,6 +43,8 @@ Update is done by accessing `http(s)://(server_name)/new-app/backend/update.php`
 (TODO)
 
 #### Customization (optional)
+##### Custom space on result page (below the table)
+Completely custom part (block) may be specified below the results in the file `smarty/new-app-template/match-lower.tpl`. Leave it blank if nothing is required.
 ##### Custom CSS
 Custom CSS may be set in `www/new-app/settings.json`
 ##### External customization
