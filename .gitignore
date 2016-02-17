@@ -10,7 +10,7 @@ www/research.txt
 www/inventura-hlasovani-narodna-rada-2012-2015/match/click.txt
 *__init__.py
 *__pychache__/*
-cache/*
+*cache/*
 *local_settings.*
 *.~lock*
 *click.txt
