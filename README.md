@@ -21,6 +21,9 @@ Volebná kalkulačka
 - make directory `www/new-app` and copy into it contents from `www/existing-app`
 - make directory `smarty/templates/new-app-templates` and copy into it contents from `smarty/templates/existing-app-templates`
 
+#### Front page
+- set up frontpage (`www/index.php` or `www/index.html` manually)
+
 #### App settings
 - basic settings for the new-app are in `www/new-app/settings.json`, correct them
 - it is possible to rewrite general settings (from `www/local_settings.json`) for whole site by these settings
