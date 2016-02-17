@@ -9,6 +9,24 @@ $smarty->setCompileDir('../../smarty/templates_c');
 $smarty->setCacheDir('../../smarty/cache');
 $smarty->setConfigDir('../../smarty/configs');
 
+$calc2016 = array (
+  array(
+    'name' => 'Volebná kalkulačka 2016',
+    'friendly_url' => 'volby-2016/',
+    'selected' => true,
+    'custom' => true
+  ),
+);
+
+$calc2014ep = array (
+  array(
+    'name' => 'Volebná kalkulačka EP 2014',
+    'friendly_url' => 'europsky-parlament-2014/',
+    'selected' => true,
+    'custom' => true
+  ),
+);
+
 $calc2014ep = array (
   array(
     'name' => 'Volebná kalkulačka EP 2014',
@@ -65,6 +83,11 @@ $sizes = array(
 );
 
 $calcs = array(
+
+  'calc2016'  => array(
+    'name' => 'Volebná kalkulačka 2016',
+    'calc' => $calc2016,
+  ),
 
   'calc2014ep' => array(
     'name' => 'Volebná kalkulačka Európsky parlament 2014',
