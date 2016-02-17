@@ -1,0 +1,16 @@
+Apache2 settings:
+
+# checking using top (4GB -> approx. 0.3% of memory)
+
+/etc/apache2/mods-available/mpm_prefork.conf
+<IfModule mpm_prefork_module>
+        StartServers                     5
+        MinSpareServers           5
+        MaxSpareServers          10
+        ServerLimit             350
+        MaxRequestWorkers         350
+        MaxConnectionsPerChild   0
+</IfModule>
+
+
+
