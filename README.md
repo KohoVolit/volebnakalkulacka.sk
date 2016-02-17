@@ -42,7 +42,7 @@ Update is done by accessing `http(s)://(server_name)/new-app/backend/update.php`
 ##### Updating of inventories (example)
 (TODO)
 
-#### Customization
+#### Customization (optional)
 ##### Custom CSS
 Custom CSS may be set in `www/new-app/settings.json`
 ##### External customization
@@ -53,6 +53,12 @@ It s possible to customize the calculator (if allowed in `www/new-app/settings.j
 (e.g., `http(s)://(server_name)/new-app/?navbar=%23CC00FF` or `?navbar=red`)
 - `css`: url-encoded link to custom css 
 (e.g., `http(s)://(server_name)/new-app/?css=http%3A%2F%2Fexample.com%2Fcustom.css`)
+
+#### Caching
+Caching for the app (the test part, not results) is available. Enable (or disable) it:
+- nncomment line `include ("cache.php");` in `www/new-app/index.php`
+- set `www/new-app/cache/` writable and readable by www server (e.g., `sudo chown user:www-data cache`)
+- length of cache may be set in `www/new-app/cache.php`
 
 #### Click registration (optional)
 - set it in `www/new-app/settings.json`

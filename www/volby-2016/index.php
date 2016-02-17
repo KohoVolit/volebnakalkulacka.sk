@@ -5,7 +5,7 @@
 */
 session_start();
 
-//include ("cache.php");
+include ("cache.php");
 
 $relative_path = "";
 
