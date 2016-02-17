@@ -42,6 +42,14 @@ Update is done by accessing `http(s)://(server_name)/new-app/backend/update.php`
 ##### Updating of inventories (example)
 (TODO)
 
+#### Research questionaire (optional)
+A questionaire may be set to be shown before the app:
+- direct traffic to `(server)/new-app/research/` (or some part of the traffic)
+- set data and texts in `www/new-app/research/data.php`
+- create file `www/new-app/research/research.txt` and set it writable by www server (e.g., chown user:www-data)
+- only subset of question type may be used (see files `smarty/templates/research.tpl` and `smarty/templates/research-(type).tpl`)
+- enable caching: 
+
 #### Customization (optional)
 ##### Custom space on result page (below the table)
 Completely custom part (block) may be specified below the results in the file `smarty/new-app-template/match-lower.tpl`. Leave it blank if nothing is required.
