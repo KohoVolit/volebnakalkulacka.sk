@@ -42,7 +42,7 @@
             <input type="hidden" name="bg" value="{$customization['bg']}" />
           {/if}
            {if (isset($customization['navbar']))}  
-            <input type="hidden" name="css" value="{$customization['navbar']}" />
+            <input type="hidden" name="navbar" value="{$customization['navbar']}" />
           {/if}
           <!-- /customization -->
           

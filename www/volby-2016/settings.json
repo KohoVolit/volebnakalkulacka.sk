@@ -8,7 +8,7 @@
     "languages": [
         "sk"
     ],
-    "clicks": true,
+    "clicks": false,
     "customization": true,
     "app_css": false,
     "background_image": "image/bg.jpg",
