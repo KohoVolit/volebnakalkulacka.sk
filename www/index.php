@@ -79,7 +79,7 @@
 				   <?php
 				    $random = rand(1,10);
 				   ?>
-				   <a href="volby-2016<?php if ($random <= 1) echo '/research/'; ?>" class="btn btn-lg btn-success" disabled="disabled" >SPUSTIŤ VOLEBNÚ KALKULAČKU (od 18.2.2016)</a>
+				   <a href="volby-2016<?php if ($random <= 1) echo '/research/'; ?>" class="btn btn-lg btn-success" xdisabled="xdisabled" >SPUSTIŤ VOLEBNÚ KALKULAČKU</a>
 				   </div>
 				   
 				   <p class="lead">
