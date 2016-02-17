@@ -112,6 +112,34 @@
    }
   }
   
+  @media (min-width: 620px) {
+    .vote-buttons {
+      position: absolute;
+      bottom: 10px;
+    }
+    /*http://stackoverflow.com/questions/20465825/vertical-align-middle-with-bootstrap-responsive-grid*/
+    .i-question {
+      background-color: rgba(0, 0, 0, 0.4);
+      border-radius: 10px;
+      margin: 5px 0;
+      padding: 10px;
+      display:table-cell;
+      vertical-align:middle;
+    }
+    .o-question {
+      display: table;
+      height: 250px;
+      width: 100%;
+    }
+    .carousel .item {
+      height: 500px; /*default*/
+    }
+
+    .vote-button {
+      min-width: 10em;
+    }
+  }
+  
   @media (min-width: 666px) {
     .vote-buttons {
       position: absolute;
