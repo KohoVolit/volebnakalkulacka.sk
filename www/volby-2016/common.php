@@ -19,6 +19,12 @@ $lang = lang($settings);
 $handle = fopen($relative_path . 'texts_' . $lang . '.csv', "r");
 $t = csv2array($handle);
 
+//ref
+if (isset($_REQUEST['ref']))
+    $ref = $_REQUEST['ref'];
+else
+    $ref = '';
+
 // customization
 $customization = [];
 if ($settings->customization) {
@@ -39,6 +45,7 @@ $smarty->setCompileDir($relative_path . '../../smarty/templates_c');
 
 $smarty->assign('lang', $lang);
 $smarty->assign('text',$t);
+$smarty->assign('ref',$ref);
 $smarty->assign('settings',$settings);
 $smarty->assign('session_id',session_id());
 $smarty->assign('customization',$customization);

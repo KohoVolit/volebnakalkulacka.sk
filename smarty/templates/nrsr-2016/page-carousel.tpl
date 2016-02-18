@@ -46,6 +46,9 @@
           {/if}
           <!-- /customization -->
           
+          <!-- ref -->
+          <input type="hidden" name="ref" value="{$ref}" />
+          
         </form>
         {include "page-indicators.tpl"}
         {include "page-arrows.tpl"}

@@ -72,6 +72,8 @@
 	    </div>
 	    
 	    <button type="submit" name="submit" value="submit" data-theme="e" data-icon="arrow-r" data-iconpos="right">{$t['text']['continue']}</button>
+	    
+	    <input type="hidden" value="{$ref}" name="ref" id="ref" />
 	  </form>
 	  
 	  

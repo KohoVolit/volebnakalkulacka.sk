@@ -78,8 +78,12 @@
 				   <div>
 				   <?php
 				    $random = rand(1,10);
+				    if (isset($_GET['ref']))
+				        $ref = '?ref=' . $_GET['ref'];
+				    else
+				        $ref = '';
 				   ?>
-				   <a href="volby-2016<?php if ($random <= 1) echo '/research/'; ?>" class="btn btn-lg btn-success" xdisabled="xdisabled" >SPUSTIŤ VOLEBNÚ KALKULAČKU</a>
+				   <a href="volby-2016/<?php if ($random <= 1) echo 'research/'; echo $ref; ?>" class="btn btn-lg btn-success" xdisabled="xdisabled" >SPUSTIŤ VOLEBNÚ KALKULAČKU</a>
 				   </div>
 				   
 				   <p class="lead">
