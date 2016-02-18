@@ -35,12 +35,12 @@ result_fb_description_and,a
 result_fb_description_only,len
 result_fb_description_2,", najnižšia "
 result_fb_description_3,"Zistite, s kým sa najviac zhodujete na VolebnaKalkulacka.sk"
-result_fb_redirect_link,http://volebnakalkulacka.sk/
-result_fb_link,http://volebnakalkulacka.sk/
+result_fb_redirect_link,https://volebnakalkulacka.sk/
+result_fb_link,https://volebnakalkulacka.sk/
 result_fb_action,"[{'name':'Koho voliť?','link':'http://volebnakalkulacka.sk/'}]"
 result_twitter_text_1,"Moja Volebná kalkulačka: 1."
 result_twitter_text_2,", najhorší:"
-result_twitter_redirect_link,http://volebnakalkulacka.sk
+result_twitter_redirect_link,https://volebnakalkulacka.sk
 result_twitter_account,"KohoVolitEU"
 result_twitter_hashtags,volby #volby2016
 result_share,Zdieľaj výsledky
