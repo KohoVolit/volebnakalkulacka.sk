@@ -25,7 +25,7 @@
   
     <h1>VolebnáKalkulačka.sk vložená na Vašom webe</h1>
     <p>Rovnako ľahko ako napríklad toto video z Youtube si môžete vložiť k sebe na webové stránky aj Volebné kalkulačku.</p>
-    <div class="box-center-match"><iframe width="420" height="315" src="http://www.youtube.com/embed/UQyaSYhVJ9g" frameborder="0" allowfullscreen></iframe></div>
+    <div class="box-center-match"><iframe width="420" height="315" src="https://www.youtube.com/embed/UQyaSYhVJ9g" frameborder="0" allowfullscreen></iframe></div>
     
     <div class="box-center-match match-winner-box">
     
