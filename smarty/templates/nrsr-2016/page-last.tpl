@@ -14,7 +14,7 @@
                       {foreach $questions as $question}
                         <tr id="weightsel-row-{$question->id}">
                           <td class="weightsel-td">
-                            <label class="weightsel-button btn btn-lg" for="w{$question->id}" id="weight-{$question->id}">
+                            <label class="weightsel-button btn" for="w{$question->id}" id="weight-{$question->id}">
                               <input type="checkbox" name="w{$question->id}" id="w{$question->id}"/> {$question->name}
                             </label>
                           </td>
