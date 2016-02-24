@@ -11,7 +11,7 @@
         </thead>
         <tbody>
             {{#each rows}}
-                <tr>
+                <tr class="{{compare_class}}">
                     <td><i class='{{important}}'></i> {{name}} <span data-toggle='tooltip' data-placement='top' title='{{text}}' class='tooltip-right'> <i class='fa fa-info-circle'></i> </span>
                     <td class='comp-center'>{{word.one}}
                         {{#if detail.one}}
@@ -26,34 +26,6 @@
             {{/each}}
         </tbody>
     </table>
-</script>
-
-<script>
-/*$(function () {
-    theTemplateScript = $("#comparison-template").html();
-    theTemplate = Handlebars.compile(theTemplateScript);
-   var context={
-        "header": {
-            "one": "One",
-            "two": "Two"
-        },
-        "rows": [
-            {
-                "name": "R1",
-                "important": "fa fa-star",
-                "text": "RRR1",
-                "word": {
-                    "one": "W1",
-                    "two": "W2"
-                }
-            }
-        ]
-    };
-    
-    var theCompiledHtml = theTemplate(context);
-
-    $('#content-placeholder').html(theCompiledHtml);
-});*/
 </script>
 
 {/literal}

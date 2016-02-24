@@ -5,7 +5,7 @@
                   <p>{$text['page_important_legend']}</p>
                   
                   <p>
-                    <button class="btn btn-default btn-lg wide-button" type="submit">{$text['page_important_skip']} <i class="fa fa-arrow-right"></i></button>
+                    <button class="btn btn-default btn-lg wide-button" type="submit" id="selection-upper">{$text['page_important_skip']} <i class="fa fa-arrow-right"></i></button>
                   </p>
                   
                   <div data-toggle="buttons">
@@ -25,7 +25,7 @@
                   </div> <!-- /buttons -->
                   
                   <p>
-                    <button class="btn btn-default btn-lg wide-button" type="submit">{$text['page_important_results']} <i class="fa fa-arrow-right"></i></button>
+                    <button class="btn btn-default btn-lg wide-button" type="submit" id="selection-lower">{$text['page_important_results']} <i class="fa fa-arrow-right"></i></button>
                   </p>
 
                 </div>
