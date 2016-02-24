@@ -110,6 +110,8 @@ $('document').ready(function() {
 });
 
 // submit calc also by clicking on the last arrow
-$("#carousel-control-last").click(function() {
-    document.getElementById("calc").submit();
+$('document').ready(function() {
+    $("#carousel-control-last").click(function() {
+        document.getElementById("calc").submit();
+    })
 })
