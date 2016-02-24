@@ -6,6 +6,10 @@
 
 session_start();
 
+//AB
+$random = mt_rand(0,1);
+$_GET['ab-results'] = $random;
+
 $relative_path = "../";
 
 include($relative_path . "common.php");
@@ -22,6 +26,12 @@ $results = calc_match($user,$answers);
 //encode user, answers and qcoefs for direct print into file
 $user_json = json_encode($user);
 $answers_json = json_encode($answers);
+
+
+if ($random == 1)
+    $smarty->assign('results_text', $t['result_results_2']);
+else
+    $smarty->assign('results_text', $t['result_results']);
 
 //this page
 
