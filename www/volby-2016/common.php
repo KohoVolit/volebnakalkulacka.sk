@@ -12,6 +12,12 @@ $settings = (object) array_merge((array) $server_settings, (array) $app_settings
 
 error_reporting($settings->error_reporting);
 
+// put full path to Smarty.class.php
+require($settings->smarty);
+$smarty = new Smarty();
+$smarty->setTemplateDir($relative_path . '../../smarty/templates/' . $settings->template);
+$smarty->setCompileDir($relative_path . '../../smarty/templates_c');
+
 //get language
 $lang = lang($settings);
 
@@ -19,11 +25,19 @@ $lang = lang($settings);
 $handle = fopen($relative_path . 'texts_' . $lang . '.csv', "r");
 $t = csv2array($handle);
 
-//ref
-if (isset($_REQUEST['ref']))
-    $ref = $_REQUEST['ref'];
-else
-    $ref = '';
+//parameters to be passed:
+$parameters = ['ref','hr','key'];
+$pparameters = [];
+foreach ($parameters as $p) {
+    if (isset($_REQUEST[$p]))
+        $pparameters[$p] = sanitize($_REQUEST[$p]);
+    else
+        $pparameters[$p] = '';   
+}
+    //try again hr:
+if ($pparameters['hr'] == '')
+    base64url_encode($_SERVER['HTTP_REFERER']);
+
 
 // customization
 $customization = [];
@@ -37,15 +51,9 @@ if ($settings->customization) {
 }
 
 
-// put full path to Smarty.class.php
-require($settings->smarty);
-$smarty = new Smarty();
-$smarty->setTemplateDir($relative_path . '../../smarty/templates/' . $settings->template);
-$smarty->setCompileDir($relative_path . '../../smarty/templates_c');
-
 $smarty->assign('lang', $lang);
 $smarty->assign('text',$t);
-$smarty->assign('ref',$ref);
+$smarty->assign('pparameters',$pparameters);
 $smarty->assign('settings',$settings);
 $smarty->assign('session_id',session_id());
 $smarty->assign('customization',$customization);
@@ -117,3 +125,13 @@ function get_user_values() {
       return $user;
   return $user;
 }
+
+/**
+* http://php.net/manual/en/function.base64-encode.php#103849
+*/
+function base64url_encode($data) {
+  return rtrim(strtr(base64_encode($data), '+/', '-_'), '=');
+}
+function base64url_decode($data) {
+  return base64_decode(str_pad(strtr($data, '-_', '+/'), strlen($data) % 4, '=', STR_PAD_RIGHT));
+} 

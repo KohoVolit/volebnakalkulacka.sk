@@ -47,8 +47,10 @@
           {/if}
           <!-- /customization -->
           
-          <!-- ref -->
-          <input type="hidden" name="ref" value="{$ref}" />
+          <!-- passed parameters -->
+          {foreach $pparameters as $k => $p}
+	        <input type="hidden" value="{$p}" name="{$k}" id="{$k}" />
+	      {/foreach}
 
           
         </form>

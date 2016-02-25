@@ -81,9 +81,15 @@
 				    if (isset($_GET['ref']))
 				        $ref = '?ref=' . $_GET['ref'];
 				    else
-				        $ref = '';
+				        $ref = '?';
 				   ?>
-				   <a href="volby-2016/<?php if ($random <= 1) echo 'research/'; echo $ref; ?>" class="btn btn-lg btn-success" xdisabled="xdisabled" >SPUSTIŤ VOLEBNÚ KALKULAČKU</a>
+				   <?php
+				    if (isset($_SERVER['HTTP_REFERER']))
+				        $hr="&hr=" . base64url_encode($_SERVER['HTTP_REFERER']);
+				    else
+				        $hr="";
+				   ?>
+				   <a href="volby-2016/<?php if ($random <= 1) echo 'research/'; echo $ref; echo $hr ?>" class="btn btn-lg btn-success" xdisabled="xdisabled" >SPUSTIŤ VOLEBNÚ KALKULAČKU</a>
 				   </div>
 				   
 				   <p class="lead">
@@ -218,3 +224,11 @@
 </body>
 
 </html>
+<?php
+/**
+* http://php.net/manual/en/function.base64-encode.php#103849
+*/
+function base64url_encode($data) {
+  return rtrim(strtr(base64_encode($data), '+/', '-_'), '=');
+}
+?>

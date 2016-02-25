@@ -40,8 +40,8 @@ else
     $smarty->assign('ab_fb', "abfb");
 //note: there is a change in match-fb-link.tpl, too
 
-
 //this page
+
 $url = $_SERVER['REQUEST_SCHEME'] . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] ;
 
 $smarty->assign('query_string', $_SERVER['QUERY_STRING']);

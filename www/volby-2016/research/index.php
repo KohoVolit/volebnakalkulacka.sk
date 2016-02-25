@@ -12,13 +12,18 @@ include($relative_path . "common.php");
 
 include('data.php');
 
-if (isset($_GET['ref']))
-    $ref = $_GET['ref'];
-else
-    $ref = '';
+//parameters to be passed:
+$parameters = ['ref','hr'];
+$pparameters = [];
+foreach ($parameters as $p) {
+    if (isset($_GET[$p]))
+        $pparameters[$p] = $_GET[$p];
+    else
+        $pparameters[$p] = '';   
+}
 
 $smarty->assign('t',$texts);
-$smarty->assign('ref',$ref);
+$smarty->assign('pparameters',$pparameters);
 $smarty->assign('questions',$questions);
 
 $smarty->display('research.tpl');

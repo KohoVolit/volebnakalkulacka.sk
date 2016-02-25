@@ -39,7 +39,7 @@
 	<div data-role="popupx" id="popup" class="ui-content">
 	  <!-- Here is the form -->
 	  <p>{$t['text']['teaser']}
-	  <form action="save_research.php" method="post" data-ajax="false">
+	  <form action="save_research.php" method="get" data-ajax="false">
 	    <p>{$t['text']['jump_1']}<button type="submit" data-mini="true" data-inline="true" name="upper-submit" value="upper-submit" >{$t['text']['jump_2']}</button>
 	    {$i = 1}
 	    {foreach $questions as $question}
@@ -73,7 +73,9 @@
 	    
 	    <button type="submit" name="submit" value="submit" data-theme="e" data-icon="arrow-r" data-iconpos="right">{$t['text']['continue']}</button>
 	    
-	    <input type="hidden" value="{$ref}" name="ref" id="ref" />
+	    {foreach $pparameters as $k => $p}
+	        <input type="hidden" value="{$p}" name="{$k}" id="{$k}" />
+	    {/foreach}
 	  </form>
 	  
 	  
