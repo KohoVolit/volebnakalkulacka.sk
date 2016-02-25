@@ -77,7 +77,7 @@
 				   <strong>Volebná kalkulačka</strong> pre voľby 2016 ukazuje vašu zhodu s politickými stranami.
 				   <div>
 				   <?php
-				    $random = rand(1,10);
+				    $random = rand(1,5);
 				    if (isset($_GET['ref']))
 				        $ref = '?ref=' . $_GET['ref'];
 				    else
