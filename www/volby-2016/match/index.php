@@ -34,7 +34,7 @@ if ($random == 1)
     $smarty->assign('results_text', $t['result_results_2']);
 else
     $smarty->assign('results_text', $t['result_results']);
-if ($random == 2)
+if ($random2 == 2)
     $smarty->assign('ab_fb', $session_id);
 else
     $smarty->assign('ab_fb', "abfb");
