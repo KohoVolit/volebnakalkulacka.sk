@@ -56,6 +56,6 @@ me,Ja
 table_title,Prehľad odpovedí | Volebná kalkulačka
 table_header,Prehľad odpovedí
 table_header_small,"vrátane otázok, ktoré neboli zaradené do kalkulačky"
-table_info,"Tip: u odpovedí označených kolieskom (<span class='text-success'><i class='fa fa-check-circle-o'></i></span>,<span class='fa-stack'><span class='text-danger'><i class='fa fa-circle-o fa-stack-1x'> </i> <i class='fa fa-close fa-stack-1x'> </i></span></span>, <span class='text-muted'><i class='fa fa-circle-o'> </i></span>) strany pripísali svoj komentár, zobrazíte ho pri kliknutí alebo nabehnutí myšou"
+table_info,"Tip: u odpovedí označených krúžkom (<span class='text-success'><i class='fa fa-check-circle-o'></i></span>,<span class='fa-stack'><span class='text-danger'><i class='fa fa-circle-o fa-stack-1x'> </i> <i class='fa fa-close fa-stack-1x'> </i></span></span>, <span class='text-muted'><i class='fa fa-circle-o'> </i></span>) strany pripísali svoj komentár, zobrazíte ho pri kliknutí alebo nabehnutí myšou"
 table_comment,Komentár
 table_included,"Otázky označené plnou hviezdičkou (<i class='fa fa-star'></i>) boli zaradené do kalkulačky, prázdnou (<i class='fa fa-star-o'></i>) neboli"
