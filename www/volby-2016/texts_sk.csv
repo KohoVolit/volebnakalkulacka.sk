@@ -44,7 +44,7 @@ result_twitter_redirect_link,https://volebnakalkulacka.sk
 result_twitter_account,"KohoVolitEU"
 result_twitter_hashtags,volby #volby2016
 result_share,Zdieľaj výsledky
-result_results,Výsledky
+result_results,Výsledky: kliknutím na meno strany zobrazíte detailné porovnanie
 result_support,"<strong>Podpořte tvorbu nezávislých Volebních kalkulaček.</strong><br/> Pošlete SMS na&nbsp;číslo&nbsp;<strong><span class='colorstrong'>87777</span></strong> s&nbsp;textem <strong><span class='colorstrong'>DMS&nbsp;KOHOVOLIT</span></strong> (cena 30Kč, z toho 28Kč pro sdružení KohoVolit.eu) nebo <strong><span class='colorstrong'>DMS&nbsp;ROK&nbsp;KOHOVOLIT</span></strong> (automaticky každý měsíc po 1 rok)"
 result_comparison,Porovnanie
 result_close,Zavrieť
@@ -53,7 +53,6 @@ result_no,Nie
 result_question,Otázka
 result_save_description,"K výsledkom svojho hlasovania sa môžete kedykoľvek vrátiť, ak si skopírujete a uložíte celú túto adresu:"
 me,Ja
-result_results_2,Výsledky: kliknutím na meno strany zobrazíte detailné porovnanie
 table_title,Prehľad odpovedí | Volebná kalkulačka
 table_header,Prehľad odpovedí
 table_header_small,"vrátane otázok, ktoré neboli zaradené do kalkulačky"

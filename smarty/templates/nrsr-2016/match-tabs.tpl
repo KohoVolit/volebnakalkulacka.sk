@@ -2,7 +2,7 @@
 <ul class="nav nav-tabs">
 {*AB*}
 {*  <li class="active"><a href="#home" data-toggle="tab" id="tabs-home"><i class="fa fa-list-ol"></i> {$text['result_results']}</a></li>*}
-  <li class="active"><a href="#home" data-toggle="tab" id="tabs-home"><i class="fa fa-list-ol"></i> {$results_text}</a></li>
+  <li class="active"><a href="#home" data-toggle="tab" id="tabs-home"><i class="fa fa-list-ol"></i> {$text['result_results']}</a></li>
   
 {*  <li><a href="#comparison" data-toggle="tab" id="tabs-comparison"><strong><i class="fa fa-th"></i> {$text['result_comparison']}</strong></a></li>*}
 </ul>

@@ -7,8 +7,6 @@
 session_start();
 
 //AB
-$random = mt_rand(0,1);
-$_GET['ab-results'] = $random;
 $random2 = mt_rand(0,2);
 $_GET['ab-fb'] = $random2;
 
@@ -30,10 +28,6 @@ $user_json = json_encode($user);
 $answers_json = json_encode($answers);
 
 //AB
-if ($random == 1)
-    $smarty->assign('results_text', $t['result_results_2']);
-else
-    $smarty->assign('results_text', $t['result_results']);
 if ($random2 == 2)
     $smarty->assign('ab_fb', session_id());
 else
