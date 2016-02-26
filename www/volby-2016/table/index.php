@@ -7,6 +7,8 @@ session_start();
 
 $relative_path = "../";
 
+include($relative_path . "cache.php");
+
 include($relative_path . "common.php");
 
 error_reporting('E_ALL');
