@@ -15,6 +15,7 @@ except:
 
 i = 0
 questions = []
+questions_all = []
 r = requests.get(url)
 r.encoding = 'utf-8'
 csvio = io.StringIO(r.text, newline="")
@@ -31,11 +32,25 @@ for row in csv.reader(csvio):
                 'order': float(row[4].strip())
             }
             questions.append(item);
+            order = float(row[4].strip())
+        else:
+            order = 1000000 + i
+        it = {
+                'id': row[0].strip(),
+                'name': row[1].strip(),
+                'question': row[2].strip(),
+                'description': row[3].strip(),
+                'order': order
+            }
+        questions_all.append(it);
     i = i + 1
  
 questions = sorted(questions, key=lambda x:x['order'])
+questions_all = sorted(questions_all, key=lambda x:x['order'])
 #print questions
 
 #save file
 with open(path+'questions.json', 'w') as outfile:
     json.dump(questions, outfile)
+with open(path+'questions_all.json', 'w') as outfile:
+    json.dump(questions_all, outfile)

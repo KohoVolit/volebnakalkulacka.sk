@@ -44,5 +44,14 @@
         "comparison": {
             "name": "abbreviation"
         }
+    },
+    "table": {
+        "picture": "picture",
+        "picture_width": "25",
+        "picture_height": "25",
+        "picture_alt": "abbreviation",
+        "picture_title": "name",
+        "picture_class": "img-rounded",
+        "name": "abbreviation"
     }
 }

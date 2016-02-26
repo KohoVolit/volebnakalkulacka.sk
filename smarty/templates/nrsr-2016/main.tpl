@@ -21,6 +21,7 @@
     <link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,700,800|Roboto+Slab:400,700&subset=latin,latin-ext">
 
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>   
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     
     {block name=additionalHead}{/block} 
     
@@ -67,8 +68,6 @@
     {block name=outsideBody}{/block}
     
     {block name=footer}{/block}
-
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
     {block name=js}{/block}
     
