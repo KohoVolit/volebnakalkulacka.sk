@@ -1,7 +1,7 @@
 http://www.facebook.com/dialog/feed?
     app_id={$text['result_fb_appid']}&
-{*    link={$text['result_fb_redirect_link']|escape:'url'}?ref={$session_id}&*}
-    link={$text['result_fb_redirect_link']|escape:'url'}?ref={$ab_fb}&
+    link={$text['result_fb_redirect_link']|escape:'url'}?ref={$session_id}&
+{*    link={$text['result_fb_redirect_link']|escape:'url'}?ref={$ab_fb}&*}
     picture={$settings->cdn_domain}{$results[0].{$settings->match->fb->picture}}&
     name={$text['result_fb_name']|escape:'url'}&
     caption=%3C-%20{$results[0].{$settings->match->fb->caption}|escape:'url'}&

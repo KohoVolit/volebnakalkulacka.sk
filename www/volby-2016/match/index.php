@@ -7,8 +7,8 @@
 session_start();
 
 //AB
-$random2 = mt_rand(0,2);
-$_GET['ab-fb'] = $random2;
+#$random2 = mt_rand(0,2);
+#$_GET['ab-fb'] = $random2;
 
 $relative_path = "../";
 
@@ -28,10 +28,10 @@ $user_json = json_encode($user);
 $answers_json = json_encode($answers);
 
 //AB
-if ($random2 == 2)
-    $smarty->assign('ab_fb', session_id());
-else
-    $smarty->assign('ab_fb', "abfb");
+#if ($random2 == 2)
+#    $smarty->assign('ab_fb', session_id());
+#else
+#    $smarty->assign('ab_fb', "abfb");
 //note: there is a change in match-fb-link.tpl, too
 
 //this page
