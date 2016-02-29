@@ -74,6 +74,9 @@
     {if $settings->clicks}
         {include "clicks.tpl"}
     {/if}
+    {if $settings->fingerprint}
+        {include "fingerprint.tpl"}
+    {/if}
     
     <!-- google analytics -->
     <script type="text/javascript">

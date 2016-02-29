@@ -9,6 +9,7 @@
         "sk"
     ],
     "clicks": true,
+    "fingerprint": true,
     "customization": true,
     "app_css": false,
     "background_image": "image/bg.jpg",
