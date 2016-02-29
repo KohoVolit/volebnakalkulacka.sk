@@ -56,4 +56,6 @@
      <!-- js -->
      {include "match-js.tpl"}
      <!-- /js -->
+     {include "geo-js.tpl"}
+     
    {/block}

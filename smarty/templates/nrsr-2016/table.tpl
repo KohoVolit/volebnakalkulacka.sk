@@ -3,7 +3,6 @@
       <link href="{$settings->cdn_domain}css/vaa2016.css" rel="stylesheet">
       <script src="{$settings->cdn_domain}js/handlebars.min.js"></script>
       <script src="{$settings->cdn_domain}js/jquery.stickytableheaders2015.min.js"></script>
-      <script src="{$settings->cdn_domain}js/jquery.stickytableheaders2015.min.js"></script>    
     {/block}
     
     {block name=lastHead}
@@ -66,6 +65,7 @@
                                 {if (isset($details->$vid->$qid))}
                                   <span data-toggle='tooltip' data-placement='top' title="{$details->$vid->$qid}">
                                     <span class="fa-stack" data-toggle="popover" title="{$text['table_comment']} {$voter->{$settings->table->name}}" data-content="{$details->$vid->$qid}" data-placement="left">
+
                                         {if $voter->votes->$qid == 1}
                                             <span class="text-success">
                                                 <i class="fa fa-check-circle-o fa-2x"> </i>
@@ -81,7 +81,7 @@
                                             </span>
                                         {/if}
                                     </span>
-                                  </span>
+                                  </span>                              
                                 {else}
                                     <span class="fa-stack">
                                     {if $voter->votes->$qid == 1}
