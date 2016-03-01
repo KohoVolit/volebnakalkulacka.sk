@@ -11,8 +11,6 @@ $relative_path = "../";
 
 include($relative_path . "common.php");
 
-error_reporting('E_ALL');
-
 $afile = $relative_path . 'answers.json';
 $answers = json_decode(file_get_contents($afile));
 $qfile = $relative_path . 'questions_all.json';

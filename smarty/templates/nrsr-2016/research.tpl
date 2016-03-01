@@ -76,6 +76,8 @@
 	    {foreach $pparameters as $k => $p}
 	        <input type="hidden" value="{$p}" name="{$k}" id="{$k}" />
 	    {/foreach}
+	    
+	    {include "research-geocoding.tpl"}
 	  </form>
 	  
 	  
