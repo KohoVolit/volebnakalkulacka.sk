@@ -40,7 +40,7 @@
             "picture_class": "img-rounded",
             "first_row": ["name"],
             "second_row": ["abbreviation"],
-            "third_row": []       
+            "third_row": []
         },
         "comparison": {
             "name": "abbreviation"

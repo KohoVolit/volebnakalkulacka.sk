@@ -32,7 +32,7 @@ foreach ($parameters as $p) {
     if (isset($_REQUEST[$p]))
         $pparameters[$p] = sanitize($_REQUEST[$p]);
     else
-        $pparameters[$p] = '';   
+        $pparameters[$p] = '';
 }
     //try again hr:
 if ($pparameters['hr'] == '')
@@ -96,8 +96,8 @@ function csv2array($handle) {
         if (!feof($handle)) {
             /*echo "Error: unexpected fgets() fail\n";*/
         }
-    } 
-    return $array;  
+    }
+    return $array;
 }
 
 /**
@@ -116,7 +116,7 @@ function get_user_values() {
   if (count($_GET) > 0) {
     foreach ($_GET as $key => $param) {
       //votes;
-      if (substr($key,0,1) == 'q') 
+      if (substr($key,0,1) == 'q')
         $user['votes'][substr($key,1)] = (int) $param;
       else if (substr($key,0,1) == 'w')
         $user['weight'][substr($key,1)] = true;
@@ -134,4 +134,4 @@ function base64url_encode($data) {
 }
 function base64url_decode($data) {
   return base64_decode(str_pad(strtr($data, '-_', '+/'), strlen($data) % 4, '=', STR_PAD_RIGHT));
-} 
+}
