@@ -27,6 +27,8 @@
                 </div>
             </a> -->
             <!-- <a @click="clicked('wall_of_fame', {'text': 'wall'})" href="wall" class="btn btn-warning btn-block btn-lg mt-4"><i class="fa fa-heart text-danger"></i> <span class="wall-text">Zeď podporovatelů Volební kalkulačky</span></a> -->
+            <a @click="clicked('fb_lh', {'text': 'fb_lh'})" href="https://www.facebook.com/volbyLH2018" class="btn btn-warning btn-block btn-lg mt-4"><i class="fa fa-heart text-danger"></i> <span class="wall-text">FB Voľby Liptovský Hrádok 2018</span></a>
+
         </div>
         <component-footer></component-footer>
         <div class="filler"></div>
