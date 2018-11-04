@@ -1,0 +1,28 @@
+{
+    "sk-SK": {
+        "header_name": "Volebná kalkulačka - Liptovský Hrádok 2018",
+        "YES": "ÁNO",
+        "NO": "NIE",
+        "yes": "Áno",
+        "no": "Nie",
+        "dont_know": "Neviem",
+        "not_important": "Je mi to jedno",
+        "skip": "Přeskočiť",
+        "result": "Výsledok",
+        "back": "Späť",
+        "select_extra_important_questions": "Vyberte otázky, ktoré sú pre vás extra dôležité:",
+        "clicking_detailed_match": "Tip: kliknutím na meno kandidáta s ním dostanete Vašu podrobnú zhodu",
+        "match": "Zhoda",
+        "close": "Zavrieť",
+        "question": "Otázka",
+        "me": "Ja",
+        "candidate_comment": "Komentár kandidáta",
+        "no_replies": "Snažili sme sa osloviť všetkých kandidátov, odpovede ostatných zatiaľ nemáme.",
+        "fb_1": "U mňa nalepšie: ",
+        "fb_2": " najhorší ",
+        "share_on_fb": "Povedzte o tom na ",
+        "sent_by_email": "pošlite emailom",
+        "email_1": "Skús si volebnú kalkulačku. Ukáže ti kandidátov, ktorí sú tí najbližší.",
+        "email_2": "\n\nVolebná kalkulačka je tu:\nhttps://volebnakalkulacka.sk/?from="
+    }
+}
