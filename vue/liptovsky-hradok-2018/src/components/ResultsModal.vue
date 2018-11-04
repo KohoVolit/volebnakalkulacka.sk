@@ -9,7 +9,8 @@
                     <div class="card-body pb-1">
                         <div class="row">
                             <div class="col-8">
-                                <h4 class="card-title">{{ results[index].info.abbreviation }}</h4>
+                                <h4 class="card-title">{{ results[index].info.family_name }} {{ results[index].info.given_name }}</h4>
+                                <h5 class="card-title">{{ results[index].info.party }} {{ results[index].info.popis }}</h5>
                                 <div class="card-text">
                                     <!-- <component-stars :stars="results[index].rating"></component-stars> -->
                                     <div class="stars">
@@ -39,7 +40,7 @@
                             x
                         </th>
                         <th class="text-center">
-                            {{ results[index].info.abbreviation }}
+                            {{ results[index].info.family_name }}
                         </th>
                         <th class="text-center">
                             {{ $t('candidate_comment') }}

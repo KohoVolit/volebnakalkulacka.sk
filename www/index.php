@@ -9,7 +9,7 @@
     <meta name="keywords" content="voľby 2016, volebná kalkulačka, volebný test">
     <meta name="author" content="KohoVolit.eu">
     <link type="image/x-icon" href="image/favicon.ico" rel="shortcut icon">
-    
+
     <meta property="og:image" content="http://volebnikalkulacka.cz/image/logo.jpg"/>
 	<meta property="og:title" content="Volebná kalkulačka"/>
 <!--	<meta property="og:url" content="http://volebnakalkulacka.sk"/>-->
@@ -32,7 +32,7 @@
     }
 	@media (min-width: 666px) {
   .header {
-        background: url("https://volebnakalkulacka.sk/inventura-hlasovani-narodna-rada-2012-2015/image/bg.jpg") no-repeat fixed center center / cover rgba(0, 0, 0, 0); 
+        background: url("https://volebnakalkulacka.sk/inventura-hlasovani-narodna-rada-2012-2015/image/bg.jpg") no-repeat fixed center center / cover rgba(0, 0, 0, 0);
       }
     }
     @media (min-width: 750px) {
@@ -42,7 +42,7 @@
     .lead { font-size: 16px; font-weight: 200; line-height: 1.4; margin-bottom: 50px; margin-bottom: 20px; font-size: 21px; color: #fff;}
     .nav a {color: #428BCA}
     </style>
-	
+
 </head>
 <body>
 
@@ -67,12 +67,22 @@
 
     <!-- Full Page Image Header Area -->
     <div id="top" class="header">
-        
-		<div class="vert-text">    
-       
+
+		<div class="vert-text">
+
 			<h1>Volebná kalkulačka</h1>
             <div class="col-md-6 col-md-offset-3 text-center" style="padding-top:2em;">
-		
+
+                <p class="lead">
+                <br>
+                <strong>Volebná kalkulačka Liptovský Hrádok 2018</strong> pre komunálne voľby 2018 ukazuje vašu zhodu s kandidátmi v Liptovskom Hrádku.
+
+                <div style="padding-bottom:3em">
+                  <a href="sk/liptovsky-hradok-2018/" class="btn btn btn-success btn-lg">SPUSTIŤ LIPTOVSKÝ HRÁDOK 2018</a>
+                </div>
+
+                <hr />
+
 				   <p class="lead">
 				   <strong>Volebná kalkulačka</strong> pre voľby 2016 ukazuje vašu zhodu s politickými stranami.
 				   <div>
@@ -89,19 +99,19 @@
 				    else
 				        $hr="";
 				   ?>
-				   <a href="volby-2016/<?php if ($random <= 1) echo 'research/'; echo $ref; echo $hr ?>" class="btn btn-lg btn-success" xdisabled="xdisabled" >SPUSTIŤ VOLEBNÚ KALKULAČKU</a>
+				   <a href="volby-2016/<?php if ($random <= 1) echo 'research/'; echo $ref; echo $hr ?>" class="btn btn-info" xdisabled="xdisabled" >SPUSTIŤ VOLEBNÚ KALKULAČKU</a>
 				   </div>
-				   
+
 				   <p class="lead">
 				   <br>
                     <strong>Inventúra hlasovaní</strong> porovnáva Vaše odpovede so skutečnými hlasovaniami z Národnej rady.
-                
+
                    <div style="padding-bottom:3em">
 				     <a href="inventura-hlasovani-narodna-rada-2012-2015" class="btn btn btn-info">SPUSTIŤ INVENTÚRU HLASOVANÍ 2012-2015</a>
 				   </div>
-				 
+
 <!--				   <p>-->
-				   
+
 <!--				   <div class=""><iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FKohoVolit.eu&amp;width=100&amp;layout=box_count&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=65&amp;appId=469801333121609" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:65px;" allowTransparency="true"></iframe><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://volebnakalkulacka.sk" data-text="Zkúste také Volebnú kalkulačku!" data-via="KohoVolitEU" data-hashtags="EP2014" data-count ="vertical">Tweet</a>-->
 <!--<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script><!-- Place this tag where you want the +1 button to render. -->
 <!--<div class="g-plusone" data-size="tall" data-href="http://volebnikalkulacka.cz/"></div>-->
@@ -119,7 +129,7 @@
     </div>
     <!-- /Full Page Image Header Area -->
 
-  
+
 
 
 
@@ -128,9 +138,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 text-center">
-                    
+
                     <a href="www.kohovolit.eu" title="KohoVolit.eu"><img src="image/logo.png" alt="logo kohovolit.eu" /></a>
-                    
+
 					<p class="lead black" style="color:#333333">Volebné kalkulačky pre Vás už od roku 2006 vytvára občianske združenie <a href="http://kohovolit.eu">KohoVolit.eu</a>
 
                     <hr>
@@ -233,5 +243,5 @@ function base64url_encode($data) {
 }
 function base64url_decode($data) {
   return base64_decode(str_pad(strtr($data, '-_', '+/'), strlen($data) % 4, '=', STR_PAD_RIGHT));
-} 
+}
 ?>

@@ -11,8 +11,9 @@
                             <!-- <img :src="createImageLink(result.info.picture)" class="picture mr-2" /> -->
                         </div>
                         <div>
-                            <h3 class="pl-2">{{ result.info.abbreviation }}</h3>
-                            <div class="pl-2">{{ result.info.name }}</div>
+                            <h3 class="pl-2">{{ result.info.family_name }} {{ result.info.given_name }}</h3>
+                            <div class="pl-2">{{ result.info.party }}</div>
+                            <div class="pl-2">{{ result.info.popis }}</div>
                         </div>
                         <div class="rating ml-auto pt-1">
                             <component-stars :stars="result.rating"></component-stars>
