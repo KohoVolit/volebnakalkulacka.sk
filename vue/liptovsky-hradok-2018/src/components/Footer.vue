@@ -7,7 +7,7 @@
                 </div>
                 <div class="col-md-6 text-center">
                     <a href="http://kohovolit.eu" title="KohoVolit.eu" id="footer-kohovolit-logo"><img src="https://volebnikalkulacka.cz/image/logo.png" alt="logo kohovolit.eu"></a>
-					<p class="lead black">Volebné kalkulačky pre Vás už od roku 2006 vytvára sdružení <a href="http://kohovolit.eu">KohoVolit.eu</a></p>
+					<p class="lead black">Volebné kalkulačky pre Vás už od roku 2006 vytvára občianske združenie <a href="http://kohovolit.eu">KohoVolit.eu</a></p>
                     <hr>
 					<p class="black">Creative Commons BY 4.0 | <a href="http://kohovolit.eu" id="footer-kohovolit-licence">KohoVolit.eu</a> 2018</p>
                 </div>
