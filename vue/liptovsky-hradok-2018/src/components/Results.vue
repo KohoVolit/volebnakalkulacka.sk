@@ -10,7 +10,7 @@
                     </a>
                 </div>
                 <div class="col-md-6">
-                    <a :href="createEmailLink()">
+                    <a :href="createEmailLink()" target="_blank">
                         <button class="btn btn-warning btn-block btn-lg" @click="clicked('email_top', {})">{{ $t('sent_by_email')}} <i class="fa fa-envelope"></i></button>
                     </a>
                 </div>
@@ -27,7 +27,8 @@
                 </div>
             </a> -->
             <!-- <a @click="clicked('wall_of_fame', {'text': 'wall'})" href="wall" class="btn btn-warning btn-block btn-lg mt-4"><i class="fa fa-heart text-danger"></i> <span class="wall-text">Zeď podporovatelů Volební kalkulačky</span></a> -->
-            <a @click="clicked('fb_lh', {'text': 'fb_lh'})" href="https://www.facebook.com/volbyLH2018" class="btn btn-warning btn-block btn-lg mt-4"><i class="fa fa-heart text-danger"></i> <span class="wall-text">FB Voľby Liptovský Hrádok 2018</span></a>
+            <a @click="clicked('table', {'text': 'table'})" href="https://docs.google.com/spreadsheets/d/1IPWBX-RYnYoGVSCEUbgKNWQMhXC32Cx1lW4NxEGGqfw/edit#gid=0" class="btn btn-warning btn-block btn-lg mt-4" target="_blank"><span class="wall-text">Tabulka všetkých odpovedí</span></a>
+            <a @click="clicked('fb_lh', {'text': 'fb_lh'})" href="https://www.facebook.com/volbyLH2018" class="btn btn-primary btn-block btn-lg mt-4" target="_blank"><i class="fa fa-heart text-danger"></i> <span class="wall-text">FB Voľby Liptovský Hrádok 2018</span></a>
 
         </div>
         <component-footer></component-footer>

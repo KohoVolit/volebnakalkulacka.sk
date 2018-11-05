@@ -1,7 +1,8 @@
 <template>
     <div v-if="exist" class="noreply pt-3">
         <p>
-            {{ $t('no_replies') }}
+            Snažili sme sa osloviť všetkých kandidátov, odpovede ostatných zatiaľ nemáme. Prehľad, kto sa zúčastnil, <a href='http://bit.ly/volbyLH2018_ucast' target="_blank"> nájdete tu</a>.
+            <!-- {{ $t('no_replies') }} -->
         </p>
         <!-- <div class="list">
             <div class="list-group" v-for="(result, index) in noreply">
