@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Volebná kalkulačka 2016. Zistíte, kto Vás naozaj reprezentuje.">
-    <meta name="keywords" content="voľby 2016, volebná kalkulačka, volebný test">
+    <meta name="description" content="Volebná kalkulačka 2019. Zistíte, kto Vás naozaj reprezentuje.">
+    <meta name="keywords" content="voľby 2019, volebná kalkulačka, volebný test">
     <meta name="author" content="KohoVolit.eu">
     <link type="image/x-icon" href="image/favicon.ico" rel="shortcut icon">
 
@@ -32,7 +32,7 @@
     }
 	@media (min-width: 666px) {
   .header {
-        background: url("https://volebnakalkulacka.sk/inventura-hlasovani-narodna-rada-2012-2015/image/bg.jpg") no-repeat fixed center center / cover rgba(0, 0, 0, 0);
+        background: url("https://volebnikalkulacka.azureedge.net/evropsky-parlament-2014/image/bg.jpg") no-repeat fixed center center / cover rgba(0, 0, 0, 0);
       }
     }
     @media (min-width: 750px) {
@@ -75,40 +75,18 @@
 
                 <p class="lead">
                 <br>
-                <strong>Volebná kalkulačka Liptovský Hrádok 2018</strong> pre komunálne voľby 2018 ukazuje vašu zhodu s kandidátmi v Liptovskom Hrádku.
+                <strong>Volebná kalkulačka Európsky parlament 2019</strong> ukazuje vašu zhodu s kandidátmi v európskych voľbách.
 
                 <div style="padding-bottom:3em">
-                  <a href="sk/liptovsky-hradok-2018/" class="btn btn btn-success btn-lg">SPUSTIŤ LIPTOVSKÝ HRÁDOK 2018</a>
+                  <a href="sk/liptovsky-hradok-2018/" class="btn btn btn-success btn-lg" disabled="disabled">VOLEBNÁ KALKULAČKA BÚDE SPUSTENÁ DO 9.5.2019</a>
                 </div>
+			   <p class="lead">
+			   <br>
+                <strong>Inventúra hlasovaní 2014-2019</strong> porovnáva Vaše odpovede so skutečnými hlasovaniami z Európskho parlamentu.
 
-                <hr />
-
-				   <p class="lead">
-				   <strong>Volebná kalkulačka</strong> pre voľby 2016 ukazuje vašu zhodu s politickými stranami.
-				   <div>
-				   <?php
-				    $random = rand(1,5);
-				    if (isset($_GET['ref']))
-				        $ref = '?ref=' . $_GET['ref'];
-				    else
-				        $ref = '?';
-				   ?>
-				   <?php
-				    if (isset($_SERVER['HTTP_REFERER']))
-				        $hr="&hr=" . base64url_encode($_SERVER['HTTP_REFERER']);
-				    else
-				        $hr="";
-				   ?>
-				   <a href="volby-2016/<?php if ($random <= 1) echo 'research/'; echo $ref; echo $hr ?>" class="btn btn-info" xdisabled="xdisabled" >SPUSTIŤ VOLEBNÚ KALKULAČKU</a>
-				   </div>
-
-				   <p class="lead">
-				   <br>
-                    <strong>Inventúra hlasovaní</strong> porovnáva Vaše odpovede so skutečnými hlasovaniami z Národnej rady.
-
-                   <div style="padding-bottom:3em">
-				     <a href="inventura-hlasovani-narodna-rada-2012-2015" class="btn btn btn-info">SPUSTIŤ INVENTÚRU HLASOVANÍ 2012-2015</a>
-				   </div>
+               <div style="padding-bottom:3em">
+			     <a href="inventura-hlasovani-narodna-rada-2012-2015" class="btn btn btn-info" disabled="disabled"> INVENTÚRA HLASOVANÍ BUDE SPUSTENÁ DO 1.5.2019</a>
+			   </div>
 
 <!--				   <p>-->
 
