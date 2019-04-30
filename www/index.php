@@ -85,7 +85,7 @@
                 <strong>Inventúra hlasovaní 2014-2019</strong> porovnáva Vaše odpovede so skutečnými hlasovaniami z Európskho parlamentu.
 
                <div style="padding-bottom:3em">
-			     <a href="inventura-hlasovani-narodna-rada-2012-2015" class="btn btn btn-info" disabled="disabled"> INVENTÚRA HLASOVANÍ BUDE SPUSTENÁ DO 1.5.2019</a>
+			     <a href="inventura-hlasovani-narodna-rada-2012-2015" class="btn btn btn-info" disabled="disabled"> INVENTÚRA HLASOVANÍ BUDE SPUSTENÁ 2.5.2019</a>
 			   </div>
 
 <!--				   <p>-->
