@@ -80,13 +80,16 @@
                 <div style="padding-bottom:3em">
                   <a href="sk/liptovsky-hradok-2018/" class="btn btn btn-success btn-lg" disabled="disabled">VOLEBNÁ KALKULAČKA BÚDE SPUSTENÁ DO 9.5.2019</a>
                 </div>
-			   <p class="lead">
-			   <br>
-                <strong>Inventúra hlasovaní 2014-2019</strong> porovnáva Vaše odpovede so skutečnými hlasovaniami z Európskho parlamentu.
+                </p>
+               <p class="lead">
+                        Inventúra hlasovaní <strong>Európskeho parlamentu 2014 - 2019</strong>. Porovnajte si svoje názory so súčasnými europoslancami na základe 35 skutočne prebehnutých hlasovaní.
+                    </p>
+                    <p class="lead">
+                            <a href="sk/inventura-hlasovani-europsky-parlament-2014-2019/?<?php if( isset($_SERVER['HTTP_REFERER'])) { $hr=$_SERVER['HTTP_REFERER']; if ($hr!="") {echo "hr=" . base64_encode($hr);} } ?><?php if( isset($_GET['ref'])) { $ref=$_GET['ref']; if ($ref!="") {echo '&ref=' . $ref;} } ?>" class="btn btn-lg btn-success" style="white-space: normal;" >
+                                    SPUSTIŤ INVENTÚRU HLASOVANÍ
+                            </a>
 
-               <div style="padding-bottom:3em">
-			     <a href="inventura-hlasovani-narodna-rada-2012-2015" class="btn btn btn-info" disabled="disabled"> INVENTÚRA HLASOVANÍ BUDE SPUSTENÁ 2.5.2019</a>
-			   </div>
+                    </p>
 
 <!--				   <p>-->
 
