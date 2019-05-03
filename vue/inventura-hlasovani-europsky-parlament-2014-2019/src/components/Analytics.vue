@@ -1,9 +1,9 @@
 /* eslint-disable */
 <template>
 <div>
-  <iframe src="https://volebnikalkulacka.cz/session/" width="0" height="0" frameborder="0"></iframe>
-  <noscript><div><img src="https://mc.yandex.ru/watch/35615280" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-  <noscript><p><img src="//piwik.kohovolit.eu/piwik.php?idsite=1&rec=1" style="border:0;" alt="" /></p></noscript>
+  <iframe src="https://volebnakalkulacka.sk/session/" width="0" height="0" frameborder="0"></iframe>
+  <noscript><div><img src="https://mc.yandex.ru/watch/35358145" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <noscript><p><img src="//piwik.kohovolit.eu/piwik.php?idsite=2&rec=1" style="border:0;" alt="" /></p></noscript>
 </div>
 </template>
 <script>
@@ -19,7 +19,7 @@
   m.parentNode.insertBefore(a, m)
 })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-ga('create', 'UA-8592359-7', 'auto');
+ga('create', 'UA-8592359-12', 'auto');
 ga('send', 'pageview');
 
 var _paq = _paq || [];
@@ -29,7 +29,7 @@ _paq.push(['enableLinkTracking']);
 (function() {
   var u = "//piwik.kohovolit.eu/";
   _paq.push(['setTrackerUrl', u + 'piwik.php']);
-  _paq.push(['setSiteId', '1']);
+  _paq.push(['setSiteId', '2']);
   var d = document,
     g = d.createElement('script'),
     s = d.getElementsByTagName('script')[0];
@@ -67,8 +67,8 @@ _paq.push(['enableLinkTracking']);
 (function (d, w, c) {
     (w[c] = w[c] || []).push(function() {
         try {
-            w.yaCounter35615280 = new Ya.Metrika({
-                id:35615280,
+            w.yaCounter35358145 = new Ya.Metrika({
+                id:35358145,
                 clickmap:true,
                 trackLinks:true,
                 accurateTrackBounce:true,

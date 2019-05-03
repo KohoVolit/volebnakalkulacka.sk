@@ -19,3 +19,8 @@ research.txt
 cache/*
 *fingerprint.csv
 *position.csv
+*fingerprint.csv
+*log.csv
+bot/
+*pixels.csv
+*actions.csv
