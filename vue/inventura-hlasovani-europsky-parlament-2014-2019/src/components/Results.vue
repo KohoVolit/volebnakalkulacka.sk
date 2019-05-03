@@ -18,6 +18,8 @@
             <component-results-table :questions="questions" :answers="$store.state.answers" v-on:clickedDetails="clickedDetails">
             </component-results-table>
             <hr />
+            <component-results-the-other-republic />
+            <hr />
             <component-results-table-eu :questions="questions" :resultsEu="resultsEu" :answers="$store.state.answers" v-on:clickedDetails="clickedDetails">
             </component-results-table-eu>
 
@@ -34,7 +36,7 @@
                 </div>
             </div>
 
-            <a @click="clicked('wall_of_fame', {'text': 'wall'})" href="wall" class="btn btn-warning btn-block btn-lg mt-4"><i class="fa fa-heart text-danger"></i> <span class="wall-text">Zeď podporovatelů Volební kalkulačky</span></a>
+            <a @click="clicked('wall_of_fame', {'text': 'wall'})" href="wall" class="btn btn-warning btn-block btn-lg mt-4"><i class="fa fa-heart text-danger"></i> <span class="wall-text">Zeď podporovatelů Volební kalkulačky</span></a>
         </div>
         <component-footer></component-footer>
         <div class="filler"></div>
@@ -48,6 +50,7 @@
     import ResultsWinners from './ResultsWinners.vue'
     import ResultsTable from './ResultsTable.vue'
     import ResultsTableEu from './ResultsTableEu.vue'
+    import ResultsTheOtherRepublic from './ResultsTheOtherRepublic.vue'
     import questions from '../data/questions.json'
     import votes from '../data/answers.json'
     import votesEu from '../data/answers_eu.json'
@@ -121,7 +124,7 @@
                 var mailto = 'mailto:?subject=' + subject + '&body=' + body
                 return mailto
             },
-            clickedDetails: function (params) {
+            clickedDetails: function () {
                 // var attributes = {
                 //     index: params[0],
                 //     abbreviation: params[1]
@@ -222,6 +225,7 @@
             'component-results-winners': ResultsWinners,
             'component-results-table': ResultsTable,
             'component-results-table-eu': ResultsTableEu,
+            'component-results-the-other-republic': ResultsTheOtherRepublic,
             'font-awesome-icon': FontAwesomeIcon,
             Analytics
         }

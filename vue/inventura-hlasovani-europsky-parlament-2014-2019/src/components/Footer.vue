@@ -8,9 +8,15 @@
                 <div class="col-md-6 text-center">
                     <a href="http://kohovolit.eu" title="KohoVolit.eu" id="footer-kohovolit-logo" target="_blank"><img src="https://volebnikalkulacka.cz/image/logo.png" alt="logo kohovolit.eu"></a>
 					<p class="lead black">Volebné kalkulačky pre Vás už od roku 2006 vytvára občianske združenie <a href="http://kohovolit.eu" target="_blank">KohoVolit.eu</a></p>
-                    <a href="https://europeum.org" target="_blank" alt="Europeum"><img src="@/assets/img/europeum.png" /></a>
+
+                    <a href="https://demagog.sk" target="_blank" alt="Demagog"><img src="@/assets/img/demagog.svg" height="58" /></a>
                     <p class="lead black">
-                        Táto kalkulačka vznikla v spolupráci s organizáciou <a href="https://europeum.org" target="_blank">Europeum</a>.
+                        Táto kalkulačka vznikla v spolupráci s organizáciou <a href="https://demagog.sk" target="_blank">Demagog</a>.
+                    </p>
+
+                    <a href="http://europeum.org" target="_blank" alt="Europeum"><img src="@/assets/img/europeum.png" /></a>
+                    <p class="lead black">
+                        Táto kalkulačka vznikla v spolupráci s organizáciou <a href="http://europeum.org" target="_blank">Europeum</a>.
                     </p>
                     <hr>
 					<p class="black">Creative Commons BY 4.0 | <a href="http://kohovolit.eu" id="footer-kohovolit-licence">KohoVolit.eu</a> 2019</p>
