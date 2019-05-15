@@ -78,7 +78,7 @@
                 <strong>Volebná kalkulačka Európsky parlament 2019</strong> ukazuje vašu zhodu s kandidátmi v európskych voľbách.
 
                 <div style="padding-bottom:3em">
-                  <a href="sk/liptovsky-hradok-2018/" class="btn btn btn-success btn-lg" disabled="disabled">VOLEBNÁ KALKULAČKA BÚDE SPUSTENÁ DO 9.5.2019</a>
+                  <a href="sk/europsky-parlament-2019?hr=<?php if( isset($_SERVER['HTTP_REFERER'])) { $hr=$_SERVER['HTTP_REFERER']; if ($hr!="") {echo base64_encode($hr);} } ?><?php if( isset($_GET['ref'])) { $ref=$_GET['ref']; if ($ref!="") {echo '&ref=' . $ref;} } ?>" class="btn btn btn-success btn-lg" disabled="disabled">SPUSTIŤ VOLEBNÚ KALKULAČKU</a>
                 </div>
                 </p>
                <p class="lead">
