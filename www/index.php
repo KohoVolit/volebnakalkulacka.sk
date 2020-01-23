@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Volebná kalkulačka 2019. Zistíte, kto Vás naozaj reprezentuje.">
-    <meta name="keywords" content="voľby 2019, volebná kalkulačka, volebný test">
+    <meta name="description" content="Volebná kalkulačka 2020. Zistíte, kto Vás naozaj reprezentuje.">
+    <meta name="keywords" content="voľby 2020, volebná kalkulačka, volebný test">
     <meta name="author" content="KohoVolit.eu">
     <link type="image/x-icon" href="image/favicon.ico" rel="shortcut icon">
 
@@ -75,13 +75,13 @@
 
                 <p class="lead">
                 <br>
-                <strong>Volebná kalkulačka Európsky parlament 2019</strong> ukazuje vašu zhodu s kandidátmi v európskych voľbách.
+                <strong>Volebná kalkulačka Národná rada SR 2020</strong> ukazuje vašu zhodu s kandidátmi v parlamentných voľbách.
 
                 <div style="padding-bottom:3em">
-                  <a href="sk/europsky-parlament-2019?hr=<?php if( isset($_SERVER['HTTP_REFERER'])) { $hr=$_SERVER['HTTP_REFERER']; if ($hr!="") {echo base64_encode($hr);} } ?><?php if( isset($_GET['ref'])) { $ref=$_GET['ref']; if ($ref!="") {echo '&ref=' . $ref;} } ?>" class="btn btn btn-success btn-lg">SPUSTIŤ VOLEBNÚ KALKULAČKU</a>
+                  <a href="sk/europsky-parlament-2019?hr=<?php if( isset($_SERVER['HTTP_REFERER'])) { $hr=$_SERVER['HTTP_REFERER']; if ($hr!="") {echo base64_encode($hr);} } ?><?php if( isset($_GET['ref'])) { $ref=$_GET['ref']; if ($ref!="") {echo '&ref=' . $ref;} } ?>" class="btn btn btn-success btn-lg disabled">PRIPRAVUJEME VOLEBNÚ KALKULAČKU</a>
                 </div>
                 </p>
-               <p class="lead">
+               <!-- <p class="lead">
                         Inventúra hlasovaní <strong>Európskeho parlamentu 2014 - 2019</strong>. Porovnajte si svoje názory so súčasnými europoslancami na základe 35 skutočne prebehnutých hlasovaní.
                     </p>
                     <p class="lead">
@@ -89,7 +89,7 @@
                                     SPUSTIŤ INVENTÚRU HLASOVANÍ
                             </a>
 
-                    </p>
+                    </p> -->
 
 <!--				   <p>-->
 
