@@ -10,13 +10,47 @@
     <meta name="author" content="KohoVolit.eu">
     <link type="image/x-icon" href="image/favicon.ico" rel="shortcut icon">
 
-    <meta property="og:image" content="http://volebnikalkulacka.cz/image/logo.jpg"/>
+    <meta property="og:image" content="https://volebnikalkulacka.cz/image/logo.jpg"/>
 	<meta property="og:title" content="Volebná kalkulačka"/>
 <!--	<meta property="og:url" content="http://volebnakalkulacka.sk"/>-->
 	<meta property="og:site_name" content="Volebná kalkulačka"/>
 	<meta property="og:type" content="website"/>
 
-    <title>Volebná kalkulačka</title>
+    <?php
+        // fb image
+        error_reporting(0);
+        $metas = [
+            "og_image" => "og:image",
+            "og_image_width" => "og:image:width",
+            "og_image_height" => "og:image:height",
+            "og_description" => "og:description",
+            "og_title" => "og:title",
+            "fb_app_id" => "fb:app_id"
+        ];
+        $defaults = [
+            "og_image" => "https://volebnikalkulacka.azureedge.net/evropsky-parlament-2014/image/bg.jpg",
+            "og_image_width" => false,
+            "og_image_height" => false,
+            "og_description" => "Volebná kalkulačka. Najužitočnejších 5 minút pred voľbami.",
+            "og_title" => "Volebná kalkulačka",
+            "fb_app_id" => "647475721940594"
+        ];
+        foreach ($metas as $key => $meta) {
+            if (isset($_GET[$key])) {
+                echo '<meta property="' . $meta . '" content="' . $_GET[$key] . '"/>' . "\n";
+            } else {
+                if ($defaults[$key]) {
+                    echo '<meta property="' . $meta . '" content="' . $defaults[$key] . '"/>' . "\n";
+                }
+            }
+        }
+     ?>
+
+    <?php
+    	echo '<meta property="og:url" content="https://' . $_SERVER[HTTP_HOST] . $_SERVER[REQUEST_URI]. '"/>'
+    ?>
+
+    <title>Volebná kalkulačka 2020</title>
 
     <!-- Bootstrap core CSS -->
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
@@ -57,7 +91,7 @@
             </li>
             <li><a href="embed/">Vložiť volebnú kalkulačku na web</a>
             </li>
-            <li><a href="http://volebnikalkulacka.cz/archive/">Archív kalkulačiek</a>
+            <li><a href="https://volebnikalkulacka.cz/archive/">Archív kalkulačiek</a>
             </li>
             <li><a href="https://kohovolit.eu/sk/kontakt/">Kontakt</a>
             </li>
@@ -70,7 +104,7 @@
 
 		<div class="vert-text">
 
-			<h1>Volebná kalkulačka</h1>
+			<h1>Volebná kalkulačka 2020</h1>
             <div class="col-md-6 col-md-offset-3 text-center" style="padding-top:2em;">
 
                 <p class="lead">
@@ -80,6 +114,16 @@
                 <div style="padding-bottom:3em">
                   <a href="sk/europsky-parlament-2019?hr=<?php if( isset($_SERVER['HTTP_REFERER'])) { $hr=$_SERVER['HTTP_REFERER']; if ($hr!="") {echo base64_encode($hr);} } ?><?php if( isset($_GET['ref'])) { $ref=$_GET['ref']; if ($ref!="") {echo '&ref=' . $ref;} } ?>" class="btn btn btn-success btn-lg disabled">PRIPRAVUJEME VOLEBNÚ KALKULAČKU</a>
                 </div>
+                </p>
+
+                <hr />
+                <p class="lead">
+                    <strong>Staršie Volebné kalkulačky:</strong>
+                </p>
+                <p class="lead">
+                    <a href="archive/?hr=<?php if( isset($_SERVER['HTTP_REFERER'])) { $hr=$_SERVER['HTTP_REFERER']; if ($hr!="") {echo base64_encode($hr);} } ?><?php if( isset($_GET['ref'])) { $ref=$_GET['ref']; if ($ref!="") {echo '&ref=' . $ref;} } ?>" class="btn btn-lg btn-info" style="white-space: normal;">
+                            ARCHÍV VOLEBNÝCH KALKULAČIEK
+                    </a>
                 </p>
                <!-- <p class="lead">
                         Inventúra hlasovaní <strong>Európskeho parlamentu 2014 - 2019</strong>. Porovnajte si svoje názory so súčasnými europoslancami na základe 35 skutočne prebehnutých hlasovaní.
@@ -130,7 +174,7 @@
   <li><a href="embed/">Vložiť kalkulačku na web</a></li>
   <li><a href="archive/">Archív</a></li>
 </ul>
-					<p class="black">Creative Commons BY 4.0 | <a href="http://kohovolit.eu">KohoVolit.eu</a> 2016</p>
+					<p class="black">Creative Commons BY 4.0 | <a href="http://kohovolit.eu">KohoVolit.eu</a> 2020</p>
                 </div>
             </div>
         </div>
@@ -171,6 +215,25 @@
         });
     });
     </script>
+
+    <!-- cookie -->
+    <?php
+    if(!isset($_COOKIE['vkid'])) {
+        session_start();
+        setcookie('vkid', session_id(), time() + (60 * 60 * 24 * 365 * 15), "/");
+    }
+    ?>
+    <!-- /cookie -->
+
+    <!-- session -->
+    <?php
+        file_get_contents("https://volebnakalkulacka.sk/session/?" . $_SERVER['QUERY_STRING'])
+    ?>
+    <script>
+        $.ajax("https://volebnakalkulacka.sk/session/" + location.search)
+    </script>
+    <!-- /session -->
+
     <!-- google analytics -->
     <script type="text/javascript">
       var _gaq = _gaq || [];
