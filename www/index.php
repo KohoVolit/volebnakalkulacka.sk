@@ -173,6 +173,7 @@
   <li><a href="info/">O projekte</a></li>
   <li><a href="embed/">Vložiť kalkulačku na web</a></li>
   <li><a href="archive/">Archív</a></li>
+  <li><a href="gdpr/">GDPR</a></li>
 </ul>
 					<p class="black">Creative Commons BY 4.0 | <a href="http://kohovolit.eu">KohoVolit.eu</a> 2020</p>
                 </div>
