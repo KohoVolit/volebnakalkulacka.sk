@@ -40,7 +40,7 @@
             <div class="row pt-4 pb-1 px-1">
                 <div class="col-md-12">
                     <a href="https://parlament21.sk/" target='_blank'>
-                        <button class="btn btn-outline-info btn-block btn-lg" @click="clicked('d21_lower, {}')" style="font-size:1.2em">Zkúste si aj hlasovanie vo volebnej hre <img src="https://parlament21.sk/assets/img/logo.svg" alt="" style="height: 45px;"></button>
+                        <button class="btn btn-outline-info btn-block btn-lg" @click="clicked('d21_lower', {})" style="font-size:1.2em">Zkúste si aj hlasovanie vo volebnej hre <img src="https://parlament21.sk/assets/img/logo.svg" alt="" style="height: 45px;"></button>
                     </a>
                 </div>
             </div>
