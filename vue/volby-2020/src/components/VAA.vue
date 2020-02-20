@@ -34,18 +34,18 @@
                                 <div class="vaa-width" style="margin:auto;">
                                     <div class="row p-2" data-toggle="buttons">
                                         <div class="col-4">
-                                            <label class="btn btn-outline-primary btn-lg btn-block" :class="checked(question.id, 1)" @click="addAnswer(question.id, 1, index)">
-                                                <input type="radio" :name="radioName(index)" :id="radionId(question.id, 1)" class="vaa-btn">{{ $t("YES") }}
+                                            <label class="btn btn-outline-primary btn-lg btn-block" :class="checked(question.id, 1)" >
+                                                <input type="radio" :name="radioName(index)" :id="radionId(question.id, 1)" class="vaa-btn" @click="addAnswer(question.id, 1, index)">{{ $t("YES") }}
                                             </label>
                                         </div>
                                         <div class="col-4">
-                                            <label class="btn btn-outline-primary btn-lg btn-block" :class="checked(question.id, -1)" @click="addAnswer(question.id, -1, index)">
-                                                <input type="radio" :name="radioName(index)" :id="radionId(question.id, -1)"  class="vaa-btn">{{ $t("NO") }}
+                                            <label class="btn btn-outline-primary btn-lg btn-block" :class="checked(question.id, -1)">
+                                                <input type="radio" :name="radioName(index)" :id="radionId(question.id, -1)"  class="vaa-btn" @click="addAnswer(question.id, -1, index)">{{ $t("NO") }}
                                             </label>
                                         </div>
                                         <div class="col-4">
-                                            <label class="btn btn-outline-secondary btn-lg btn-block" :class="checked(question.id, 0)" @click="addAnswer(question.id, 0, index)">
-                                                <input type="radio" :name="radioName(index)" :id="radionId(question.id, 0)" class="vaa-btn"><small>{{ $t("dont_know") }}</small>
+                                            <label class="btn btn-outline-secondary btn-lg btn-block" :class="checked(question.id, 0)">
+                                                <input type="radio" :name="radioName(index)" :id="radionId(question.id, 0)" class="vaa-btn" @click="addAnswer(question.id, 0, index)"><small>{{ $t("dont_know") }}</small>
                                             </label>
                                         </div>
                                     </div>
@@ -119,8 +119,10 @@
             addAnswer: function (id, value, index) {
                 var payload = {'key': id, 'value': value}
                 this.$store.commit('addAnswer', payload)
+                console.log("this.slide", this.slide, this.questions.length)
                 setTimeout(() => {
                     if ((this.slide + 1) === this.questions.length) {
+                        console.log("this.slide inside", this.slide, this.questions.length)
                     this.$router.push(
                         { path: '/selection', query: { q: JSON.stringify(this.$store.state.answers) }
                     })

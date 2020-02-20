@@ -125,6 +125,18 @@
                             ARCHÍV VOLEBNÝCH KALKULAČIEK
                     </a>
                 </p>
+
+                <div data-darujme-widget-token="ump6u9fi5cl6vcqc">&nbsp;</div>
+                <script type="text/javascript">
+                	+function(w, d, s, u, a, b) {
+                		w['DarujmeObject'] = u;
+                		w[u] = w[u] || function () { (w[u].q = w[u].q || []).push(arguments) };
+                		a = d.createElement(s); b = d.getElementsByTagName(s)[0];
+                		a.async = 1; a.src = "https:\/\/www.darujme.cz\/assets\/scripts\/widget.js";
+                		b.parentNode.insertBefore(a, b);
+                	}(window, document, 'script', 'Darujme');
+                	Darujme(1, "ump6u9fi5cl6vcqc", 'render', "https:\/\/www.darujme.cz\/widget?token=ump6u9fi5cl6vcqc", "100%");
+                </script>
                <!-- <p class="lead">
                         Inventúra hlasovaní <strong>Európskeho parlamentu 2014 - 2019</strong>. Porovnajte si svoje názory so súčasnými europoslancami na základe 35 skutočne prebehnutých hlasovaní.
                     </p>
