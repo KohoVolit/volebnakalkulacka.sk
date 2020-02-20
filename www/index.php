@@ -10,8 +10,8 @@
     <meta name="author" content="KohoVolit.eu">
     <link type="image/x-icon" href="image/favicon.ico" rel="shortcut icon">
 
-    <meta property="og:image" content="https://volebnikalkulacka.cz/image/logo.jpg"/>
-	<meta property="og:title" content="Volebná kalkulačka"/>
+    <!-- <meta property="og:image" content="https://volebnikalkulacka.cz/image/logo.jpg"/> -->
+	<!-- <meta property="og:title" content="Volebná kalkulačka"/> -->
 <!--	<meta property="og:url" content="http://volebnakalkulacka.sk"/>-->
 	<meta property="og:site_name" content="Volebná kalkulačka"/>
 	<meta property="og:type" content="website"/>
@@ -28,7 +28,7 @@
             "fb_app_id" => "fb:app_id"
         ];
         $defaults = [
-            "og_image" => "https://volebnikalkulacka.azureedge.net/evropsky-parlament-2014/image/bg.jpg",
+            "og_image" => "https://volebnikalkulacka.azureedge.net/image/logo.jpg",
             "og_image_width" => false,
             "og_image_height" => false,
             "og_description" => "Volebná kalkulačka. Najužitočnejších 5 minút pred voľbami.",
