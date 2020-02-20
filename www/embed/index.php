@@ -1,167 +1,279 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Volebná kalkulačka 2020. Najužitočnejších 5 minút pred voľbami.">
+    <meta name="keywords" content="volebná kalkulačka, volebný test">
+    <meta name="author" content="KohoVolit.eu">
+    <link type="image/x-icon" href="../image/favicon.ico" rel="shortcut icon">
+
 <?php
+    // fb image
+    error_reporting(0);
+    $metas = [
+        "og_image" => "og:image",
+        "og_image_width" => "og:image:width",
+        "og_image_height" => "og:image:height",
+        "og_description" => "og:description",
+        "og_title" => "og:title",
+        "fb_app_id" => "fb:app_id"
+    ];
+    $defaults = [
+        "og_image" => "https://volebnikalkulacka.azureedge.net/evropsky-parlament-2014/image/bg.jpg",
+        "og_image_width" => false,
+        "og_image_height" => false,
+        "og_description" => "Volebná kalkulačka. Najužitočnejších 5 minút pred voľbami.",
+        "og_title" => "Volebná kalkulačka",
+        "fb_app_id" => "647475721940594"
+    ];
+    foreach ($metas as $key => $meta) {
+        if (isset($_GET[$key])) {
+            echo '<meta property="' . $meta . '" content="' . $_GET[$key] . '"/>' . "\n";
+        } else {
+            if ($defaults[$key]) {
+                echo '<meta property="' . $meta . '" content="' . $defaults[$key] . '"/>' . "\n";
+            }
+        }
+    }
+ ?>
 
-// put full path to Smarty.class.php
-require('/usr/local/lib/php/Smarty/libs/Smarty.class.php');
-$smarty = new Smarty();
-
-$smarty->setTemplateDir('../../smarty/templates');
-$smarty->setCompileDir('../../smarty/templates_c');
-$smarty->setCacheDir('../../smarty/cache');
-$smarty->setConfigDir('../../smarty/configs');
-
-$calc2016 = array (
-  array(
-    'name' => 'Volebná kalkulačka 2016',
-    'friendly_url' => 'volby-2016/',
-    'selected' => true,
-    'custom' => true
-  ),
-);
-
-$calc2014ep = array (
-  array(
-    'name' => 'Volebná kalkulačka EP 2014',
-    'friendly_url' => 'europsky-parlament-2014/',
-    'selected' => true,
-    'custom' => true
-  ),
-);
-
-$calc2014ep = array (
-  array(
-    'name' => 'Volebná kalkulačka EP 2014',
-    'friendly_url' => 'europsky-parlament-2014/',
-    'selected' => true,
-    'custom' => true
-  ),
-);
-
-$inventory2014ep = array (
-  array(
-    'name' => 'Inventúra hlasovaní EP 2009-2014',
-    'friendly_url' => 'inventura-hlasovani-europsky-parlament-2009-2014/',
-    'selected' => true,
-    'custom' => true
-  ),
-);
-
-$calc2014ep_hu = array (
-  array(
-    'name' => '2014-es európai parlamenti választás',
-    'friendly_url' => '2014-es-europai-parlamenti-valasztas/',
-    'selected' => true,
-    'custom' => true
-  ),
-);
-
-$constit = array(
-  'banska-bystrica' => 'Banskobystrický kraj',
-  'bratislava' => 'Bratislavský kraj',
-  'kosice' => 'Košický kraj',
-  'nitra' => 'Nitriansky kraj',
-  'presov' => 'Prešovský kraj',
-  'trencin' => 'Trenčiansky kraj',
-  'trnava' => 'Trnavský kraj',
-  'zilina' => 'Žilinský kraj'
-);
-
-foreach ($constit as $ckey=>$c) {
-  $constit[$ckey] = array(
-    'name' => $c,
-    'friendly_url' => 'volby-vuc-2013/?region='.$ckey . '&',
-    'selected' => (($ckey=='bratislava') ? 'true' : 'false'),
-  );
-}
-
-
-
-$sizes = array(
-  array('name' => 'Najväčšia 850x600', 'width' => '850', 'height' => '600'),
-  array('name' => 'Štandardná 650x550', 'width' => '650', 'height' => '550', 'selected' => true),
-  array('name' => 'Mobilná 480x320', 'width' => '480', 'height' => '320'),
-  array('name' => 'Mobilná na výšku 320x480', 'width' => '320', 'height' => '480'),
-);
-
-$calcs = array(
-
-  'calc2016'  => array(
-    'name' => 'Volebná kalkulačka 2016',
-    'calc' => $calc2016,
-  ),
-
-  'calc2014ep' => array(
-    'name' => 'Volebná kalkulačka Európsky parlament 2014',
-    'calc' => $calc2014ep,
-  ),
-
-  'inventory2014ep' => array(
-    'name' => 'Inventúra hlasovaní Európsky parlament 2009-2014',
-    'calc' => $inventory2014ep,
-  ),
-  
-  'calc2014ep_hu' => array(
-    'name' => 'Választás kalkulátor Európai Parlament 2014',
-    'calc' => $calc2014ep_hu,
-  ),
-
-  'all' => array(
-    'name' => 'Celá VolebnáKalkulačka.sk',
-    'calc' => array(array('name'=>'VolebnáKalkulačka.sk','friendly_url'=>'?')),
-  ),
-  
-  'president2014' => array(
-    'name' => 'Volebná kalkulačka pre prezidentské voľby 2014',
-    'calc' => array(array('name'=>'Prezidentské voľby 2014','friendly_url'=>'volba-prezidenta-2014/?')),
-  ),
-
-  'vuc2013' => array(
-    'name' => 'Krajské volebné kalkulačky 2013',
-    'calc' => $constit,
-  ),
-
-);
-
-//random key
-$key = randomAlphaNum(8);
-
-$smarty->assign('calcs', $calcs);
-$smarty->assign('key', $key);
-$smarty->assign('sizes', $sizes);
-
-$smarty->display('embed.tpl'); 
-
-/**
-* generates random key
-*/
-function randomAlphaNum($length){
-
-    $rangeMin = pow(36, $length-1); //smallest number to give length digits in base 36
-    $rangeMax = pow(36, $length)-1; //largest number to give length digits in base 36
-    $base10Rand = mt_rand($rangeMin, $rangeMax); //get the random number
-    $newRand = base_convert($base10Rand, 10, 36); //convert it
-   
-    return $newRand; //spit it out
-}
-
-
-/**
-* creates "friendly url" version of text, translits string (gets rid of diacritics) and substitutes ' ' for '-', etc.
-* @return friendly url version of text
-* example:
-* friendly_url('klub ČSSD')
-*     returns 'klub-cssd'
-*/
-function friendly_url($text,$locale = 'cs_CZ.utf-8') {
-    $old_locale = setlocale(LC_ALL, "0");
-setlocale(LC_ALL,$locale);
-$url = $text;
-$url = preg_replace('~[^\\pL0-9_]+~u', '-', $url);
-$url = trim($url, "-");
-$url = iconv("utf-8", "us-ascii//TRANSLIT", $url);
-$url = strtolower($url);
-$url = preg_replace('~[^-a-z0-9_]+~', '', $url);
-setlocale(LC_ALL,$old_locale);
-return $url;
-}
-
+<?php
+	echo '<meta property="og:url" content="https://' . $_SERVER[HTTP_HOST] . $_SERVER[REQUEST_URI]. '"/>'
 ?>
+	<meta property="og:site_name" content="Volebná kalkulačka"/>
+	<meta property="og:type" content="website"/>
+
+    <title>Volebná kalkulačka 2020</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="../css/stylish-portfolio.min.css" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,700,800|Roboto+Slab:400,700&subset=latin,latin-ext">
+	<link rel="stylesheet" href="../css/vaa2014.css">
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<style>
+	body {
+      padding-top: 0;
+    }
+	@media (min-width: 666px) {
+  .header {
+        background: url("https://volebnakalkulacka.azureedge.net/volby-2016/image/bg.jpg") no-repeat fixed center center / cover rgba(0, 0, 0, 0);
+      }
+    }
+    @media (min-width: 750px) {
+      h1 {background: none repeat scroll 0 0 rgba(0, 0, 0, 0.2);}
+    }
+    h1 { color: #FFFFFF; display: inline; line-height: 60px; font-family: 'Roboto Slab',serif; padding: 10px 20px; vertical-align: baseline; width: auto; }
+    .lead { font-size: 16px; font-weight: 200; line-height: 1.4; margin-bottom: 50px; margin-bottom: 20px; font-size: 21px; color: #fff;}
+    .nav a {color: #428BCA}
+    </style>
+
+</head>
+<body>
+
+    <!-- Side Menu -->
+    <div class="lang-group">sk | <a href="https://electioncalculator.org">en</a> </div><a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand"><a href="http://kohovolit.eu/">KohoVolit.eu</a>
+            </li>
+            <li><a href="../info/">O projekte</a>
+            </li>
+            <li><a href="../embed/">Vložiť kalkulačku na web</a>
+            </li>
+            <li><a href="../archive/">Archív kalkulačiek</a>
+            </li>
+            <li><a href="http://kohovolit.eu/cs/kontakt/">Kontakt</a>
+            </li>
+        </ul>
+    </div>
+    <!-- /Side Menu -->
+
+    <!-- Content -->
+    <div id="top" class="header">
+        <div class="text-center pb-2">
+            <h1>Vložiť Volebnú kalkulačku k sobe na web</h1>
+        </div>
+        <div class="container">
+            <div class="alert alert-warning" role="alert">
+                Upozornenie: Volebná kalkulačka je zverejňovaná pod licenciou <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>.
+            </div>
+            <div class="alert alert-info" role="alert">
+                Rovnako ľahko ako napríklad video z Youtube si môžete vložiť k sebe na webové stránky aj Volebnú kalkulačku.
+                <br/>
+                Čísla <em>width</em> (šírka) a <em>height</em> (výška) si upravte podľa svojich potrieb.
+                <br />
+                HTML kód:
+            </br/>
+            </div>
+            <?php
+                function randomAlphaNum($length){
+
+                    $rangeMin = pow(36, $length-1); //smallest number to give length digits in base 36
+                    $rangeMax = pow(36, $length)-1; //largest number to give length digits in base 36
+                    $base10Rand = mt_rand($rangeMin, $rangeMax); //get the random number
+                    $newRand = base_convert($base10Rand, 10, 36); //convert it
+
+                    return $newRand; //spit it out
+                }
+                $key = randomAlphaNum(8);
+             ?>
+            <div class="jumbotron">
+                <code>
+
+    &lt;iframe src=&quot;https://volebnakalkulacka.sk/sk/volby-2020/?key=<?php echo $key ?>&quot; width=&quot;650&quot; height=&quot;550&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+                </code>
+            </div>
+
+    </div>
+
+    <!-- /Content -->
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+
+                    <a href="http://www.kohovolit.eu" title="KohoVolit.eu"><img src="../image/logo.png" alt="logo kohovolit.eu" /></a>
+                    <!--<p><a href="http://votematch.eu" id="footer-votematch"><img src="image/eu2014/votematch.png" title="VoteMatch.eu" alt="VoteMatch.eu"/></a></p>-->
+					<p class="lead black" style="color:#333333">Volební kalkulačky pro Vás již od roku 2006 vytváří sdružení <a href="http://kohovolit.eu">KohoVolit.eu</a><!--<br/>Proudly part of <a href="http://www.votematch.eu/">VoteMatchEurope</a>--></p>
+
+                    <hr>
+					<ul class="nav nav-pills" style="color: #428BCA;">
+                      <li><a href="info/">O projektu</a></li>
+                      <li><a href="embed/">Vložit kalkulačku na web</a></li>
+                      <li><a href="archive/">Archiv</a></li>
+                    </ul>
+					<p class="black">Creative Commons BY-NC 4.0 | <a href="http://kohovolit.eu">KohoVolit.eu</a> 2006-2020</p>
+                <br/>
+                <br/>
+                <br/>
+
+            </br/>
+                </div>
+            </div>
+        		</div>
+    </footer>
+        <!-- /Footer -->
+
+        <!-- cookie -->
+        <?php
+        if(!isset($_COOKIE['vkid'])) {
+            session_start();
+            setcookie('vkid', session_id(), time() + (60 * 60 * 24 * 365 * 15), "/");
+        }
+        ?>
+        <!-- /cookie -->
+
+        <!-- session -->
+        <?php
+            file_get_contents("https://volebnakalkulacka.sk/session/?" . $_SERVER['QUERY_STRING'])
+        ?>
+        <script>
+            $.ajax("https://volebnakalkulacka.sk/session/" + location.search)
+        </script>
+        <!-- /session -->
+
+
+
+        <!-- Custom JavaScript for the Side Menu and Smooth Scrolling -->
+        <script>
+        $("#menu-close").click(function(e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+        });
+        </script>
+        <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+        });
+        </script>
+        <script>
+        $(function() {
+            $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+        </script>
+        <!-- google analytics -->
+        <script type="text/javascript">
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-8592359-12']);
+          _gaq.push(['_trackPageview']);
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+        </script>
+        <!-- /google analytics -->
+        <!-- Yandex.Metrika counter -->
+        <script type="text/javascript">
+            (function (d, w, c) {
+                (w[c] = w[c] || []).push(function() {
+                    try {
+                        w.yaCounter35358145 = new Ya.Metrika({
+                            id:35358145,
+                            clickmap:true,
+                            trackLinks:true,
+                            accurateTrackBounce:true
+                        });
+                    } catch(e) { }
+                });
+
+                var n = d.getElementsByTagName("script")[0],
+                    s = d.createElement("script"),
+                    f = function () { n.parentNode.insertBefore(s, n); };
+                s.type = "text/javascript";
+                s.async = true;
+                s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+                if (w.opera == "[object Opera]") {
+                    d.addEventListener("DOMContentLoaded", f, false);
+                } else { f(); }
+            })(document, window, "yandex_metrika_callbacks");
+        </script>
+        <noscript><div><img src="https://mc.yandex.ru/watch/35358145" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+        <!-- /Yandex.Metrika counter -->
+        <!-- Piwik -->
+        <script type="text/javascript">
+          var _paq = _paq || [];
+          // tracker methods like "setCustomDimension" should be called before "trackPageView"
+          _paq.push(['trackPageView']);
+          _paq.push(['enableLinkTracking']);
+          (function() {
+            var u="//piwik.kohovolit.eu/";
+            _paq.push(['setTrackerUrl', u+'piwik.php']);
+            _paq.push(['setSiteId', '2']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+          })();
+        </script>
+        <!-- End Piwik Code -->
+</body>
+
+</html>
