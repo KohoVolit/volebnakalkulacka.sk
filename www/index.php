@@ -112,19 +112,12 @@
                 <strong>Volebná kalkulačka Národná rada SR 2020</strong> ukazuje vašu zhodu s kandidátmi v parlamentných voľbách.
 
                 <div style="padding-bottom:3em">
-                  <a href="sk/europsky-parlament-2019?hr=<?php if( isset($_SERVER['HTTP_REFERER'])) { $hr=$_SERVER['HTTP_REFERER']; if ($hr!="") {echo base64_encode($hr);} } ?><?php if( isset($_GET['ref'])) { $ref=$_GET['ref']; if ($ref!="") {echo '&ref=' . $ref;} } ?>" class="btn btn btn-success btn-lg disabled">VOLEBNÁ KALKULAČKA BUDE SPUSTENÁ 20.02.2020 20:02</a>
+                  <a href="sk/volby-2020?hr=<?php if( isset($_SERVER['HTTP_REFERER'])) { $hr=$_SERVER['HTTP_REFERER']; if ($hr!="") {echo base64_encode($hr);} } ?><?php if( isset($_GET['ref'])) { $ref=$_GET['ref']; if ($ref!="") {echo '&ref=' . $ref;} } ?>" class="btn btn btn-success btn-lg">SPUSTIŤ VOLEBNÚ KALKULAČKU</a>
                 </div>
                 </p>
 
                 <hr />
-                <p class="lead">
-                    <strong>Staršie Volebné kalkulačky:</strong>
-                </p>
-                <p class="lead">
-                    <a href="archive/?hr=<?php if( isset($_SERVER['HTTP_REFERER'])) { $hr=$_SERVER['HTTP_REFERER']; if ($hr!="") {echo base64_encode($hr);} } ?><?php if( isset($_GET['ref'])) { $ref=$_GET['ref']; if ($ref!="") {echo '&ref=' . $ref;} } ?>" class="btn btn-lg btn-info" style="white-space: normal;">
-                            ARCHÍV VOLEBNÝCH KALKULAČIEK
-                    </a>
-                </p>
+
 
                 <div data-darujme-widget-token="ump6u9fi5cl6vcqc">&nbsp;</div>
                 <script type="text/javascript">
@@ -137,6 +130,16 @@
                 	}(window, document, 'script', 'Darujme');
                 	Darujme(1, "ump6u9fi5cl6vcqc", 'render', "https:\/\/www.darujme.cz\/widget?token=ump6u9fi5cl6vcqc", "100%");
                 </script>
+
+                <!-- <hr /> -->
+                <!-- <p class="lead">
+                    <strong>Staršie Volebné kalkulačky:</strong>
+                </p>
+                <p class="lead">
+                    <a href="archive/?hr=<?php if( isset($_SERVER['HTTP_REFERER'])) { $hr=$_SERVER['HTTP_REFERER']; if ($hr!="") {echo base64_encode($hr);} } ?><?php if( isset($_GET['ref'])) { $ref=$_GET['ref']; if ($ref!="") {echo '&ref=' . $ref;} } ?>" class="btn btn-lg btn-info" style="white-space: normal;">
+                            ARCHÍV VOLEBNÝCH KALKULAČIEK
+                    </a>
+                </p> -->
                <!-- <p class="lead">
                         Inventúra hlasovaní <strong>Európskeho parlamentu 2014 - 2019</strong>. Porovnajte si svoje názory so súčasnými europoslancami na základe 35 skutočne prebehnutých hlasovaní.
                     </p>

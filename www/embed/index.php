@@ -106,7 +106,7 @@
         </div>
         <div class="container">
             <div class="alert alert-warning" role="alert">
-                Upozornenie: Volebná kalkulačka je zverejňovaná pod licenciou <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>.
+                Upozornenie: Volebná kalkulačka je zverejňovaná pod licenciou <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>. Kontakt: Michal Škop +420 735 518 529.
             </div>
             <div class="alert alert-info" role="alert">
                 Rovnako ľahko ako napríklad video z Youtube si môžete vložiť k sebe na webové stránky aj Volebnú kalkulačku.
