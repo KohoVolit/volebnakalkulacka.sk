@@ -48,7 +48,7 @@
             <!-- <a @click="clicked('all_questions_table', {'text': 'overview'})" href="https://docs.google.com/spreadsheets/d/1_1ya3KCgY4Z9j932Xz8SVn28NpE-xuvRHwzOP69dAJQ/edit?usp=sharing" target="_blank" class="btn btn-info btn-block btn-lg mt-4"><font-awesome-icon icon="table" /> Přehled všech odpovědí v tabulce</a> -->
             <component-results-noreply :questions="questions"></component-results-noreply>
             <hr />
-            <!-- <Darujme></Darujme> -->
+            <Darujme></Darujme>
         </div>
         <component-footer></component-footer>
         <div class="filler"></div>
@@ -68,7 +68,7 @@
     import votes from '../data/answers.json'
     // import votesEu from '../data/answers_eu.json'
     import Analytics from './Analytics.vue'
-    // import Darujme from './Darujme.vue'
+    import Darujme from './Darujme.vue'
 
     import { library } from '@fortawesome/fontawesome-svg-core'
     import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
@@ -243,7 +243,7 @@
             // 'component-results-the-other-republic': ResultsTheOtherRepublic,
             'font-awesome-icon': FontAwesomeIcon,
             Analytics,
-            // Darujme
+            Darujme
         }
     }
 </script>
