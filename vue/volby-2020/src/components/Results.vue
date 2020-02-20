@@ -37,6 +37,8 @@
                 </div>
             </div>
 
+            <a @click="clicked('all_questions_table', {'text': 'overview'})" href="https://docs.google.com/spreadsheets/d/1wWL9Bv1YPhQ_zUvjPJzy1Xsj8aIYgjzQQaV9OMMQpjM/edit?usp=sharing" target="_blank" class="btn btn-info btn-block btn-lg mt-4"><font-awesome-icon icon="table" /> Prehľad odpovedí strán v tabuľke</a>
+
             <div class="row pt-4 pb-1 px-1">
                 <div class="col-md-12">
                     <a href="https://parlament21.sk/" target='_blank'>
@@ -72,11 +74,13 @@
 
     import { library } from '@fortawesome/fontawesome-svg-core'
     import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+    import { faTable } from '@fortawesome/free-solid-svg-icons'
     import { faFacebook } from '@fortawesome/free-brands-svg-icons'
     import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
     library.add(faEnvelope)
     library.add(faFacebook)
+    library.add(faTable)
 
     export default {
         data: function () {
