@@ -112,7 +112,7 @@
                 <strong>Volebná kalkulačka Národná rada SR 2020</strong> ukazuje vašu zhodu s kandidátmi v parlamentných voľbách.
 
                 <div style="padding-bottom:3em">
-                  <a href="sk/volby-2020?hr=<?php if( isset($_SERVER['HTTP_REFERER'])) { $hr=$_SERVER['HTTP_REFERER']; if ($hr!="") {echo base64_encode($hr);} } ?><?php if( isset($_GET['ref'])) { $ref=$_GET['ref']; if ($ref!="") {echo '&ref=' . $ref;} } ?>" class="btn btn btn-success btn-lg">SPUSTIŤ VOLEBNÚ KALKULAČKU</a>
+                  <a href="sk/volby-2020?hr=<?php if( isset($_SERVER['HTTP_REFERER'])) { $hr=$_SERVER['HTTP_REFERER']; if ($hr!="") {echo base64_encode($hr);} } ?><?php if( isset($_GET['ref'])) { $ref=$_GET['ref']; if ($ref!="") {echo '&ref=' . $ref;} } ?>" class="btn btn btn-success btn-lg" disabled>SPUSTIŤ VOLEBNÚ KALKULAČKU - ŠTART 20.02.2020 20:02</a>
                 </div>
                 </p>
 
