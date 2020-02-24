@@ -51,6 +51,7 @@
             <component-results-noreply :questions="questions"></component-results-noreply>
             <hr />
             <Darujme></Darujme>
+            <Heroes></Heroes>
         </div>
         <component-footer></component-footer>
         <div class="filler"></div>
@@ -71,6 +72,8 @@
     // import votesEu from '../data/answers_eu.json'
     import Analytics from './Analytics.vue'
     import Darujme from './Darujme.vue'
+    import Heroes from './Heroes.vue'
+
 
     import { library } from '@fortawesome/fontawesome-svg-core'
     import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
@@ -247,7 +250,8 @@
             // 'component-results-the-other-republic': ResultsTheOtherRepublic,
             'font-awesome-icon': FontAwesomeIcon,
             Analytics,
-            Darujme
+            Darujme,
+            Heroes
         }
     }
 </script>
