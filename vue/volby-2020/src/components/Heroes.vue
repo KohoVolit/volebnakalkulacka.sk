@@ -5,11 +5,11 @@
             </h1>
             <div class="d-flex flex-row flex-wrap justify-content-around">
                 <div v-for="(supporter, index) in supporters" :key="index" class="card p-2 m-2" :class="bgClass(supporter.date)">
-                    <h4 :class="textClass(supporter.date)">{{ supporter['given_name'] }} {{ supporter['family_name'] }}</h4>
+                    <h6 :class="textClass(supporter.date)">{{ supporter['given_name'] }} {{ supporter['family_name'] }}</h6>
                 </div>
             </div>
             <div class="mt-5">
-                <a :href="url_darujme" target="_blank"><h4  class="outlink">{{ t['support'] }}</h4></a>
+                <a :href="url_darujme" target="_blank"><h4 class="outlink">{{ t['support'] }}</h4></a>
             </div>
         </div>
     </div>
