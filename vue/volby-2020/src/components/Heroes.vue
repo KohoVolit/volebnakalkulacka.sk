@@ -41,7 +41,17 @@ export default {
             return response.json()
         })
         .then(function (response) {
+            let blackList = [
+                {"given_name": "Bozikova", "family_name": "Gabriela"},
+                {"given_name": "Anonymny", "family_name": "darca"}
+            ]
             $this.$data.supporters = response.reverse().filter( function (item) {
+                blackList.forEach(black => {
+                    if ((black["given_name"] == item['given_name']) && (black["family_name"] == item["family_name"])) {
+                        item['given_name'] = '💜'
+                        item["family_name"] = '❤'
+                    }
+                })
                 return item.last
             })
         })
