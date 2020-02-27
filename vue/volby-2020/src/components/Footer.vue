@@ -10,6 +10,7 @@
 					<p class="lead black">Volebné kalkulačky pre Vás už od roku 2006 vytvára občianske združenie <a href="http://kohovolit.eu" target="_blank">KohoVolit.eu</a></p>
                     <hr>
 					<p class="black">Creative Commons BY NC 4.0 | <a href="http://kohovolit.eu" id="footer-kohovolit-licence">KohoVolit.eu</a> 2020</p>
+                    <p class="black">Vyrobené s ❤ v <a href="https://sk.wikipedia.org/wiki/Plasy">Plasích</a></p>
                 </div>
             </div>
         </div>
