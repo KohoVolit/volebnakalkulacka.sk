@@ -191,6 +191,7 @@
   <li><a href="gdpr/">GDPR</a></li>
 </ul>
 					<p class="black">Creative Commons BY 4.0 | <a href="http://kohovolit.eu">KohoVolit.eu</a> 2020</p>
+                    <p class="black">Vyrobené s ❤ v <a href="https://sk.wikipedia.org/wiki/Plasy">Plasích</a></p>
                 </div>
             </div>
         </div>
